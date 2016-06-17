@@ -1,0 +1,417 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 97
+ VARIABLES
+ {
+  #ARCHITECTURE="HA"
+  #BLOCKTABLE_FILE="#TABLE_LARC_2022.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="HA"
+  #LANGUAGE="VHDL"
+  AUTHOR="Wilson Ruggiero"
+  COMPANY="LARC-EPUSP"
+  CREATIONDATE="20/11/2008"
+  PAGECOUNT="2"
+  TITLE="No Title"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,100,200)
+ }
+ 
+ BODY
+ {
+  INSTANCE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="x"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (580,560)
+   VERTEXES ( (2,37) )
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (494,543,509,578)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 15
+  }
+  INSTANCE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="y"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (580,740)
+   VERTEXES ( (2,45) )
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (494,723,509,758)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 20
+  }
+  INSTANCE  25, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="p"
+    #SYMBOL="Output"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (1200,560)
+   VERTEXES ( (2,59) )
+  }
+  TEXT  26, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1272,543,1290,578)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 25
+  }
+  INSTANCE  30, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="g"
+    #SYMBOL="Output"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (1200,740)
+   VERTEXES ( (2,67) )
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1272,723,1290,758)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 30
+  }
+  SIGNALASSIGN  35, 0, 0
+  {
+   LABEL "SignalAssignments_1"
+   TEXT 
+"p <= x xor y after 2*Tgate;\n"+
+"g <= x and y after Tgate;"
+   RECT (680,580,1100,700)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  43, 51, 53, 61 )
+  }
+  GENERIC  36, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT "Tgate: time := 1 ns"
+   RECT (380,280,760,360)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+  }
+  VTX  37, 0, 0
+  {
+   COORD (580,560)
+  }
+  VTX  38, 0, 0
+  {
+   COORD (620,620)
+  }
+  NET WIRE  39, 0, 0
+  VTX  40, 0, 0
+  {
+   COORD (620,560)
+  }
+  WIRE  41, 0, 0
+  {
+   NET 39
+   VTX 37, 40
+  }
+  WIRE  42, 0, 0
+  {
+   NET 39
+   VTX 40, 38
+  }
+  VTX  43, 0, 0
+  {
+   COORD (680,620)
+  }
+  WIRE  44, 0, 0
+  {
+   NET 39
+   VTX 38, 43
+  }
+  VTX  45, 0, 0
+  {
+   COORD (580,740)
+  }
+  VTX  46, 0, 0
+  {
+   COORD (620,740)
+  }
+  NET WIRE  47, 0, 0
+  WIRE  48, 0, 0
+  {
+   NET 47
+   VTX 45, 46
+  }
+  VTX  49, 0, 0
+  {
+   COORD (620,680)
+  }
+  WIRE  50, 0, 0
+  {
+   NET 47
+   VTX 46, 49
+  }
+  VTX  51, 0, 0
+  {
+   COORD (680,680)
+  }
+  WIRE  52, 0, 0
+  {
+   NET 47
+   VTX 49, 51
+  }
+  VTX  53, 0, 0
+  {
+   COORD (1100,620)
+  }
+  VTX  54, 0, 0
+  {
+   COORD (1160,620)
+  }
+  NET WIRE  55, 0, 0
+  WIRE  56, 0, 0
+  {
+   NET 55
+   VTX 53, 54
+  }
+  VTX  57, 0, 0
+  {
+   COORD (1160,560)
+  }
+  WIRE  58, 0, 0
+  {
+   NET 55
+   VTX 54, 57
+  }
+  VTX  59, 0, 0
+  {
+   COORD (1200,560)
+  }
+  WIRE  60, 0, 0
+  {
+   NET 55
+   VTX 57, 59
+  }
+  VTX  61, 0, 0
+  {
+   COORD (1100,680)
+  }
+  VTX  62, 0, 0
+  {
+   COORD (1160,680)
+  }
+  NET WIRE  63, 0, 0
+  WIRE  64, 0, 0
+  {
+   NET 63
+   VTX 61, 62
+  }
+  VTX  65, 0, 0
+  {
+   COORD (1160,740)
+  }
+  WIRE  66, 0, 0
+  {
+   NET 63
+   VTX 62, 65
+  }
+  VTX  67, 0, 0
+  {
+   COORD (1200,740)
+  }
+  WIRE  68, 0, 0
+  {
+   NET 63
+   VTX 65, 67
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1222031323"
+   PAGENAME=""
+   PAGENUMBER="1"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  83, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Criado em:"
+   RECT (1140,1329,1261,1376)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  84, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (1320,1330,1980,1380)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  TEXT  85, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Título:"
+   RECT (1141,1387,1215,1434)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  86, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (1310,1380,1980,1440)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINE  87, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1320), (2000,1320) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  88, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1380), (2000,1380) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  89, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1300,1320), (1300,1500) )
+  }
+  TEXT  90, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT 
+"PCS 2022:\n"+
+"Organização de Computadores"
+   RECT (1140,1240,1485,1296)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  91, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1500,1220), (1500,1320) )
+  }
+  LINE  92, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1440), (2000,1440) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  93, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Página:"
+   RECT (1140,1447,1226,1494)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  94, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT     $PAGENAME"
+   RECT (1310,1440,1980,1500)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINKBMPPICT  95, 0, 0
+  {
+   FILENAME ".\\..\\..\\..\\..\\Program Files\\Aldec\\Active-HDL 7.3\\dat\\logo_LARC.bmp"
+   RECT (1600,1240,1860,1320)
+  }
+  RECT  96, 0, 0
+  {
+   OUTLINE 0,1, (0,0,0)
+   AREA (1120,1220,2000,1500)
+   FILL (1,(0,0,0),0)
+  }
+ }
+ 
+}
+

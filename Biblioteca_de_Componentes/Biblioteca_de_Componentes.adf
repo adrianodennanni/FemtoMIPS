@@ -1,0 +1,289 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=Biblioteca_de_Componentes
+
+[Library]
+Biblioteca_de_Componentes=.\Biblioteca_de_Componentes.LIB
+std=.\..\..\..\..\..\..\program files\aldec\active-hdl 8.1\vlib\std\std.lib
+ieee=.\..\..\..\..\..\..\program files\aldec\active-hdl 8.1\vlib\ieee\ieee.lib
+synopsys=.\..\..\..\..\..\..\program files\aldec\active-hdl 8.1\vlib\synopsys\synopsys.lib
+
+[$LibMap$]
+Biblioteca_de_Componentes=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+CSYNTH_TOOL=<none>
+PHYSSYNTH_TOOL=<none>
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+FAMILY=
+HESPrepare=0
+FUNC_LIB=Biblioteca_de_Componentes
+POST_LIB=Biblioteca_de_Componentes_post_synthesis
+TIM_LIB=Biblioteca_de_Componentes_timing
+SYNTH_STATUS=none
+IMPL_STATUS=none
+PHYSSYNTH_STATUS=none
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name3=Makefiles
+Directory3=C:\Arquivos de programas\Aldec\Active-HDL 7.2SE\Vlib\Biblioteca_de_Componentes\
+Extension3=mak
+Name4=Memory
+Directory4=C:\Arquivos de programas\Aldec\Active-HDL 7.2SE\Vlib\Biblioteca_de_Componentes\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\Arquivos de programas\Aldec\Active-HDL 7.2SE\Vlib\Biblioteca_de_Componentes\
+Extension5=dll
+Name6=PDF
+Directory6=C:\Arquivos de programas\Aldec\Active-HDL 7.2SE\Vlib\Biblioteca_de_Componentes\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\Arquivos de programas\Aldec\Active-HDL 7.2SE\Vlib\Biblioteca_de_Componentes\
+Extension7=
+
+[file_out:/Fuse.bde]
+/..\compile\fuse.vhd=-1
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[LocalVerilogSets]
+EnableDebug=0
+EnableSLP=1
+
+[file_out:/#LARC.bde]
+/..\compile\#LARC.vhd=-1
+
+[SIM.FUNC]
+FJD=FunctionalSimJob1
+FST=-all
+OPTION=0
+SERVERFARM_INCLUDE_INPUT_FILES=*.*
+SERVERFARM_EXCLUDE_INPUT_FILES=log\*.*:synthesis\*.*:implement\*.*
+TOPLEVEL=ram
+WAVEFORMS=
+DEFWAVE=0
+ADD_HIERARCHY_SIGNALS=0
+
+[Files]
+/maximo.bde=-1
+/somador.bde=-1
+/valor_absoluto.bde=-1
+/xzero.bde=-1
+/fill_memory.vhd=-1
+/xsign.bde=-1
+/subtrator.bde=-1
+/ULA.bde=-1
+/SomSub.bde=-1
+/Stack.bde=-1
+/Ram.bde=-1
+/ROM.bde=-1
+/RegFile.bde=-1
+/Mux4x1.bde=-1
+/Ou_NP.bde=-1
+/Mux8x1.bde=-1
+/multiplexador.bde=-1
+/minimo.bde=-1
+/deslocad1.bde=-1
+/Fuse_and.bde=-1
+/Log_Sinc.bde=-1
+/maisum.bde=-1
+/deslocador_combinatorio.bde=-1
+/DualRegFile.bde=-1
+/deslocador.bde=-1
+/deslocad3.bde=-1
+/buffertristate.bde=-1
+/Decodificador.bde=-1
+/contador.bde=-1
+/absminmaxsomsub.bde=-1
+/registrador.bde=-1
+/HA.bde=-1
+/fuse_ou.bde=-1
+/And_NE.bde=-1
+/FA.bde=-1
+/RingCounter.bde=-1
+/CSA.bde=-1
+/Waveform Editor 10.awf=-1
+/mrom.txt=-1
+
+[Files.Data]
+.\src\maximo.bde=Block Diagram
+.\src\somador.bde=Block Diagram
+.\src\valor_absoluto.bde=Block Diagram
+.\src\xzero.bde=Block Diagram
+.\src\fill_memory.vhd=VHDL Source Code
+.\src\xsign.bde=Block Diagram
+.\src\subtrator.bde=Block Diagram
+.\src\ULA.bde=Block Diagram
+.\src\SomSub.bde=Block Diagram
+.\src\Stack.bde=Block Diagram
+.\src\Ram.bde=Block Diagram
+.\src\ROM.bde=Block Diagram
+.\src\RegFile.bde=Block Diagram
+.\src\Mux4x1.bde=Block Diagram
+.\src\Ou_NP.bde=Block Diagram
+.\src\Mux8x1.bde=Block Diagram
+.\src\multiplexador.bde=Block Diagram
+.\src\minimo.bde=Block Diagram
+.\src\deslocad1.bde=Block Diagram
+.\src\Fuse_and.bde=Block Diagram
+.\src\Log_Sinc.bde=Block Diagram
+.\src\maisum.bde=Block Diagram
+.\src\deslocador_combinatorio.bde=Block Diagram
+.\src\DualRegFile.bde=Block Diagram
+.\src\deslocador.bde=Block Diagram
+.\src\deslocad3.bde=Block Diagram
+.\src\buffertristate.bde=Block Diagram
+.\src\Decodificador.bde=Block Diagram
+.\src\contador.bde=Block Diagram
+.\src\absminmaxsomsub.bde=Block Diagram
+.\src\registrador.bde=Block Diagram
+.\src\HA.bde=Block Diagram
+.\src\fuse_ou.bde=Block Diagram
+.\src\And_NE.bde=Block Diagram
+.\src\FA.bde=Block Diagram
+.\src\RingCounter.bde=Block Diagram
+.\src\CSA.bde=Block Diagram
+.\src\Waveform Editor 10.awf=Waveform File
+.\src\mrom.txt=Text File
+
+[file_out:/maximo.bde]
+/..\compile\maximo.vhd=-1
+
+[file_out:/somador.bde]
+/..\compile\somador.vhd=-1
+
+[file_out:/valor_absoluto.bde]
+/..\compile\valor_absoluto.vhd=-1
+
+[file_out:/xzero.bde]
+/..\compile\xzero.vhd=-1
+
+[file_out:/xsign.bde]
+/..\compile\xsign.vhd=-1
+
+[file_out:/subtrator.bde]
+/..\compile\subtrator.vhd=-1
+
+[file_out:/ULA.bde]
+/..\compile\ULA.vhd=-1
+
+[file_out:/SomSub.bde]
+/..\compile\SomSub.vhd=-1
+
+[file_out:/Stack.bde]
+/..\compile\Stack.vhd=-1
+
+[file_out:/Ram.bde]
+/..\compile\Ram.vhd=-1
+
+[file_out:/ROM.bde]
+/..\compile\ROM.vhd=-1
+
+[file_out:/RegFile.bde]
+/..\compile\RegFile.vhd=-1
+
+[file_out:/Mux4x1.bde]
+/..\compile\Mux4x1.vhd=-1
+
+[file_out:/Ou_NP.bde]
+/..\compile\Ou_NP.vhd=-1
+
+[file_out:/Mux8x1.bde]
+/..\compile\Mux8x1.vhd=-1
+
+[file_out:/multiplexador.bde]
+/..\compile\multiplexador.vhd=-1
+
+[file_out:/minimo.bde]
+/..\compile\minimo.vhd=-1
+
+[file_out:/deslocad1.bde]
+/..\compile\deslocad1.vhd=-1
+
+[file_out:/Fuse_and.bde]
+/..\compile\Fuse_and.vhd=-1
+
+[file_out:/Log_Sinc.bde]
+/..\compile\Log_Sinc.vhd=-1
+
+[file_out:/maisum.bde]
+/..\compile\maisum.vhd=-1
+
+[file_out:/deslocador_combinatorio.bde]
+/..\compile\deslocador_combinatorio.vhd=-1
+
+[file_out:/DualRegFile.bde]
+/..\compile\DualRegFile.vhd=-1
+
+[file_out:/deslocador.bde]
+/..\compile\deslocador.vhd=-1
+
+[file_out:/deslocad3.bde]
+/..\compile\deslocad3.vhd=-1
+
+[file_out:/buffertristate.bde]
+/..\compile\buffertristate.vhd=-1
+
+[file_out:/Decodificador.bde]
+/..\compile\Decodificador.vhd=-1
+
+[file_out:/contador.bde]
+/..\compile\contador.vhd=-1
+
+[file_out:/absminmaxsomsub.bde]
+/..\compile\absminmaxsomsub.vhd=-1
+
+[file_out:/registrador.bde]
+/..\compile\registrador.vhd=-1
+
+[file_out:/HA.bde]
+/..\compile\HA.vhd=-1
+
+[file_out:/fuse_ou.bde]
+/..\compile\fuse_ou.vhd=-1
+
+[file_out:/And_NE.bde]
+/..\compile\And_NE.vhd=-1
+
+[file_out:/FA.bde]
+/..\compile\FA.vhd=-1
+
+[file_out:/RingCounter.bde]
+/..\compile\RingCounter.vhd=-1
+
+[file_out:/CSA.bde]
+/..\compile\CSA.vhd=-1
+

@@ -1,0 +1,1009 @@
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/Ram.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ram.bde'.
+# DRC: Warning: Ram.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\Ram.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ram.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0078: Ram.bde(Ram.vhd) : (109, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Ram.bde(Ram.vhd) : (109, 15): Cannot find object declaration.
+# Error: COMP96_0289: Ram.bde(Ram.vhd) : (109, 15): Prefix of index must be an array.
+# Error: COMP96_0077: Ram.bde(Ram.vhd) : (109, 15): Undefined type of expression. Expected type 'INTEGER'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/Ram.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ram.bde'.
+# DRC: Warning: Ram.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\Ram.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ram.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/ROM.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde'.
+# DRC: ROM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\ROM.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\ROM.vhd
+# Error: COMP96_0016: ROM.bde(ROM.vhd) : (23, 26): Design unit declaration expected.
+# Compile Entity "ROM"
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (24, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (25, 5): Unknown identifier "ieee".
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (36, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: ROM.bde(ROM.vhd) : (36, 19): Unknown type.
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (37, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: ROM.bde(ROM.vhd) : (37, 19): Unknown type.
+# Compile Architecture "ROM" of Entity "ROM"
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (98, 14): Unknown identifier "to_integer".
+# Error: COMP96_0133: ROM.bde(ROM.vhd) : (98, 14): Cannot find object declaration.
+# Error: COMP96_0289: ROM.bde(ROM.vhd) : (98, 14): Prefix of index must be an array.
+# Error: COMP96_0138: ROM.bde(ROM.vhd) : (98, 14): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/ROM.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde'.
+# DRC: ROM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\ROM.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\ROM.vhd
+# Error: COMP96_0016: ROM.bde(ROM.vhd) : (23, 26): Design unit declaration expected.
+# Compile Entity "ROM"
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (24, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (25, 5): Unknown identifier "ieee".
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (36, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: ROM.bde(ROM.vhd) : (36, 19): Unknown type.
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (37, 19): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: ROM.bde(ROM.vhd) : (37, 19): Unknown type.
+# Compile Architecture "ROM" of Entity "ROM"
+# Error: COMP96_0078: ROM.bde(ROM.vhd) : (98, 14): Unknown identifier "to_integer".
+# Error: COMP96_0133: ROM.bde(ROM.vhd) : (98, 14): Cannot find object declaration.
+# Error: COMP96_0289: ROM.bde(ROM.vhd) : (98, 14): Prefix of index must be an array.
+# Error: COMP96_0138: ROM.bde(ROM.vhd) : (98, 14): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/ROM.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde'.
+# DRC: ROM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\ROM.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "ROM" of Entity "ROM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/maximo.bde $dsn/src/somador.bde $dsn/src/valor_absoluto.bde $dsn/src/xzero.bde $dsn/src/fill_memory.vhd $dsn/src/xsign.bde $dsn/src/subtrator.bde $dsn/src/ULA.bde $dsn/src/SomSub.bde $dsn/src/Stack.bde $dsn/src/Ram.bde $dsn/src/ROM.bde $dsn/src/RegFile.bde $dsn/src/Mux4x1.bde $dsn/src/Ou_NP.bde $dsn/src/Mux8x1.bde $dsn/src/multiplexador.bde $dsn/src/minimo.bde $dsn/src/deslocad1.bde $dsn/src/Fuse_and.bde $dsn/src/Log_Sinc.bde $dsn/src/maisum.bde $dsn/src/deslocador_combinatorio.bde $dsn/src/DualRegFile.bde $dsn/src/deslocador.bde $dsn/src/deslocad3.bde $dsn/src/buffertristate.bde $dsn/src/Decodificador.bde $dsn/src/contador.bde $dsn/src/absminmaxsomsub.bde $dsn/src/registrador.bde $dsn/src/HA.bde $dsn/src/fuse_ou.bde $dsn/src/And_NE.bde $dsn/src/FA.bde $dsn/src/RingCounter.bde $dsn/src/CSA.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ram.bde'.
+# DRC: Warning: Ram.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\Ram.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ram.bde ...
+# Generation successful
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde'.
+# DRC: ROM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\ROM.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\maximo.vhd
+# Compile Entity "maximo"
+# Compile Architecture "maximo" of Entity "maximo"
+# File: .\somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: .\valor_absoluto.vhd
+# Compile Entity "valor_absoluto"
+# Compile Architecture "valor_absoluto" of Entity "valor_absoluto"
+# File: .\xzero.vhd
+# Compile Entity "xzero"
+# Compile Architecture "xzero" of Entity "xzero"
+# File: D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\fill_memory.vhd
+# Compile Entity "testfill"
+# Compile Architecture "fillmem" of Entity "testfill"
+# File: .\xsign.vhd
+# Compile Entity "xsign"
+# Compile Architecture "xsign" of Entity "xsign"
+# File: .\subtrator.vhd
+# Compile Entity "subtrator"
+# Compile Architecture "subtrator" of Entity "subtrator"
+# File: .\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: .\SomSub.vhd
+# Compile Entity "SomSub"
+# Compile Architecture "SomSub" of Entity "SomSub"
+# File: .\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack" of Entity "Stack"
+# File: .\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "ROM" of Entity "ROM"
+# File: .\RegFile.vhd
+# Compile Entity "RegFile"
+# Compile Architecture "RegFile" of Entity "RegFile"
+# File: .\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: .\Ou_NP.vhd
+# Compile Entity "Ou_NP"
+# Compile Architecture "Ou_NP" of Entity "Ou_NP"
+# File: .\Mux8x1.vhd
+# Compile Entity "Mux8x1"
+# Compile Architecture "Mux8x1" of Entity "Mux8x1"
+# File: .\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\minimo.vhd
+# Compile Entity "minimo"
+# Compile Architecture "minimo" of Entity "minimo"
+# File: .\deslocad1.vhd
+# Compile Entity "DeslocaD1"
+# Compile Architecture "DeslocaD1" of Entity "DeslocaD1"
+# File: .\Fuse_and.vhd
+# Compile Entity "Fuse"
+# Compile Architecture "Fuse" of Entity "Fuse"
+# File: .\Log_Sinc.vhd
+# Compile Entity "Log_Sinc"
+# Compile Architecture "Log_Sinc" of Entity "Log_Sinc"
+# File: .\maisum.vhd
+# Compile Entity "maisum"
+# Compile Architecture "maisum" of Entity "maisum"
+# File: .\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\DualRegFile.vhd
+# Compile Entity "DualRegFile"
+# Compile Architecture "DualRegFile" of Entity "DualRegFile"
+# File: .\deslocador.vhd
+# Compile Entity "deslocador"
+# Compile Architecture "deslocador" of Entity "deslocador"
+# File: .\deslocad3.vhd
+# Compile Entity "DeslocaD3"
+# Compile Architecture "DeslocaD3" of Entity "DeslocaD3"
+# File: .\buffertristate.vhd
+# Compile Entity "bufferTristate"
+# Compile Architecture "bufferTristate" of Entity "bufferTristate"
+# File: .\Decodificador.vhd
+# Compile Entity "Decodificador"
+# Compile Architecture "Decodificador" of Entity "Decodificador"
+# File: .\contador.vhd
+# Compile Entity "contador"
+# Compile Architecture "contador" of Entity "contador"
+# File: .\absminmaxsomsub.vhd
+# Compile Entity "absminmaxsomsub"
+# Compile Architecture "absminmaxsomsub" of Entity "absminmaxsomsub"
+# File: .\registrador.vhd
+# Compile Entity "registrador"
+# Compile Architecture "registrador" of Entity "registrador"
+# File: .\HA.vhd
+# Compile Entity "HA"
+# Compile Architecture "HA" of Entity "HA"
+# File: .\fuse_ou.vhd
+# Compile Entity "fuse_ou"
+# Compile Architecture "fuse_ou" of Entity "fuse_ou"
+# File: .\And_NE.vhd
+# Compile Entity "And_NE"
+# Compile Architecture "And_NE" of Entity "And_NE"
+# File: .\FA.vhd
+# Compile Entity "FA"
+# Compile Architecture "FA" of Entity "FA"
+# File: .\RingCounter.vhd
+# Compile Entity "RingCounter"
+# Compile Architecture "RingCounter" of Entity "RingCounter"
+# File: .\CSA.vhd
+# Compile Entity "CSA"
+# Compile Architecture "CSA" of Entity "CSA"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/maximo.bde $dsn/src/somador.bde $dsn/src/valor_absoluto.bde $dsn/src/xzero.bde $dsn/src/fill_memory.vhd $dsn/src/xsign.bde $dsn/src/subtrator.bde $dsn/src/ULA.bde $dsn/src/SomSub.bde $dsn/src/Stack.bde $dsn/src/Ram.bde $dsn/src/ROM.bde $dsn/src/RegFile.bde $dsn/src/Mux4x1.bde $dsn/src/Ou_NP.bde $dsn/src/Mux8x1.bde $dsn/src/multiplexador.bde $dsn/src/minimo.bde $dsn/src/deslocad1.bde $dsn/src/Fuse_and.bde $dsn/src/Log_Sinc.bde $dsn/src/maisum.bde $dsn/src/deslocador_combinatorio.bde $dsn/src/DualRegFile.bde $dsn/src/deslocador.bde $dsn/src/deslocad3.bde $dsn/src/buffertristate.bde $dsn/src/Decodificador.bde $dsn/src/contador.bde $dsn/src/absminmaxsomsub.bde $dsn/src/registrador.bde $dsn/src/HA.bde $dsn/src/fuse_ou.bde $dsn/src/And_NE.bde $dsn/src/FA.bde $dsn/src/RingCounter.bde $dsn/src/CSA.bde
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\maximo.vhd
+# Compile Entity "maximo"
+# Compile Architecture "maximo" of Entity "maximo"
+# File: .\somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: .\valor_absoluto.vhd
+# Compile Entity "valor_absoluto"
+# Compile Architecture "valor_absoluto" of Entity "valor_absoluto"
+# File: .\xzero.vhd
+# Compile Entity "xzero"
+# Compile Architecture "xzero" of Entity "xzero"
+# File: D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\fill_memory.vhd
+# Compile Entity "testfill"
+# Compile Architecture "fillmem" of Entity "testfill"
+# File: .\xsign.vhd
+# Compile Entity "xsign"
+# Compile Architecture "xsign" of Entity "xsign"
+# File: .\subtrator.vhd
+# Compile Entity "subtrator"
+# Compile Architecture "subtrator" of Entity "subtrator"
+# File: .\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: .\SomSub.vhd
+# Compile Entity "SomSub"
+# Compile Architecture "SomSub" of Entity "SomSub"
+# File: .\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack" of Entity "Stack"
+# File: .\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "ROM" of Entity "ROM"
+# File: .\RegFile.vhd
+# Compile Entity "RegFile"
+# Compile Architecture "RegFile" of Entity "RegFile"
+# File: .\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: .\Ou_NP.vhd
+# Compile Entity "Ou_NP"
+# Compile Architecture "Ou_NP" of Entity "Ou_NP"
+# File: .\Mux8x1.vhd
+# Compile Entity "Mux8x1"
+# Compile Architecture "Mux8x1" of Entity "Mux8x1"
+# File: .\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\minimo.vhd
+# Compile Entity "minimo"
+# Compile Architecture "minimo" of Entity "minimo"
+# File: .\deslocad1.vhd
+# Compile Entity "DeslocaD1"
+# Compile Architecture "DeslocaD1" of Entity "DeslocaD1"
+# File: .\Fuse_and.vhd
+# Compile Entity "Fuse"
+# Compile Architecture "Fuse" of Entity "Fuse"
+# File: .\Log_Sinc.vhd
+# Compile Entity "Log_Sinc"
+# Compile Architecture "Log_Sinc" of Entity "Log_Sinc"
+# File: .\maisum.vhd
+# Compile Entity "maisum"
+# Compile Architecture "maisum" of Entity "maisum"
+# File: .\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\DualRegFile.vhd
+# Compile Entity "DualRegFile"
+# Compile Architecture "DualRegFile" of Entity "DualRegFile"
+# File: .\deslocador.vhd
+# Compile Entity "deslocador"
+# Compile Architecture "deslocador" of Entity "deslocador"
+# File: .\deslocad3.vhd
+# Compile Entity "DeslocaD3"
+# Compile Architecture "DeslocaD3" of Entity "DeslocaD3"
+# File: .\buffertristate.vhd
+# Compile Entity "bufferTristate"
+# Compile Architecture "bufferTristate" of Entity "bufferTristate"
+# File: .\Decodificador.vhd
+# Compile Entity "Decodificador"
+# Compile Architecture "Decodificador" of Entity "Decodificador"
+# File: .\contador.vhd
+# Compile Entity "contador"
+# Compile Architecture "contador" of Entity "contador"
+# File: .\absminmaxsomsub.vhd
+# Compile Entity "absminmaxsomsub"
+# Compile Architecture "absminmaxsomsub" of Entity "absminmaxsomsub"
+# File: .\registrador.vhd
+# Compile Entity "registrador"
+# Compile Architecture "registrador" of Entity "registrador"
+# File: .\HA.vhd
+# Compile Entity "HA"
+# Compile Architecture "HA" of Entity "HA"
+# File: .\fuse_ou.vhd
+# Compile Entity "fuse_ou"
+# Compile Architecture "fuse_ou" of Entity "fuse_ou"
+# File: .\And_NE.vhd
+# Compile Entity "And_NE"
+# Compile Architecture "And_NE" of Entity "And_NE"
+# File: .\FA.vhd
+# Compile Entity "FA"
+# Compile Architecture "FA" of Entity "FA"
+# File: .\RingCounter.vhd
+# Compile Entity "RingCounter"
+# Compile Architecture "RingCounter" of Entity "RingCounter"
+# File: .\CSA.vhd
+# Compile Entity "CSA"
+# Compile Architecture "CSA" of Entity "CSA"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/maximo.bde $dsn/src/somador.bde $dsn/src/valor_absoluto.bde $dsn/src/xzero.bde $dsn/src/fill_memory.vhd $dsn/src/xsign.bde $dsn/src/subtrator.bde $dsn/src/ULA.bde $dsn/src/SomSub.bde $dsn/src/Stack.bde $dsn/src/Ram.bde $dsn/src/ROM.bde $dsn/src/RegFile.bde $dsn/src/Mux4x1.bde $dsn/src/Ou_NP.bde $dsn/src/Mux8x1.bde $dsn/src/multiplexador.bde $dsn/src/minimo.bde $dsn/src/deslocad1.bde $dsn/src/Fuse_and.bde $dsn/src/Log_Sinc.bde $dsn/src/maisum.bde $dsn/src/deslocador_combinatorio.bde $dsn/src/DualRegFile.bde $dsn/src/deslocador.bde $dsn/src/deslocad3.bde $dsn/src/buffertristate.bde $dsn/src/Decodificador.bde $dsn/src/contador.bde $dsn/src/absminmaxsomsub.bde $dsn/src/registrador.bde $dsn/src/HA.bde $dsn/src/fuse_ou.bde $dsn/src/And_NE.bde $dsn/src/FA.bde $dsn/src/RingCounter.bde $dsn/src/CSA.bde
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\maximo.vhd
+# Compile Entity "maximo"
+# Compile Architecture "maximo" of Entity "maximo"
+# File: .\somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: .\valor_absoluto.vhd
+# Compile Entity "valor_absoluto"
+# Compile Architecture "valor_absoluto" of Entity "valor_absoluto"
+# File: .\xzero.vhd
+# Compile Entity "xzero"
+# Compile Architecture "xzero" of Entity "xzero"
+# File: D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\fill_memory.vhd
+# Compile Entity "testfill"
+# Compile Architecture "fillmem" of Entity "testfill"
+# File: .\xsign.vhd
+# Compile Entity "xsign"
+# Compile Architecture "xsign" of Entity "xsign"
+# File: .\subtrator.vhd
+# Compile Entity "subtrator"
+# Compile Architecture "subtrator" of Entity "subtrator"
+# File: .\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: .\SomSub.vhd
+# Compile Entity "SomSub"
+# Compile Architecture "SomSub" of Entity "SomSub"
+# File: .\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack" of Entity "Stack"
+# File: .\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "ROM" of Entity "ROM"
+# File: .\RegFile.vhd
+# Compile Entity "RegFile"
+# Compile Architecture "RegFile" of Entity "RegFile"
+# File: .\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: .\Ou_NP.vhd
+# Compile Entity "Ou_NP"
+# Compile Architecture "Ou_NP" of Entity "Ou_NP"
+# File: .\Mux8x1.vhd
+# Compile Entity "Mux8x1"
+# Compile Architecture "Mux8x1" of Entity "Mux8x1"
+# File: .\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\minimo.vhd
+# Compile Entity "minimo"
+# Compile Architecture "minimo" of Entity "minimo"
+# File: .\deslocad1.vhd
+# Compile Entity "DeslocaD1"
+# Compile Architecture "DeslocaD1" of Entity "DeslocaD1"
+# File: .\Fuse_and.vhd
+# Compile Entity "Fuse"
+# Compile Architecture "Fuse" of Entity "Fuse"
+# Clearing workspace libraries...
+# Library Manager: Library "biblioteca_de_componentes" contents cleared.
+# File: .\Log_Sinc.vhd
+# Compile Entity "Log_Sinc"
+# Compile Architecture "Log_Sinc" of Entity "Log_Sinc"
+# File: .\maisum.vhd
+# Compile Entity "maisum"
+# Compile Architecture "maisum" of Entity "maisum"
+# File: .\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\DualRegFile.vhd
+# Compile Entity "DualRegFile"
+# Compile Architecture "DualRegFile" of Entity "DualRegFile"
+# File: .\deslocador.vhd
+# Compile Entity "deslocador"
+# Compile Architecture "deslocador" of Entity "deslocador"
+# File: .\deslocad3.vhd
+# Compile Entity "DeslocaD3"
+# Compile Architecture "DeslocaD3" of Entity "DeslocaD3"
+# File: .\buffertristate.vhd
+# Compile Entity "bufferTristate"
+# Compile Architecture "bufferTristate" of Entity "bufferTristate"
+# File: .\Decodificador.vhd
+# Compile Entity "Decodificador"
+# Compile Architecture "Decodificador" of Entity "Decodificador"
+# File: .\contador.vhd
+# Compile Entity "contador"
+# Compile Architecture "contador" of Entity "contador"
+# File: .\absminmaxsomsub.vhd
+# Compile Entity "absminmaxsomsub"
+# Compile Architecture "absminmaxsomsub" of Entity "absminmaxsomsub"
+# File: .\registrador.vhd
+# Compile Entity "registrador"
+# Compile Architecture "registrador" of Entity "registrador"
+# File: .\HA.vhd
+# Compile Entity "HA"
+# Compile Architecture "HA" of Entity "HA"
+# File: .\fuse_ou.vhd
+# Compile Entity "fuse_ou"
+# Compile Architecture "fuse_ou" of Entity "fuse_ou"
+# File: .\And_NE.vhd
+# Compile Entity "And_NE"
+# Compile Architecture "And_NE" of Entity "And_NE"
+# File: .\FA.vhd
+# Compile Entity "FA"
+# Compile Architecture "FA" of Entity "FA"
+# File: .\RingCounter.vhd
+# Compile Entity "RingCounter"
+# Compile Architecture "RingCounter" of Entity "RingCounter"
+# File: .\CSA.vhd
+# Compile Entity "CSA"
+# Compile Architecture "CSA" of Entity "CSA"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -reorder -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/maximo.bde $dsn/src/somador.bde $dsn/src/valor_absoluto.bde $dsn/src/xzero.bde $dsn/src/fill_memory.vhd $dsn/src/xsign.bde $dsn/src/subtrator.bde $dsn/src/ULA.bde $dsn/src/SomSub.bde $dsn/src/Stack.bde $dsn/src/Ram.bde $dsn/src/ROM.bde $dsn/src/RegFile.bde $dsn/src/Mux4x1.bde $dsn/src/Ou_NP.bde $dsn/src/Mux8x1.bde $dsn/src/multiplexador.bde $dsn/src/minimo.bde $dsn/src/deslocad1.bde $dsn/src/Fuse_and.bde $dsn/src/Log_Sinc.bde $dsn/src/maisum.bde $dsn/src/deslocador_combinatorio.bde $dsn/src/DualRegFile.bde $dsn/src/deslocador.bde $dsn/src/deslocad3.bde $dsn/src/buffertristate.bde $dsn/src/Decodificador.bde $dsn/src/contador.bde $dsn/src/absminmaxsomsub.bde $dsn/src/registrador.bde $dsn/src/HA.bde $dsn/src/fuse_ou.bde $dsn/src/And_NE.bde $dsn/src/FA.bde $dsn/src/RingCounter.bde $dsn/src/CSA.bde
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\maximo.vhd
+# Compile Entity "maximo"
+# Compile Architecture "maximo" of Entity "maximo"
+# File: .\somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: .\valor_absoluto.vhd
+# Compile Entity "valor_absoluto"
+# Compile Architecture "valor_absoluto" of Entity "valor_absoluto"
+# File: .\xzero.vhd
+# Compile Entity "xzero"
+# Compile Architecture "xzero" of Entity "xzero"
+# File: D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\fill_memory.vhd
+# Compile Entity "testfill"
+# Compile Architecture "fillmem" of Entity "testfill"
+# File: .\xsign.vhd
+# Compile Entity "xsign"
+# Compile Architecture "xsign" of Entity "xsign"
+# File: .\subtrator.vhd
+# Compile Entity "subtrator"
+# Compile Architecture "subtrator" of Entity "subtrator"
+# File: .\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: .\SomSub.vhd
+# Compile Entity "SomSub"
+# Compile Architecture "SomSub" of Entity "SomSub"
+# File: .\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack" of Entity "Stack"
+# File: .\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "ROM" of Entity "ROM"
+# File: .\RegFile.vhd
+# Compile Entity "RegFile"
+# Compile Architecture "RegFile" of Entity "RegFile"
+# File: .\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: .\Ou_NP.vhd
+# Compile Entity "Ou_NP"
+# Compile Architecture "Ou_NP" of Entity "Ou_NP"
+# File: .\Mux8x1.vhd
+# Compile Entity "Mux8x1"
+# Compile Architecture "Mux8x1" of Entity "Mux8x1"
+# File: .\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\minimo.vhd
+# Compile Entity "minimo"
+# Compile Architecture "minimo" of Entity "minimo"
+# File: .\deslocad1.vhd
+# Compile Entity "DeslocaD1"
+# Compile Architecture "DeslocaD1" of Entity "DeslocaD1"
+# File: .\Fuse_and.vhd
+# Compile Entity "Fuse"
+# Compile Architecture "Fuse" of Entity "Fuse"
+# File: .\Log_Sinc.vhd
+# Compile Entity "Log_Sinc"
+# Compile Architecture "Log_Sinc" of Entity "Log_Sinc"
+# File: .\maisum.vhd
+# Compile Entity "maisum"
+# Compile Architecture "maisum" of Entity "maisum"
+# File: .\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\DualRegFile.vhd
+# Compile Entity "DualRegFile"
+# Compile Architecture "DualRegFile" of Entity "DualRegFile"
+# File: .\deslocador.vhd
+# Compile Entity "deslocador"
+# Compile Architecture "deslocador" of Entity "deslocador"
+# File: .\deslocad3.vhd
+# Compile Entity "DeslocaD3"
+# Compile Architecture "DeslocaD3" of Entity "DeslocaD3"
+# File: .\buffertristate.vhd
+# Compile Entity "bufferTristate"
+# Compile Architecture "bufferTristate" of Entity "bufferTristate"
+# File: .\Decodificador.vhd
+# Compile Entity "Decodificador"
+# Compile Architecture "Decodificador" of Entity "Decodificador"
+# File: .\contador.vhd
+# Compile Entity "contador"
+# Compile Architecture "contador" of Entity "contador"
+# File: .\absminmaxsomsub.vhd
+# Compile Entity "absminmaxsomsub"
+# Compile Architecture "absminmaxsomsub" of Entity "absminmaxsomsub"
+# File: .\registrador.vhd
+# Compile Entity "registrador"
+# Compile Architecture "registrador" of Entity "registrador"
+# File: .\HA.vhd
+# Compile Entity "HA"
+# Compile Architecture "HA" of Entity "HA"
+# File: .\fuse_ou.vhd
+# Compile Entity "fuse_ou"
+# Compile Architecture "fuse_ou" of Entity "fuse_ou"
+# File: .\And_NE.vhd
+# Compile Entity "And_NE"
+# Compile Architecture "And_NE" of Entity "And_NE"
+# File: .\FA.vhd
+# Compile Entity "FA"
+# Compile Architecture "FA" of Entity "FA"
+# File: .\RingCounter.vhd
+# Compile Entity "RingCounter"
+# Compile Architecture "RingCounter" of Entity "RingCounter"
+# File: .\CSA.vhd
+# Compile Entity "CSA"
+# Compile Architecture "CSA" of Entity "CSA"
+# Top-level unit(s) detected:
+# Entity => Mux4x1
+# Entity => SomSub
+# Entity => valor_absoluto
+# Entity => xzero
+# Entity => testfill
+# Entity => xsign
+# Entity => subtrator
+# Entity => ULA
+# Entity => Stack
+# Entity => Ram
+# Entity => ROM
+# Entity => Somador
+# Entity => RingCounter
+# Entity => RegFile
+# Entity => Ou_NP
+# Entity => Mux8x1
+# Entity => Fuse
+# Entity => maximo
+# Entity => minimo
+# Entity => multiplexador
+# Entity => Log_Sinc
+# Entity => maisum
+# Entity => fuse_ou
+# Entity => DeslocaD3
+# Entity => deslocador_combinatorio
+# Entity => DualRegFile
+# Entity => deslocador
+# Entity => bufferTristate
+# Entity => Decodificador
+# Entity => DeslocaD1
+# Entity => contador
+# Entity => CSA
+# Entity => absminmaxsomsub
+# Entity => And_NE
+# Compile success 0 Errors 0 Warnings  Analysis time :  2.0 [s]
+# Getting symbols for update...
+# Updating symbols...
+# Symbol 'Fuse_and' updated
+# Symbol 'Ou_NP' updated
+# Symbol 'absminmaxsomsub' updated
+# Symbol 'and_ne' updated
+# Symbol 'buffertristate' updated
+# Symbol 'contador' updated
+# Symbol 'csa' updated
+# Symbol 'decodificador' updated
+# Symbol 'deslocad1' updated
+# Symbol 'deslocad3' updated
+# Symbol 'deslocador' updated
+# Symbol 'deslocador_combinatorio' updated
+# Symbol 'dualregfile' updated
+# Symbol 'fa' updated
+# Symbol 'fuse_ou' updated
+# Symbol 'ha' updated
+# Symbol 'log_sinc' updated
+# Symbol 'maisum' updated
+# Symbol 'maximo' updated
+# Symbol 'minimo' updated
+# Symbol 'multiplexador' updated
+# Symbol 'mux4x1' updated
+# Symbol 'mux8x1' updated
+# Symbol 'ram' updated
+# Symbol 'regfile' updated
+# Symbol 'registrador' updated
+# Symbol 'ringcounter' updated
+# Symbol 'rom' updated
+# Symbol 'somador' updated
+# Symbol 'somsub' updated
+# Symbol 'stack' updated
+# Symbol 'subtrator' updated
+# Symbol 'ula' updated
+# Symbol 'valor_absoluto' updated
+# Symbol 'xsign' updated
+# Symbol 'xzero' updated
+# ...Updating symbols done
+# Updating diagrams...
+# Opening diagram itor 10.awf
+# ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\maximo.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram tor 10.awf...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\somador.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram or_aba...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\valor_absoluto.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram luto.bde...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\xzero.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram y.vhd...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\xsign.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\subtrator.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram Q...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ULA.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram \src...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\SomSub.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram s\src...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Stack.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram Q...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ram.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram Q...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\ROM.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram src...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\RegFile.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Mux4x1.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Ou_NP.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Mux8x1.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\multiplexador.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram or.bde...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\minimo.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram bde...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\deslocad1.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Fuse_and.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram rc...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Log_Sinc.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram e...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\maisum.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram e...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\deslocador_combinatorio.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram L¯ãjL...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\DualRegFile.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\deslocador.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram c\valor_aba...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\deslocad3.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram jM...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\buffertristate.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\Decodificador.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram .bde...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\contador.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram L...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\absminmaxsomsub.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram bde...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\registrador.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\HA.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram bde...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\fuse_ou.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\And_NE.bde...
+# ...No symbols to update found on the diagram
+# Opening diagram ...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\FA.bde...
+# Updating instances of symbol 'ha' from library 'Biblioteca_de_Componentes' (U1, U2)
+# ...Diagram updated.
+# Saving diagram ...
+# ...Diagram saved
+# Opening diagram RingCouna...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\RingCounter.bde...
+# Updating instances of symbol 'registrador' from library 'Biblioteca_de_Componentes' (Q1, Q2, Q3, Q4)
+# ...Diagram updated.
+# Saving diagram RingCouna...
+# ...Diagram saved
+# Opening diagram Q...
+# ...Diagram opened
+# Updating diagram D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\CSA.bde...
+# ...No symbols to update found on the diagram
+# ...Updating diagrams done
+# Compile with File Reorder...
+# Refresh Entity "maximo"
+# Refresh Architecture "maximo" of Entity "maximo"
+# Refresh Entity "Somador"
+# Refresh Architecture "Somador" of Entity "Somador"
+# Refresh Entity "valor_absoluto"
+# Refresh Architecture "valor_absoluto" of Entity "valor_absoluto"
+# Refresh Entity "xzero"
+# Refresh Architecture "xzero" of Entity "xzero"
+# Refresh Entity "testfill"
+# Refresh Architecture "fillmem" of Entity "testfill"
+# Refresh Entity "xsign"
+# Refresh Architecture "xsign" of Entity "xsign"
+# Refresh Entity "subtrator"
+# Refresh Architecture "subtrator" of Entity "subtrator"
+# Refresh Entity "ULA"
+# Refresh Architecture "ULA" of Entity "ULA"
+# Refresh Entity "SomSub"
+# Refresh Architecture "SomSub" of Entity "SomSub"
+# Refresh Entity "Stack"
+# Refresh Architecture "Stack" of Entity "Stack"
+# Refresh Entity "Ram"
+# Refresh Architecture "Ram" of Entity "Ram"
+# Refresh Entity "ROM"
+# Refresh Architecture "ROM" of Entity "ROM"
+# Refresh Entity "RegFile"
+# Refresh Architecture "RegFile" of Entity "RegFile"
+# Refresh Entity "Mux4x1"
+# Refresh Architecture "Mux4x1" of Entity "Mux4x1"
+# Refresh Entity "Ou_NP"
+# Refresh Architecture "Ou_NP" of Entity "Ou_NP"
+# Refresh Entity "Mux8x1"
+# Refresh Architecture "Mux8x1" of Entity "Mux8x1"
+# Refresh Entity "multiplexador"
+# Refresh Architecture "multiplexador" of Entity "multiplexador"
+# Refresh Entity "minimo"
+# Refresh Architecture "minimo" of Entity "minimo"
+# Refresh Entity "DeslocaD1"
+# Refresh Architecture "DeslocaD1" of Entity "DeslocaD1"
+# Refresh Entity "Fuse"
+# Refresh Architecture "Fuse" of Entity "Fuse"
+# Refresh Entity "Log_Sinc"
+# Refresh Architecture "Log_Sinc" of Entity "Log_Sinc"
+# Refresh Entity "maisum"
+# Refresh Architecture "maisum" of Entity "maisum"
+# Refresh Entity "deslocador_combinatorio"
+# Refresh Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# Refresh Entity "DualRegFile"
+# Refresh Architecture "DualRegFile" of Entity "DualRegFile"
+# Refresh Entity "deslocador"
+# Refresh Architecture "deslocador" of Entity "deslocador"
+# Refresh Entity "DeslocaD3"
+# Refresh Architecture "DeslocaD3" of Entity "DeslocaD3"
+# Refresh Entity "bufferTristate"
+# Refresh Architecture "bufferTristate" of Entity "bufferTristate"
+# Refresh Entity "Decodificador"
+# Refresh Architecture "Decodificador" of Entity "Decodificador"
+# Refresh Entity "contador"
+# Refresh Architecture "contador" of Entity "contador"
+# Refresh Entity "absminmaxsomsub"
+# Refresh Architecture "absminmaxsomsub" of Entity "absminmaxsomsub"
+# Refresh Entity "registrador"
+# Refresh Architecture "registrador" of Entity "registrador"
+# Refresh Entity "HA"
+# Refresh Architecture "HA" of Entity "HA"
+# Refresh Entity "fuse_ou"
+# Refresh Architecture "fuse_ou" of Entity "fuse_ou"
+# Refresh Entity "And_NE"
+# Refresh Architecture "And_NE" of Entity "And_NE"
+# Refresh Entity "FA"
+# Refresh Architecture "FA" of Entity "FA"
+# Refresh Entity "RingCounter"
+# Refresh Architecture "RingCounter" of Entity "RingCounter"
+# Refresh Entity "CSA"
+# Refresh Architecture "CSA" of Entity "CSA"
+# Refresh success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/FA.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\FA.bde'.
+# DRC: FA.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\FA.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\FA.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\FA.vhd
+# Compile Entity "FA"
+# Compile Architecture "FA" of Entity "FA"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/RingCounter.bde
+# Compile...
+# DRC: Checking file 'D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\RingCounter.bde'.
+# DRC: Warning: RingCounter.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\compile\RingCounter.vhd from D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\RingCounter.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\RingCounter.vhd
+# Compile Entity "RingCounter"
+# Compile Architecture "RingCounter" of Entity "RingCounter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work Biblioteca_de_Componentes -2002  $dsn/src/maximo.bde $dsn/src/somador.bde $dsn/src/valor_absoluto.bde $dsn/src/xzero.bde $dsn/src/fill_memory.vhd $dsn/src/xsign.bde $dsn/src/subtrator.bde $dsn/src/ULA.bde $dsn/src/SomSub.bde $dsn/src/Stack.bde $dsn/src/Ram.bde $dsn/src/ROM.bde $dsn/src/RegFile.bde $dsn/src/Mux4x1.bde $dsn/src/Ou_NP.bde $dsn/src/Mux8x1.bde $dsn/src/multiplexador.bde $dsn/src/minimo.bde $dsn/src/deslocad1.bde $dsn/src/Fuse_and.bde $dsn/src/Log_Sinc.bde $dsn/src/maisum.bde $dsn/src/deslocador_combinatorio.bde $dsn/src/DualRegFile.bde $dsn/src/deslocador.bde $dsn/src/deslocad3.bde $dsn/src/buffertristate.bde $dsn/src/Decodificador.bde $dsn/src/contador.bde $dsn/src/absminmaxsomsub.bde $dsn/src/registrador.bde $dsn/src/HA.bde $dsn/src/fuse_ou.bde $dsn/src/And_NE.bde $dsn/src/FA.bde $dsn/src/RingCounter.bde $dsn/src/CSA.bde
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: .\maximo.vhd
+# Compile Entity "maximo"
+# Compile Architecture "maximo" of Entity "maximo"
+# File: .\somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: .\valor_absoluto.vhd
+# Compile Entity "valor_absoluto"
+# Compile Architecture "valor_absoluto" of Entity "valor_absoluto"
+# File: .\xzero.vhd
+# Compile Entity "xzero"
+# Compile Architecture "xzero" of Entity "xzero"
+# File: D:\Projetos_VHDL\Projetos_Student\Biblioteca_de_Componentes\src\fill_memory.vhd
+# Compile Entity "testfill"
+# Compile Architecture "fillmem" of Entity "testfill"
+# File: .\xsign.vhd
+# Compile Entity "xsign"
+# Compile Architecture "xsign" of Entity "xsign"
+# File: .\subtrator.vhd
+# Compile Entity "subtrator"
+# Compile Architecture "subtrator" of Entity "subtrator"
+# File: .\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: .\SomSub.vhd
+# Compile Entity "SomSub"
+# Compile Architecture "SomSub" of Entity "SomSub"
+# File: .\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack" of Entity "Stack"
+# File: .\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "ROM" of Entity "ROM"
+# File: .\RegFile.vhd
+# Compile Entity "RegFile"
+# Compile Architecture "RegFile" of Entity "RegFile"
+# File: .\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: .\Ou_NP.vhd
+# Compile Entity "Ou_NP"
+# Compile Architecture "Ou_NP" of Entity "Ou_NP"
+# File: .\Mux8x1.vhd
+# Compile Entity "Mux8x1"
+# Compile Architecture "Mux8x1" of Entity "Mux8x1"
+# File: .\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\minimo.vhd
+# Compile Entity "minimo"
+# Compile Architecture "minimo" of Entity "minimo"
+# File: .\deslocad1.vhd
+# Compile Entity "DeslocaD1"
+# Compile Architecture "DeslocaD1" of Entity "DeslocaD1"
+# File: .\Fuse_and.vhd
+# Compile Entity "Fuse"
+# Compile Architecture "Fuse" of Entity "Fuse"
+# File: .\Log_Sinc.vhd
+# Compile Entity "Log_Sinc"
+# Compile Architecture "Log_Sinc" of Entity "Log_Sinc"
+# File: .\maisum.vhd
+# Compile Entity "maisum"
+# Compile Architecture "maisum" of Entity "maisum"
+# File: .\deslocador_combinatorio.vhd
+# Compile Entity "deslocador_combinatorio"
+# Compile Architecture "deslocador_combinatorio" of Entity "deslocador_combinatorio"
+# File: .\DualRegFile.vhd
+# Compile Entity "DualRegFile"
+# Compile Architecture "DualRegFile" of Entity "DualRegFile"
+# File: .\deslocador.vhd
+# Compile Entity "deslocador"
+# Compile Architecture "deslocador" of Entity "deslocador"
+# File: .\deslocad3.vhd
+# Compile Entity "DeslocaD3"
+# Compile Architecture "DeslocaD3" of Entity "DeslocaD3"
+# File: .\buffertristate.vhd
+# Compile Entity "bufferTristate"
+# Compile Architecture "bufferTristate" of Entity "bufferTristate"
+# File: .\Decodificador.vhd
+# Compile Entity "Decodificador"
+# Compile Architecture "Decodificador" of Entity "Decodificador"
+# File: .\contador.vhd
+# Compile Entity "contador"
+# Compile Architecture "contador" of Entity "contador"
+# File: .\absminmaxsomsub.vhd
+# Compile Entity "absminmaxsomsub"
+# Compile Architecture "absminmaxsomsub" of Entity "absminmaxsomsub"
+# File: .\registrador.vhd
+# Compile Entity "registrador"
+# Compile Architecture "registrador" of Entity "registrador"
+# File: .\HA.vhd
+# Compile Entity "HA"
+# Compile Architecture "HA" of Entity "HA"
+# File: .\fuse_ou.vhd
+# Compile Entity "fuse_ou"
+# Compile Architecture "fuse_ou" of Entity "fuse_ou"
+# File: .\And_NE.vhd
+# Compile Entity "And_NE"
+# Compile Architecture "And_NE" of Entity "And_NE"
+# File: .\FA.vhd
+# Compile Entity "FA"
+# Compile Architecture "FA" of Entity "FA"
+# File: .\RingCounter.vhd
+# Compile Entity "RingCounter"
+# Compile Architecture "RingCounter" of Entity "RingCounter"
+# File: .\CSA.vhd
+# Compile Entity "CSA"
+# Compile Architecture "CSA" of Entity "CSA"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]

@@ -1,0 +1,498 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 231
+ VARIABLES
+ {
+  #ARCHITECTURE="Stack"
+  #BLOCKTABLE_FILE="#LARC.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="Stack"
+  #LANGUAGE="VHDL"
+  AUTHOR="Wilson Ruggiero"
+  COMPANY="LARC-EPUSP"
+  CREATIONDATE="15-Nov-09"
+  PAGECOUNT="2"
+  TITLE="No Title"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,100,200)
+  VARIABLES
+  {
+   #BLOCKTABLE_VISIBLE="1"
+  }
+ }
+ 
+ BODY
+ {
+  INSTANCE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(NBdado - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="din(NBdado - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (560,540)
+   VERTEXES ( (2,53) )
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (258,523,489,558)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 20
+  }
+  INSTANCE  25, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DECLARATION="(NBdado - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="dout(NBdado - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1320,700)
+   VERTEXES ( (2,147) )
+  }
+  TEXT  26, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1392,683,1640,718)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 25
+  }
+  INSTANCE  30, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="push_pop"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (560,780)
+   VERTEXES ( (2,49) )
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (360,763,489,798)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 30
+  }
+  INSTANCE  35, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (560,880)
+   VERTEXES ( (2,45) )
+  }
+  TEXT  36, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (451,863,489,898)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 35
+  }
+  GENERIC  40, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT "NBdado: integer := 8"
+   RECT (260,260,640,380)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  41, 0, 0
+  {
+   LABEL "Generic_2"
+   TEXT "NBend: integer := 4"
+   RECT (660,260,1020,380)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  42, 0, 0
+  {
+   LABEL "Generic_3"
+   TEXT "Tpush: time := 5 ns"
+   RECT (1040,260,1360,380)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  43, 0, 0
+  {
+   LABEL "Generic_4"
+   TEXT "Tpop: time := 5 ns"
+   RECT (1380,260,1700,380)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  44, 0, 0
+  {
+   LABEL "StackMemory"
+   TEXT 
+"StackMemory :\n"+
+"process (clk, Reset)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"-- declarations\t\n"+
+"begin\n"+
+"\tif Reset = '1' then\n"+
+"\t\ttos <= (others => '0');\n"+
+"\telsif clk'event and clk = '1' then\n"+
+"\t\tcase push_pop is\n"+
+"\t\t\twhen '0' => -- Operação de Push\n"+
+"\t\t\t\ttos <= std_logic_vector((unsigned(tos) + 1));\n"+
+"\t\t\t\tstack(to_integer(unsigned(tos))) <= din after Tpush;\n"+
+"\t\t\twhen '1' => -- Operação Pop\n"+
+"\t\t\t\tdout <= stack(to_integer(unsigned(tos))) after Tpop;\n"+
+"\t\t\t\ttos <= std_logic_vector((unsigned(tos) - 1));\n"+
+"\t\t\twhen others => -- Operação nula\n"+
+"\t\t\t\tnull;\n"+
+"\t\tend case;\n"+
+"\tend if;\n"+
+"end process;"
+   RECT (660,480,1060,940)
+   ALIGN 5
+   MARGINS (20,20)
+   FONT (14,0,0,700,0,0,0,"Arial")
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   CORNER 10
+   VTX (  46, 50, 54, 148, 153 )
+   VARIABLES
+   {
+    #DIRECTION_LIST="46 50 54 153 "
+    #UPDATE_SENS_LIST="1"
+   }
+   LIST (  46, 153 )
+  }
+  VTX  45, 0, 0
+  {
+   COORD (560,880)
+  }
+  VTX  46, 0, 0
+  {
+   COORD (660,880)
+  }
+  NET WIRE  47, 0, 0
+  WIRE  48, 0, 0
+  {
+   NET 47
+   VTX 45, 46
+  }
+  VTX  49, 0, 0
+  {
+   COORD (560,780)
+  }
+  VTX  50, 0, 0
+  {
+   COORD (660,780)
+  }
+  NET WIRE  51, 0, 0
+  WIRE  52, 0, 0
+  {
+   NET 51
+   VTX 49, 50
+  }
+  VTX  53, 0, 0
+  {
+   COORD (560,540)
+  }
+  VTX  54, 0, 0
+  {
+   COORD (660,540)
+  }
+  NET BUS  55, 0, 0
+  BUS  56, 0, 0
+  {
+   NET 55
+   VTX 53, 54
+  }
+  NET BUS  59, 0, 0
+  ARCHITECTUREDECLARATIONS  61, 0, 0
+  {
+   LABEL "Architecture declarations"
+   TEXT 
+"type ram_type is array (0 to 2**NBend - 1)\n"+
+"        of std_logic_vector (NBdado - 1 downto 0);\n"+
+"signal stack: ram_type;\n"+
+"signal tos: std_logic_vector(NBend - 1 downto 0) := (others => '0');\n"+
+""
+   RECT (240,1060,1140,1240)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  VHDLDESIGNUNITHDR  62, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;\n"+
+"use ieee.numeric_std.all;"
+   RECT (1180,1100,1800,1240)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  INSTANCE  82, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="Reset"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (560,700)
+   VERTEXES ( (2,154) )
+  }
+  TEXT  83, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (411,683,489,718)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 82
+  }
+  NET WIRE  89, 0, 0
+  VTX  147, 0, 0
+  {
+   COORD (1320,700)
+  }
+  VTX  148, 0, 0
+  {
+   COORD (1060,700)
+  }
+  BUS  149, 0, 0
+  {
+   NET 59
+   VTX 147, 148
+  }
+  VTX  153, 0, 0
+  {
+   COORD (660,700)
+  }
+  VTX  154, 0, 0
+  {
+   COORD (560,700)
+  }
+  WIRE  155, 0, 0
+  {
+   NET 89
+   VTX 153, 154
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1282849448"
+   PAGENAME=""
+   PAGENUMBER="1"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  213, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Data:"
+   RECT (1180,1384,1253,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  214, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (1310,1393,1437,1428)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  TEXT  215, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Titulo:"
+   RECT (1179,1444,1268,1497)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  216, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (1310,1453,1407,1488)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  LINE  217, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (1170,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  218, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1380), (2000,1380) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  219, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1440), (2000,1440) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  220, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1300,1380), (1300,1500) )
+  }
+  LINE  221, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1260), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  222, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (2000,1500), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  223, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (2000,1500) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  224, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "PCS-2307: Organização de Computadores"
+   RECT (1420,1300,1986,1335)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  225, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1400,1260), (1400,1380) )
+  }
+  LINE  226, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1860,1380), (1860,1440) )
+  }
+  TEXT  227, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Pagina:"
+   RECT (1718,1384,1822,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  228, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT"
+   RECT (1876,1382,1998,1442)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINE  229, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1700,1380), (1700,1440) )
+  }
+  LINKBMPPICT  230, 0, 0
+  {
+   FILENAME ".\\..\\..\\..\\DAT\\#LARC.bmp"
+   RECT (1180,1280,1380,1360)
+  }
+ }
+ 
+}
+

@@ -1,0 +1,380 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 2416
+ VARIABLES
+ {
+  #ARCHITECTURE="valor_absoluto"
+  #BLOCKTABLE_FILE="#TABLE_LARC_2022.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="valor_absoluto"
+  #LANGUAGE="VHDL"
+  AUTHOR="Wilson Ruggiero"
+  COMPANY="LARC-EPUSP"
+  CREATIONDATE="14/10/2008"
+  PAGECOUNT="2"
+  TITLE="Unidade Funcional: Valor Absoluto - Raiz Quadrada"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,100,200)
+ }
+ 
+ BODY
+ {
+  INSTANCE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(numeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="In1(numeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (620,660)
+   VERTEXES ( (2,2298) )
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (265,643,540,678)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 15
+  }
+  INSTANCE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DECLARATION="(numeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="Out1(numeroBits - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1566,660)
+   ORIENTATION 3
+   VERTEXES ( (2,2300) )
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1646,642,1945,677)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 20
+   ORIENTATION 3
+  }
+  GENERIC  25, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT "numeroBits : integer  := 8"
+   RECT (1600,240,1980,360)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  VHDLDESIGNUNITHDR  26, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;\n"+
+"use IEEE.std_logic_arith.all;\n"+
+"use IEEE.std_logic_signed.all;"
+   RECT (220,240,760,440)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  TEXT  55, 0, 0
+  {
+   TEXT "Valor Absoluto"
+   RECT (920,300,1298,368)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (24,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  59, 0, 0
+  {
+   TEXT "Valor absoluto de um número com sinal em complemento de dois."
+   RECT (780,380,1719,420)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (14,0,0,400,0,0,0,"Arial")
+  }
+  SIGNALASSIGN  77, 0, 0
+  {
+   LABEL "SignalAssignments_1"
+   TEXT 
+"Out1 <= In1 \t\t\tafter Tabs when In1(NumeroBits - 1) = '0' else\n"+
+"\t\t\t\t\t(not In1) + '1'\t after Tabs;"
+   RECT (626,605,1560,718)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  2299, 2301 )
+  }
+  NET BUS  80, 0, 0
+  NET BUS  84, 0, 0
+  VTX  2298, 0, 0
+  {
+   COORD (620,660)
+  }
+  VTX  2299, 0, 0
+  {
+   COORD (626,657)
+  }
+  VTX  2300, 0, 0
+  {
+   COORD (1566,660)
+  }
+  VTX  2301, 0, 0
+  {
+   COORD (1560,657)
+  }
+  VTX  2302, 0, 0
+  {
+   COORD (625,660)
+  }
+  BUS  2303, 0, 0
+  {
+   NET 84
+   VTX 2298, 2302
+  }
+  VTX  2304, 0, 0
+  {
+   COORD (625,657)
+  }
+  BUS  2305, 0, 0
+  {
+   NET 84
+   VTX 2302, 2304
+  }
+  BUS  2306, 0, 0
+  {
+   NET 84
+   VTX 2304, 2299
+  }
+  VTX  2307, 0, 0
+  {
+   COORD (1560,660)
+  }
+  BUS  2308, 0, 0
+  {
+   NET 80
+   VTX 2300, 2307
+  }
+  VTX  2309, 0, 0
+  {
+   COORD (1560,659)
+  }
+  BUS  2310, 0, 0
+  {
+   NET 80
+   VTX 2307, 2309
+  }
+  VTX  2311, 0, 0
+  {
+   COORD (1561,659)
+  }
+  BUS  2312, 0, 0
+  {
+   NET 80
+   VTX 2309, 2311
+  }
+  VTX  2313, 0, 0
+  {
+   COORD (1561,657)
+  }
+  BUS  2314, 0, 0
+  {
+   NET 80
+   VTX 2311, 2313
+  }
+  BUS  2315, 0, 0
+  {
+   NET 80
+   VTX 2313, 2301
+  }
+  GENERIC  2358, 0, 0
+  {
+   LABEL "Generic_2"
+   TEXT "Tabs : time  := 2 ns"
+   RECT (420,900,800,1020)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1222031323"
+   PAGENAME=""
+   PAGENUMBER="1"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  2402, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Criado em:"
+   RECT (1140,1329,1261,1376)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  2403, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (1320,1330,1980,1380)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  TEXT  2404, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Título:"
+   RECT (1141,1387,1215,1434)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  2405, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (1310,1380,1980,1440)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINE  2406, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1320), (2000,1320) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  2407, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1380), (2000,1380) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  2408, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1300,1320), (1300,1500) )
+  }
+  TEXT  2409, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT 
+"PCS 2022:\n"+
+"Organização de Computadores"
+   RECT (1140,1240,1485,1296)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  2410, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1500,1220), (1500,1320) )
+  }
+  LINE  2411, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1440), (2000,1440) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  2412, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Página:"
+   RECT (1140,1447,1226,1494)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  2413, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT     $PAGENAME"
+   RECT (1310,1440,1980,1500)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINKBMPPICT  2414, 0, 0
+  {
+   FILENAME ".\\..\\..\\..\\..\\Program Files\\Aldec\\Active-HDL 7.3\\dat\\logo_LARC.bmp"
+   RECT (1600,1240,1860,1320)
+  }
+  RECT  2415, 0, 0
+  {
+   OUTLINE 0,1, (0,0,0)
+   AREA (1120,1220,2000,1500)
+   FILL (1,(0,0,0),0)
+  }
+ }
+ 
+}
+

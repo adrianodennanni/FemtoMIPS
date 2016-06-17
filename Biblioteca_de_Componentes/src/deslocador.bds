@@ -1,0 +1,248 @@
+SYMB0100
+
+HEADER
+{
+ FREEID 30
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #GENERIC0="NumeroBits:INTEGER:=8"
+  #GENERIC1="Tcarga:TIME:=3 ns"
+  #GENERIC2="Tdesl:TIME:=2 ns"
+  #HDL_ENTRIES=
+"library STD,IEEE;\n"+
+"use STD.STANDARD.all,ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1226615727"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,200,200)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,20,180,180)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,140)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #INITIAL_VALUE=""
+    #LABEL="CLK"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="Clk"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (0,0,128)
+    POINTS ( (0,0), (20,0) )
+   }
+   LINE  2, 0, 0
+   {
+    OUTLINE 0,1, (0,0,128)
+    POINTS ( (20,0), (20,-10), (30,0), (20,10), (20,0) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,133,46,151)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+   FONT (6,0,0,400,0,0,0,"Arial")
+  }
+  PIN  4, 0, 0
+  {
+   COORD (200,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="OutA(NumeroBits-1:0)"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="D_E"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,73,52,91)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+   FONT (6,0,0,400,0,0,0,"Arial")
+  }
+  PIN  8, 0, 0
+  {
+   COORD (100,200)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="SaiBit"
+    #NUMBER="0"
+    #SIDE="bottom"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-20), (0,0) )
+   }
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (93,138,111,175)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 8
+   FONT (6,0,0,400,0,0,0,"Arial")
+   ORIENTATION 7
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="InA(NumeroBits-1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (100,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="InBit"
+    #NUMBER="0"
+    #SIDE="top"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (89,25,107,53)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 12
+   FONT (6,0,0,400,0,0,0,"Arial")
+   ORIENTATION 5
+  }
+  PIN  14, 0, 0
+  {
+   COORD (0,100)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="T_D"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,93,50,111)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 14
+   FONT (6,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  18, 0, 0
+  {
+   TEXT "DESL"
+   RECT (80,80,134,104)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (8,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  22, 0, 0
+  {
+   TEXT "D"
+   RECT (0,40,11,58)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (6,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  26, 0, 0
+  {
+   TEXT "Q"
+   RECT (180,40,192,58)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (6,0,0,400,0,0,0,"Arial")
+  }
+ }
+ 
+}
+

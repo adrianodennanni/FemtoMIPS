@@ -1,0 +1,463 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 592
+ VARIABLES
+ {
+  #ARCHITECTURE="Somador"
+  #BLOCKTABLE_FILE="#LARC.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="Somador"
+  #LANGUAGE="VHDL"
+  AUTHOR="Wilson Ruggiero"
+  COMPANY="LARC-EPUSP"
+  CREATIONDATE="05/10/2008"
+  PAGECOUNT="2"
+  TITLE="No Title"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,100,200)
+  VARIABLES
+  {
+   #BLOCKTABLE_VISIBLE="1"
+  }
+ }
+ 
+ BODY
+ {
+  INSTANCE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="A(NumeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (580,660)
+   VERTEXES ( (2,132) )
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (240,643,500,678)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 15
+  }
+  INSTANCE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="B(NumeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (580,820)
+   VERTEXES ( (2,140) )
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (240,803,500,838)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 20
+  }
+  INSTANCE  25, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DECLARATION="(NumeroBits - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="C(NumeroBits - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1400,740)
+   ORIENTATION 3
+   VERTEXES ( (2,396) )
+  }
+  TEXT  26, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1480,722,1742,757)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 25
+   ORIENTATION 3
+  }
+  INSTANCE  30, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="S"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (580,940)
+   VERTEXES ( (2,152) )
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (479,923,500,958)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 30
+  }
+  GENERIC  35, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT 
+"NumeroBits : integer  := 8\n"+
+"\n"+
+""
+   RECT (1020,400,1480,540)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  VHDLDESIGNUNITHDR  50, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;\n"+
+"use IEEE.std_logic_arith.all;\n"+
+"use IEEE.std_logic_signed.all;"
+   RECT (360,280,960,460)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  79, 0, 0
+  {
+   LABEL "SignalAssignments_1"
+   TEXT 
+"C <= (A + B + Vum) \tafter Tsoma  when S = '1' else\n"+
+"\t\t\t (A + Vum)\t\t\tafter Tinc;"
+   RECT (660,700,1380,820)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  397 )
+  }
+  TEXT  114, 0, 0
+  {
+   TEXT "S = '1' ==> Soma; Sel = '0' ==> Transfere."
+   RECT (660,1040,1263,1080)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (14,0,0,400,0,0,0,"Arial")
+  }
+  VTX  132, 0, 0
+  {
+   COORD (580,660)
+  }
+  VTX  135, 0, 0
+  {
+   COORD (650,660)
+  }
+  BUS  136, 0, 0
+  {
+   NET 572
+   VTX 132, 135
+  }
+  VTX  140, 0, 0
+  {
+   COORD (580,820)
+  }
+  VTX  143, 0, 0
+  {
+   COORD (650,820)
+  }
+  BUS  144, 0, 0
+  {
+   NET 570
+   VTX 140, 143
+  }
+  NET BUS  150, 0, 0
+  VTX  152, 0, 0
+  {
+   COORD (580,940)
+  }
+  VTX  153, 0, 0
+  {
+   COORD (840,940)
+  }
+  NET WIRE  154, 0, 0
+  WIRE  155, 0, 0
+  {
+   NET 154
+   VTX 152, 153
+  }
+  INSTANCE  172, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="Vum"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (740,540)
+   VERTEXES ( (2,177) )
+  }
+  TEXT  173, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (608,523,670,558)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 172
+  }
+  VTX  177, 0, 0
+  {
+   COORD (740,540)
+  }
+  VTX  178, 0, 0
+  {
+   COORD (820,540)
+  }
+  NET WIRE  179, 0, 0
+  WIRE  180, 0, 0
+  {
+   NET 179
+   VTX 177, 178
+  }
+  VTX  396, 0, 0
+  {
+   COORD (1400,740)
+  }
+  VTX  397, 0, 0
+  {
+   COORD (1380,740)
+  }
+  BUS  398, 0, 0
+  {
+   NET 150
+   VTX 396, 397
+  }
+  GENERIC  441, 0, 0
+  {
+   LABEL "Generic_2"
+   TEXT "Tsoma :\ttime\t:= 3 ns"
+   RECT (1520,260,1900,380)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  442, 0, 0
+  {
+   LABEL "Generic_3"
+   TEXT "Tinc :\t\t\ttime\t:= 2 ns"
+   RECT (1520,420,1900,540)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  NET BUS  570, 0, 0
+  NET BUS  572, 0, 0
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1322357135"
+   PAGENAME=""
+   PAGENUMBER="1"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  574, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Data:"
+   RECT (1180,1384,1253,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  575, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (1310,1393,1492,1428)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  TEXT  576, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Titulo:"
+   RECT (1179,1444,1268,1497)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  577, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (1310,1453,1430,1488)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  LINE  578, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (1170,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  579, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1380), (2000,1380) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  580, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1440), (2000,1440) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  581, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1300,1380), (1300,1500) )
+  }
+  LINE  582, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1260), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  583, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (2000,1500), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  584, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (2000,1500) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  585, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "PCS-2307: Organização de Computadores"
+   RECT (1420,1300,1986,1335)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  586, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1400,1260), (1400,1380) )
+  }
+  LINE  587, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1860,1380), (1860,1440) )
+  }
+  TEXT  588, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Pagina:"
+   RECT (1718,1384,1822,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  589, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT"
+   RECT (1876,1382,1998,1442)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINE  590, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1700,1380), (1700,1440) )
+  }
+  LINKBMPPICT  591, 0, 0
+  {
+   FILENAME ".\\..\\#LARC.bmp"
+   RECT (1180,1280,1380,1360)
+  }
+ }
+ 
+}
+

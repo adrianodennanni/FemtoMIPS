@@ -1,0 +1,9 @@
+[General]
+CurrentVersion=103
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+FD_Componentes=1
+Built-in symbols=0
+[CACHEDOC|Aldec.Project.Generic.7|c:\Users\wilson\Documents\My_Designs\Biblioteca_de_Componentes\Biblioteca_de_Componentes\FD_Componentes\FD_Componentes.adf|]
+Path=
+[Gui config]
+RunFor=100 ns

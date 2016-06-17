@@ -1,0 +1,2 @@
+00 10 -- Carrega 10 palavras com 2 digitos Hex cada a partir do endereço 18 decimal ou 12 hexadecimal
+010F 0A2D 2B1A FC00 DA4B E358 4C7E AAFF 4690 FFAA 

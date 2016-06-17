@@ -1,0 +1,421 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 178
+ VARIABLES
+ {
+  #ARCHITECTURE="subtrator"
+  #BLOCKTABLE_FILE="#LARC.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="subtrator"
+  #LANGUAGE="VHDL"
+  AUTHOR="Wilson Ruggiero"
+  COMPANY="LARC-EPUSP"
+  CREATIONDATE="14/10/2008"
+  PAGECOUNT="2"
+  TITLE="Unidade Funcional Subtrator - Projeto Raiz Quadrada"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,100,200)
+  VARIABLES
+  {
+   #BLOCKTABLE_VISIBLE="1"
+  }
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  15, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;\n"+
+"use IEEE.std_logic_arith.all;\n"+
+"use IEEE.std_logic_signed.all;"
+   RECT (220,260,740,460)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  16, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT "NumeroBits: integer  := 8"
+   RECT (1240,240,1620,360)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "Subtrai dois números positivos."
+   RECT (840,360,1247,395)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  18, 0, 0
+  {
+   TEXT "Subtrator"
+   RECT (880,280,1119,348)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (24,0,0,400,0,0,0,"Arial")
+  }
+  INSTANCE  19, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(numeroBits - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="In1(numeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (640,660)
+   VERTEXES ( (2,49) )
+  }
+  TEXT  20, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (285,643,560,678)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 19
+  }
+  INSTANCE  24, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(numeroBits - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="In2(numeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (640,820)
+   VERTEXES ( (2,57) )
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (285,803,560,838)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 24
+  }
+  INSTANCE  29, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DECLARATION="(numeroBits - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="Out1(7numeroBits - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1240,740)
+   ORIENTATION 3
+   VERTEXES ( (2,115) )
+  }
+  TEXT  30, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1300,722,1615,757)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 29
+   ORIENTATION 3
+  }
+  SIGNALASSIGN  48, 0, 0
+  {
+   LABEL "SignalAssignments_1"
+   TEXT "Out1 <= (In1 - In2) after Tsub;"
+   RECT (700,680,1200,800)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  55, 63, 116 )
+  }
+  VTX  49, 0, 0
+  {
+   COORD (640,660)
+  }
+  VTX  50, 0, 0
+  {
+   COORD (660,660)
+  }
+  NET BUS  51, 0, 0
+  BUS  52, 0, 0
+  {
+   NET 51
+   VTX 49, 50
+  }
+  VTX  53, 0, 0
+  {
+   COORD (660,700)
+  }
+  BUS  54, 0, 0
+  {
+   NET 51
+   VTX 50, 53
+  }
+  VTX  55, 0, 0
+  {
+   COORD (700,700)
+  }
+  BUS  56, 0, 0
+  {
+   NET 51
+   VTX 53, 55
+  }
+  VTX  57, 0, 0
+  {
+   COORD (640,820)
+  }
+  VTX  58, 0, 0
+  {
+   COORD (660,820)
+  }
+  NET BUS  59, 0, 0
+  BUS  60, 0, 0
+  {
+   NET 59
+   VTX 57, 58
+  }
+  VTX  61, 0, 0
+  {
+   COORD (660,760)
+  }
+  BUS  62, 0, 0
+  {
+   NET 59
+   VTX 58, 61
+  }
+  VTX  63, 0, 0
+  {
+   COORD (700,760)
+  }
+  BUS  64, 0, 0
+  {
+   NET 59
+   VTX 61, 63
+  }
+  NET BUS  67, 0, 0
+  GENERIC  97, 0, 0
+  {
+   LABEL "Generic_2"
+   TEXT "Tsub : time  := 3 ns"
+   RECT (1260,420,1640,540)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  VTX  115, 0, 0
+  {
+   COORD (1240,740)
+  }
+  VTX  116, 0, 0
+  {
+   COORD (1200,740)
+  }
+  BUS  117, 0, 0
+  {
+   NET 67
+   VTX 115, 116
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1282849448"
+   PAGENAME=""
+   PAGENUMBER="1"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  160, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Data:"
+   RECT (1180,1384,1253,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  161, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (1310,1393,1448,1428)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  TEXT  162, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Titulo:"
+   RECT (1179,1444,1268,1497)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  163, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (1310,1453,1958,1488)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  LINE  164, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (1170,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  165, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1380), (2000,1380) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  166, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1440), (2000,1440) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  167, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1300,1380), (1300,1500) )
+  }
+  LINE  168, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1260), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  169, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (2000,1500), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  170, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (2000,1500) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  171, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "PCS-2307: Organização de Computadores"
+   RECT (1420,1300,1986,1335)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  172, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1400,1260), (1400,1380) )
+  }
+  LINE  173, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1860,1380), (1860,1440) )
+  }
+  TEXT  174, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Pagina:"
+   RECT (1718,1384,1822,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  175, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT"
+   RECT (1876,1382,1998,1442)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINE  176, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1700,1380), (1700,1440) )
+  }
+  LINKBMPPICT  177, 0, 0
+  {
+   FILENAME ".\\..\\..\\..\\DAT\\#LARC.bmp"
+   RECT (1180,1280,1380,1360)
+  }
+ }
+ 
+}
+

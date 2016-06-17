@@ -1,0 +1,441 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 269
+ VARIABLES
+ {
+  #ARCHITECTURE="multiplexador"
+  #BLOCKTABLE_FILE="#LARC.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="multiplexador"
+  #LANGUAGE="VHDL"
+  AUTHOR="Wilson Ruggiero"
+  COMPANY="LARC-EPUSP"
+  CREATIONDATE="05/10/2008"
+  PAGECOUNT="2"
+  TITLE="No Title"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,100,200)
+  VARIABLES
+  {
+   #BLOCKTABLE_VISIBLE="1"
+  }
+ }
+ 
+ BODY
+ {
+  PROCESS  50, 0, 0
+  {
+   LABEL "Mux"
+   TEXT 
+"Mux :\n"+
+"process (I0, I1, S)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable Delay: time := 0 ns;\n"+
+"begin\n"+
+"\tIf (S'event) then \n"+
+"\t\tDelay := Tsel;\n"+
+"\telse\n"+
+"\t\tDelay := Tdata;\n"+
+"\tend if;\n"+
+"\tcase S is\n"+
+"\t\twhen '0' \t=> O <= I0 \t\t\t\tafter Delay;\n"+
+"\t\twhen '1' \t=> O <= I1 \t\t\t\tafter Delay;\n"+
+"\t\twhen others => O <= (others => 'X') after Delay;\n"+
+"\tend case;\n"+
+"end process;"
+   RECT (810,460,1050,780)
+   ALIGN 5
+   MARGINS (20,20)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   CORNER 10
+   VTX (  74, 78, 81, 89 )
+   VARIABLES
+   {
+    #DIRECTION_LIST="74 78 89 "
+   }
+   LIST (  74, 78, 89 )
+  }
+  VTX  73, 0, 0
+  {
+   COORD (620,520)
+  }
+  VTX  74, 0, 0
+  {
+   COORD (810,520)
+  }
+  NET BUS  75, 0, 0
+  BUS  76, 0, 0
+  {
+   NET 75
+   VTX 73, 74
+  }
+  VTX  77, 0, 0
+  {
+   COORD (620,680)
+  }
+  VTX  78, 0, 0
+  {
+   COORD (810,680)
+  }
+  NET BUS  79, 0, 0
+  BUS  80, 0, 0
+  {
+   NET 79
+   VTX 77, 78
+  }
+  VTX  81, 0, 0
+  {
+   COORD (1050,620)
+  }
+  VTX  82, 0, 0
+  {
+   COORD (1240,620)
+  }
+  NET BUS  83, 0, 0
+  BUS  84, 0, 0
+  {
+   NET 83
+   VTX 81, 82
+  }
+  VTX  85, 0, 0
+  {
+   COORD (620,820)
+  }
+  VTX  86, 0, 0
+  {
+   COORD (920,820)
+  }
+  NET WIRE  87, 0, 0
+  WIRE  88, 0, 0
+  {
+   NET 87
+   VTX 85, 86
+  }
+  VTX  89, 0, 0
+  {
+   COORD (920,780)
+  }
+  WIRE  90, 0, 0
+  {
+   NET 87
+   VTX 86, 89
+  }
+  INSTANCE  170, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="I0(NumeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (620,520)
+   ORIENTATION 3
+   VERTEXES ( (2,73) )
+  }
+  TEXT  171, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (301,501,565,536)
+   ALIGN 10
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 170
+   ORIENTATION 3
+  }
+  INSTANCE  172, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="O(NumeroBits - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1240,620)
+   VERTEXES ( (2,82) )
+  }
+  TEXT  173, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1295,604,1559,639)
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 172
+  }
+  INSTANCE  174, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="I1(NumeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (620,680)
+   ORIENTATION 3
+   VERTEXES ( (2,77) )
+  }
+  TEXT  175, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (301,661,565,696)
+   ALIGN 10
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 174
+   ORIENTATION 3
+  }
+  INSTANCE  176, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="S"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (620,820)
+   ORIENTATION 3
+   VERTEXES ( (2,85) )
+  }
+  TEXT  177, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (544,801,565,836)
+   ALIGN 10
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 176
+   ORIENTATION 3
+  }
+  GENERIC  178, 0, 0
+  {
+   LABEL "Generic"
+   TEXT "NumeroBits:integer:=8"
+   RECT (1240,280,1571,353)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  207, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT "Tsel : time  := 2 ns"
+   RECT (400,280,780,360)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  236, 0, 0
+  {
+   LABEL "Generic_2"
+   TEXT "Tdata : time  := 1 ns"
+   RECT (820,280,1200,360)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1282849448"
+   PAGENAME=""
+   PAGENUMBER="1"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  251, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Data:"
+   RECT (1180,1384,1253,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  252, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (1310,1393,1448,1428)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  TEXT  253, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Titulo:"
+   RECT (1179,1444,1268,1497)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  254, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (1310,1453,1407,1488)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  LINE  255, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (1170,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  256, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1380), (2000,1380) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  257, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1440), (2000,1440) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  258, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1300,1380), (1300,1500) )
+  }
+  LINE  259, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1260), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  260, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (2000,1500), (2000,1260) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  261, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1170,1500), (2000,1500) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  262, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "PCS-2307: Organização de Computadores"
+   RECT (1420,1300,1986,1335)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  263, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1400,1260), (1400,1380) )
+  }
+  LINE  264, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1860,1380), (1860,1440) )
+  }
+  TEXT  265, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Pagina:"
+   RECT (1718,1384,1822,1437)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  266, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT"
+   RECT (1876,1382,1998,1442)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINE  267, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1700,1380), (1700,1440) )
+  }
+  LINKBMPPICT  268, 0, 0
+  {
+   FILENAME ".\\..\\..\\..\\DAT\\#LARC.bmp"
+   RECT (1180,1280,1380,1360)
+  }
+ }
+ 
+}
+

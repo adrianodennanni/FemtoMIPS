@@ -1,0 +1,167 @@
+SYMB0100
+
+HEADER
+{
+ FREEID 36
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #GENERIC0="NumeroBits:INTEGER:=8"
+  #GENERIC1="Tsom:TIME:=5 ns"
+  #GENERIC2="Tabs:TIME:=2 ns"
+  #GENERIC3="Tsub:TIME:=5 ns"
+  #GENERIC4="Tmm:TIME:=3 ns"
+  #HDL_ENTRIES=
+"library STD,IEEE;\n"+
+"use STD.STANDARD.all,ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1226594817"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,160,160)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (81,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="C(2:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (160,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="f(NumeroBits-1:0)"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="a(NumeroBits-1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="b(NumeroBits-1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  GROUP  12, -1, 0
+  {
+   RECT (20,0,139,159)
+   VARIABLES
+   {
+    #NAME="MUX"
+    #OUTLINE_FILLING="1"
+   }
+   FREEID 1
+   LINE  10, 0, 0
+   {
+    OUTLINE 0,2, (132,4,0)
+    POINTS ( (0,0), (118,38), (118,118), (0,158), (0,0) )
+    FILL (0,(255,255,156),0)
+   }
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "c"
+   RECT (60,120,72,144)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "b"
+   RECT (20,120,33,144)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "a"
+   RECT (20,20,32,44)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "f"
+   RECT (120,60,128,84)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "AMMSS"
+   RECT (40,60,115,84)
+   MARGINS (1,1)
+   COLOR (0,4,132)
+   FONT (8,0,0,700,0,0,0,"Arial")
+  }
+ }
+ 
+}
+

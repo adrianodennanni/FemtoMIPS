@@ -1,0 +1,290 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 64
+ VARIABLES
+ {
+  #ARCHITECTURE="xzero"
+  #BLOCKTABLE_FILE="#TABLE_LARC_2022.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="xzero"
+  #LANGUAGE="VHDL"
+  AUTHOR="Wilson Ruggiero"
+  COMPANY="LARC-EPUSP"
+  CREATIONDATE="20/11/2008"
+  PAGECOUNT="2"
+  TITLE="No Title"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,100,200)
+ }
+ 
+ BODY
+ {
+  INSTANCE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DECLARATION="(NBE - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="I(NBE - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (500,700)
+   VERTEXES ( (2,28) )
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (275,683,429,718)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 15
+  }
+  INSTANCE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DECLARATION="(NBS - 1:0)"
+    #LIBRARY="#terminals"
+    #REFERENCE="O(NBS - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1620,700)
+   VERTEXES ( (2,33) )
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1692,683,1862,718)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 20
+  }
+  GENERIC  25, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT "NBE: integer := 8"
+   RECT (340,300,720,420)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  26, 0, 0
+  {
+   LABEL "Generic_2"
+   TEXT "NBS: integer := 16"
+   RECT (880,300,1260,420)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  27, 0, 0
+  {
+   LABEL "SignalAssignments_1"
+   TEXT 
+"O(NBE - 1 downto 0) <= I(NBE - 1 downto 0);\n"+
+"O(NBS - 1 downto NBE) <= (others => '0');"
+   RECT (620,640,1280,760)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  29, 32 )
+  }
+  VTX  28, 0, 0
+  {
+   COORD (500,700)
+  }
+  VTX  29, 0, 0
+  {
+   COORD (620,700)
+  }
+  NET BUS  30, 0, 0
+  BUS  31, 0, 0
+  {
+   NET 30
+   VTX 28, 29
+  }
+  VTX  32, 0, 0
+  {
+   COORD (1280,700)
+  }
+  VTX  33, 0, 0
+  {
+   COORD (1620,700)
+  }
+  NET BUS  34, 0, 0
+  BUS  35, 0, 0
+  {
+   NET 34
+   VTX 32, 33
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2200,1700)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1222031323"
+   PAGENAME=""
+   PAGENUMBER="1"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  50, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Criado em:"
+   RECT (1140,1329,1261,1376)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  51, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (1320,1330,1980,1380)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  TEXT  52, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Título:"
+   RECT (1141,1387,1215,1434)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  53, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (1310,1380,1980,1440)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINE  54, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1320), (2000,1320) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  55, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1380), (2000,1380) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  56, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1300,1320), (1300,1500) )
+  }
+  TEXT  57, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT 
+"PCS 2022:\n"+
+"Organização de Computadores"
+   RECT (1140,1240,1485,1296)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  58, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1500,1220), (1500,1320) )
+  }
+  LINE  59, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (1120,1440), (2000,1440) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  60, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Página:"
+   RECT (1140,1447,1226,1494)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  61, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT     $PAGENAME"
+   RECT (1310,1440,1980,1500)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  LINKBMPPICT  62, 0, 0
+  {
+   FILENAME ".\\..\\..\\..\\..\\Program Files\\Aldec\\Active-HDL 7.3\\dat\\logo_LARC.bmp"
+   RECT (1600,1240,1860,1320)
+  }
+  RECT  63, 0, 0
+  {
+   OUTLINE 0,1, (0,0,0)
+   AREA (1120,1220,2000,1500)
+   FILL (1,(0,0,0),0)
+  }
+ }
+ 
+}
+

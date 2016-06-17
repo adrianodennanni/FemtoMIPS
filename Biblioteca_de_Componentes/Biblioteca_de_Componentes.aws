@@ -1,0 +1,17 @@
+[Version]
+Version=8.2
+[Designs]
+Biblioteca_de_Componentes=Biblioteca_de_Componentes.adf
+[Settings]
+Active=biblioteca_de_componentes
+[Expand]
+biblioteca_de_componentes=1
+biblioteca_de_componentes_2=0
+bibliotecacomponentes3=0
+biblioteca_componentes_v4_activehdl72=0
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
