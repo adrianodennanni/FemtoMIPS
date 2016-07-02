@@ -1,4 +1,4 @@
-Active-HDL 10.3.3559.6081  2016-07-02 14:49:33
+Active-HDL 10.3.3559.6081  2016-07-02 15:01:28
 
 Elaboration top modules:
 Architecture                  proc(proc)
@@ -46,9 +46,3 @@ femtomips                           | None
 ieee                                | Standard IEEE packages library
 std                                 | Standard VHDL library
 ---------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+proc proc proc
-
-
-The performance of simulation is reduced. Version Student Edition

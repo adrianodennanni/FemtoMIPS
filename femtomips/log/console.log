@@ -1,7 +1,104 @@
+acom -reorder -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => WBA
+# Entity => proc
+# Entity => Mux2x1Bit
+# Entity => MEM
+# Entity => IFE
+# Entity => IDE
+# Entity => EPC
+# Entity => EXE
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Architecture "proc" of Entity "proc"
+# File: C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Architecture "IDE" of Entity "IDE"
+# Compile success 0 Errors 0 Warnings  Analysis time :  3.0 [s]
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-open -asdb {C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb}
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
+# ELBREAD: Elaboration time 0.1 [s].
 asim -O5 +access +r +m+proc proc proc
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -18,15 +115,14 @@ asim -O5 +access +r +m+proc proc proc
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 # SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 10404 kB (elbread=1280 elab2=8964 kernel=159 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb
-#  14:41, sábado, 2 de julho de 2016
+# KERNEL: ASDB file was created in location C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\wave.asdb
+#  14:58, sábado, 2 de julho de 2016
 #  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
 run
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
@@ -35,190 +131,11 @@ run
 # EXECUTION:: NOTE   : \a
 # EXECUTION:: Time: 12712500 ps,  Iteration: 1,  Instance: /proc,  Process: line__558.
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
-open -asdb {C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb}
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
-open -asdb {C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb}
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
-acom -O3 -e 100 -work femtomips -2002  $dsn/src/proc.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\proc.vhd
-# Compile Entity "proc"
-# Compile Architecture "proc" of Entity "proc"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\ULA.vhd
-# Compile Entity "ULA"
-# Compile Architecture "ULA" of Entity "ULA"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "CacheI" of Entity "CacheI"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MemoriaPrincipal.vhd
-# Compile Entity "MemoriaPrincipal"
-# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux2x1.vhd
-# Compile Entity "Mux2x1"
-# Compile Architecture "Mux2x1" of Entity "Mux2x1"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1.vhd
-# Compile Entity "Mux4x1"
-# Compile Architecture "Mux4x1" of Entity "Mux4x1"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux2x1Bit.vhd
-# Compile Entity "Mux2x1Bit"
-# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1Bit.vhd
-# Compile Entity "Mux4x1Bit"
-# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IFID.vhd
-# Compile Entity "IFID"
-# Compile Architecture "IFID" of Entity "IFID"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IDEXE.vhd
-# Compile Entity "IDEXE"
-# Compile Architecture "IDEXE" of Entity "IDEXE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EXEMEM.vhd
-# Compile Entity "EXEMEM"
-# Compile Architecture "EXEMEM" of Entity "EXEMEM"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MEMWB.vhd
-# Compile Entity "MEMWB"
-# Compile Architecture "MEMWB" of Entity "MEMWB"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EPC.vhd
-# Compile Entity "EPC"
-# Compile Architecture "EPC" of Entity "EPC"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Somador.vhd
-# Compile Entity "Somador"
-# Compile Architecture "Somador" of Entity "Somador"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IFE.vhd
-# Compile Entity "IFE"
-# Compile Architecture "IFE" of Entity "IFE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IDE.vhd
-# Compile Entity "IDE"
-# Compile Architecture "IDE" of Entity "IDE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EXE.vhd
-# Compile Entity "EXE"
-# Compile Architecture "EXE" of Entity "EXE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MEM.vhd
-# Compile Entity "MEM"
-# Compile Architecture "MEM" of Entity "MEM"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\WBA.vhd
-# Compile Entity "WBA"
-# Compile Architecture "WBA" of Entity "WBA"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Controle.vhd
-# Compile Entity "Controle"
-# Compile Architecture "Controle" of Entity "Controle"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\GPR.vhd
-# Compile Entity "GPR"
-# Compile Architecture "GPR" of Entity "GPR"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\HazardUnit.vhd
-# Compile Entity "HazardUnit"
-# Compile Architecture "HazardUnit" of Entity "HazardUnit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\ForwardingUnit.vhd
-# Compile Entity "ForwardingUnit"
-# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1_5b.vhd
-# Compile Entity "Mux4x1_5b"
-# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\proc.vhd
-# Compile Entity "proc"
-# Compile Architecture "proc" of Entity "proc"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\CacheD.vhd
-# Compile Entity "CacheD"
-# Compile Architecture "CacheDI" of Entity "CacheD"
-# Compile Architecture "CacheD" of Entity "CacheD"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-open -asdb {C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb}
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
 # 146 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Adriano/Documents/GitHub/FemtoMIPS/femtomips/src/wave.asdb'.
 run
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\ULA.vhd
-# Compile Entity "ULA"
-# Compile Architecture "ULA" of Entity "ULA"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "CacheI" of Entity "CacheI"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MemoriaPrincipal.vhd
-# Compile Entity "MemoriaPrincipal"
-# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux2x1.vhd
-# Compile Entity "Mux2x1"
-# Compile Architecture "Mux2x1" of Entity "Mux2x1"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1.vhd
-# Compile Entity "Mux4x1"
-# Compile Architecture "Mux4x1" of Entity "Mux4x1"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux2x1Bit.vhd
-# Compile Entity "Mux2x1Bit"
-# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1Bit.vhd
-# Compile Entity "Mux4x1Bit"
-# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IFID.vhd
-# Compile Entity "IFID"
-# Compile Architecture "IFID" of Entity "IFID"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IDEXE.vhd
-# Compile Entity "IDEXE"
-# Compile Architecture "IDEXE" of Entity "IDEXE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EXEMEM.vhd
-# Compile Entity "EXEMEM"
-# Compile Architecture "EXEMEM" of Entity "EXEMEM"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MEMWB.vhd
-# Compile Entity "MEMWB"
-# Compile Architecture "MEMWB" of Entity "MEMWB"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EPC.vhd
-# Compile Entity "EPC"
-# Compile Architecture "EPC" of Entity "EPC"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Somador.vhd
-# Compile Entity "Somador"
-# Compile Architecture "Somador" of Entity "Somador"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IFE.vhd
-# Compile Entity "IFE"
-# Compile Architecture "IFE" of Entity "IFE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IDE.vhd
-# Compile Entity "IDE"
-# Compile Architecture "IDE" of Entity "IDE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EXE.vhd
-# Compile Entity "EXE"
-# Compile Architecture "EXE" of Entity "EXE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MEM.vhd
-# Compile Entity "MEM"
-# Compile Architecture "MEM" of Entity "MEM"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\WBA.vhd
-# Compile Entity "WBA"
-# Compile Architecture "WBA" of Entity "WBA"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Controle.vhd
-# Compile Entity "Controle"
-# Compile Architecture "Controle" of Entity "Controle"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\GPR.vhd
-# Compile Entity "GPR"
-# Compile Architecture "GPR" of Entity "GPR"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\HazardUnit.vhd
-# Compile Entity "HazardUnit"
-# Compile Architecture "HazardUnit" of Entity "HazardUnit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\ForwardingUnit.vhd
-# Compile Entity "ForwardingUnit"
-# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1_5b.vhd
-# Compile Entity "Mux4x1_5b"
-# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\proc.vhd
-# Compile Entity "proc"
-# Compile Architecture "proc" of Entity "proc"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\CacheD.vhd
-# Compile Entity "CacheD"
-# Compile Architecture "CacheDI" of Entity "CacheD"
-# Compile Architecture "CacheD" of Entity "CacheD"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
-run @12812.5ns
+run 100 ns
 # KERNEL: stopped at time: 12812500 ps
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
 restart
@@ -240,17 +157,13 @@ restart
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 10404 kB (elbread=1280 elab2=8964 kernel=159 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb
-#  14:49, sábado, 2 de julho de 2016
+# KERNEL: ASDB file was created in location C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\wave.asdb
+#  14:59, sábado, 2 de julho de 2016
 #  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+proc proc proc
+# Waveform file 'untitled.awc' connected to 'C:/Users/Adriano/Documents/GitHub/FemtoMIPS/femtomips/src/wave.asdb'.
+restart
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
 # 
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
@@ -267,251 +180,21 @@ asim -O5 +access +r +m+proc proc proc
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 10404 kB (elbread=1280 elab2=8964 kernel=159 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb
-#  14:49, sábado, 2 de julho de 2016
+# KERNEL: ASDB file was created in location C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\wave.asdb
+#  14:59, sábado, 2 de julho de 2016
 #  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
-run @100ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/Adriano/Documents/GitHub/FemtoMIPS/femtomips/src/wave.asdb'.
+run
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
-# KERNEL: stopped at time: 100 ns
-endsim
-# VSIM: Simulation has finished.
-# Warning: WAVEFORM: Object matching /proc/reset not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/FORWARD_RS_DECIDE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/FORWARD_RT_DECIDE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/FLUSH_IFID not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/FLUSH_IDEXE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/FLUSH_EXEMEM not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/FLUSH_MEMWB not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/STALL_IFID not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/STALL_IDEXE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/STALL_EXEMEM not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/STALL_MEMWB not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/STALL_PC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IFE_PC_FEED not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IFE_PC_FEEDA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IFE_PC_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/PC_INCR not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IFE_INST not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_PC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_INST not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_BADDR_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_GPR_RS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_GPR_RT not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_OPERA_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_OPERB_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_BDECIDE_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_MEM_WRITE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_WREG_ADDR not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_ALU_OP not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_MEM_READ not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_WREG_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_WREG_WRITE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R0 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R1 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R2 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R3 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R4 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R5 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R6 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_R7 not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_JAL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_WREG_ADDR_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_rs not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_rt not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/IDE_rd not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_BADDR_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_GPR_RS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_GPR_RT not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_BDECIDE_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_MEM_WRITE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ALU_OP not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_MEM_READ not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_WREG_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_WREG_ADDR not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_WREG_WRITE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_JAL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_INST not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_PC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_RS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_RT not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_BADDR_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_BADDR_DATA_A not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_OPERA_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ALU_RS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ALU_RT not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_OPERA_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_OPERB_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ALU_RES not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_OPERB_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ALU_ZERO not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ALU_NEG not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ALU_OVF not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_IMED_EX not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_IMED_DESL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_SHAMT_EX not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_ENDER_DESL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EXE_BRANCH_IMED not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_BADDR_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_BDECIDE_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_BDECIDE_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_ALU_ZERO not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_ALU_NEG not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_ALU_RES not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_NALU_ZER not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_ALU_OVF not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_MEM_WRITE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_MEM_READ not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_WREG_ADDR not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_WREG_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_WREG_WRITE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_GPR_RT not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_JAL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_INST not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_PC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MEM_CACHED_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_WREG_ADDR not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_WREG_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_WREG_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_WREG_WRITE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_ALU_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_MEM_DATA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_ALU_NEG not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_JAL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_INST not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_PC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/WB_NEG_AUX not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/INTERRUPT_SIGNAL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/INTERRUPT_SOURCE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/EPC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CAUSA not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CACHEI_MISS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CACHED_MISS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_enableI not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_prontoI not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_dadoI not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_ENDERI not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/PC_STALL_DEF not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/clk not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/over not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CACHED_DM not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CCICLOS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CNOP not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CADD not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CSLT not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CJR not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CADDU not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CSLL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CLW not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CSW not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CADDI not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CBEQ not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CBNE not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CSLTI not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CJ not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CJAL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CBTAKEN not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CBTOTAL not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CCACHEIMISS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CCACHEIACC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CCACHEDMISS not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CCACHEDACC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/CMEMACC not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_RW not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_enableD not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_prontoD not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_ENDERD not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /proc/MP_dadoD not found in C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb.
-acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\ULA.vhd
-# Compile Entity "ULA"
-# Compile Architecture "ULA" of Entity "ULA"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "CacheI" of Entity "CacheI"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MemoriaPrincipal.vhd
-# Compile Entity "MemoriaPrincipal"
-# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux2x1.vhd
-# Compile Entity "Mux2x1"
-# Compile Architecture "Mux2x1" of Entity "Mux2x1"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1.vhd
-# Compile Entity "Mux4x1"
-# Compile Architecture "Mux4x1" of Entity "Mux4x1"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux2x1Bit.vhd
-# Compile Entity "Mux2x1Bit"
-# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1Bit.vhd
-# Compile Entity "Mux4x1Bit"
-# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IFID.vhd
-# Compile Entity "IFID"
-# Compile Architecture "IFID" of Entity "IFID"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IDEXE.vhd
-# Compile Entity "IDEXE"
-# Compile Architecture "IDEXE" of Entity "IDEXE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EXEMEM.vhd
-# Compile Entity "EXEMEM"
-# Compile Architecture "EXEMEM" of Entity "EXEMEM"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MEMWB.vhd
-# Compile Entity "MEMWB"
-# Compile Architecture "MEMWB" of Entity "MEMWB"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EPC.vhd
-# Compile Entity "EPC"
-# Compile Architecture "EPC" of Entity "EPC"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Somador.vhd
-# Compile Entity "Somador"
-# Compile Architecture "Somador" of Entity "Somador"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IFE.vhd
-# Compile Entity "IFE"
-# Compile Architecture "IFE" of Entity "IFE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\IDE.vhd
-# Compile Entity "IDE"
-# Compile Architecture "IDE" of Entity "IDE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\EXE.vhd
-# Compile Entity "EXE"
-# Compile Architecture "EXE" of Entity "EXE"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\MEM.vhd
-# Compile Entity "MEM"
-# Compile Architecture "MEM" of Entity "MEM"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\WBA.vhd
-# Compile Entity "WBA"
-# Compile Architecture "WBA" of Entity "WBA"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Controle.vhd
-# Compile Entity "Controle"
-# Compile Architecture "Controle" of Entity "Controle"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\GPR.vhd
-# Compile Entity "GPR"
-# Compile Architecture "GPR" of Entity "GPR"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\HazardUnit.vhd
-# Compile Entity "HazardUnit"
-# Compile Architecture "HazardUnit" of Entity "HazardUnit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\ForwardingUnit.vhd
-# Compile Entity "ForwardingUnit"
-# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\Mux4x1_5b.vhd
-# Compile Entity "Mux4x1_5b"
-# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\proc.vhd
-# Compile Entity "proc"
-# Compile Architecture "proc" of Entity "proc"
-# File: C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\CacheD.vhd
-# Compile Entity "CacheD"
-# Compile Architecture "CacheDI" of Entity "CacheD"
-# Compile Architecture "CacheD" of Entity "CacheD"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
-asim -O5 +access +r +m+proc proc proc
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 12712500 ps,  Iteration: 1,  Instance: /proc,  Process: line__558.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
 # 
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
@@ -528,163 +211,50 @@ asim -O5 +access +r +m+proc proc proc
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 10404 kB (elbread=1280 elab2=8964 kernel=159 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\src\wave.asdb
-#  14:49, sábado, 2 de julho de 2016
+# KERNEL: ASDB file was created in location C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\wave.asdb
+#  15:00, sábado, 2 de julho de 2016
 #  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/joaoh/Desktop/FEMTOMIPS/femtomips/src/wave.asdb'.
-run @100ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/Adriano/Documents/GitHub/FemtoMIPS/femtomips/src/wave.asdb'.
+run
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
-# KERNEL: stopped at time: 100 ns
-# 1 signal(s) traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/FLUSH_MEMWB' has already been traced.
-# 145 signal(s) traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/reset' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/FORWARD_RS_DECIDE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/FORWARD_RT_DECIDE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/FLUSH_IFID' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/FLUSH_IDEXE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/FLUSH_EXEMEM' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/FLUSH_MEMWB' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/STALL_IFID' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/STALL_IDEXE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/STALL_EXEMEM' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/STALL_MEMWB' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/STALL_PC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IFE_PC_FEED' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IFE_PC_FEEDA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IFE_PC_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/PC_INCR' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IFE_INST' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_PC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_INST' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_BADDR_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_GPR_RS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_GPR_RT' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_OPERA_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_OPERB_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_BDECIDE_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_MEM_WRITE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_WREG_ADDR' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_ALU_OP' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_MEM_READ' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_WREG_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_WREG_WRITE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R0' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R1' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R2' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R3' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R4' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R5' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R6' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_R7' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_JAL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_WREG_ADDR_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_rs' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_rt' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/IDE_rd' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_BADDR_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_GPR_RS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_GPR_RT' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_BDECIDE_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_MEM_WRITE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ALU_OP' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_MEM_READ' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_WREG_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_WREG_ADDR' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_WREG_WRITE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_JAL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_INST' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_PC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_RS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_RT' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_BADDR_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_BADDR_DATA_A' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_OPERA_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ALU_RS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ALU_RT' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_OPERA_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_OPERB_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ALU_RES' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_OPERB_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ALU_ZERO' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ALU_NEG' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ALU_OVF' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_IMED_EX' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_IMED_DESL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_SHAMT_EX' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_ENDER_DESL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EXE_BRANCH_IMED' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_BADDR_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_BDECIDE_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_BDECIDE_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_ALU_ZERO' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_ALU_NEG' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_ALU_RES' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_NALU_ZER' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_ALU_OVF' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_MEM_WRITE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_MEM_READ' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_WREG_ADDR' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_WREG_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_WREG_WRITE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_GPR_RT' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_JAL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_INST' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_PC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MEM_CACHED_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_WREG_ADDR' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_WREG_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_WREG_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_WREG_WRITE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_ALU_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_MEM_DATA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_ALU_NEG' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_JAL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_INST' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_PC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/WB_NEG_AUX' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/INTERRUPT_SIGNAL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/INTERRUPT_SOURCE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/EPC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CAUSA' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CACHEI_MISS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CACHED_MISS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_enableI' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_prontoI' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_dadoI' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_ENDERI' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/PC_STALL_DEF' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/clk' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/over' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CACHED_DM' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CCICLOS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CNOP' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CADD' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CSLT' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CJR' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CADDU' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CSLL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CLW' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CSW' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CADDI' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CBEQ' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CBNE' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CSLTI' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CJ' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CJAL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CBTAKEN' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CBTOTAL' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CCACHEIMISS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CCACHEIACC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CCACHEDMISS' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CCACHEDACC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/CMEMACC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_RW' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_enableD' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_prontoD' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_ENDERD' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/proc/MP_dadoD' has already been traced.
-# 0 signal(s) traced.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 12847500 ps,  Iteration: 1,  Instance: /proc,  Process: line__558.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10404 kB (elbread=1280 elab2=8964 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\wave.asdb
+#  15:01, sábado, 2 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Adriano/Documents/GitHub/FemtoMIPS/femtomips/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 12832500 ps,  Iteration: 1,  Instance: /proc,  Process: line__558.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'C:/Users/Adriano/Documents/GitHub/FemtoMIPS/femtomips/src/simulation.awc' connected to 'C:/Users/Adriano/Documents/GitHub/FemtoMIPS/femtomips/src/simulation.asdb'.
+# Adding file C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\simulation.asdb ... Done
+# Adding file C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\simulation.awc ... Done
+# Adding file C:\Users\Adriano\Documents\GitHub\FemtoMIPS\femtomips\src\simulation.awc ... Done

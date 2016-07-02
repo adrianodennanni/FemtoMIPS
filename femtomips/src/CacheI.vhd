@@ -11,8 +11,7 @@ entity CacheI is
        rw : in std_logic;
        ender : in std_logic_vector(31 downto 0);
        dado : out std_logic_vector(31 downto 0);
-       CACHEI_MISS : out std_logic := '0';
-
+       CACHEI_MISS : out std_logic := '0'; -- sinal indicando ao processsador que ocorreu um miss
        MAIN_DATA : in std_logic_vector(127 downto 0);
        MAIN_END : OUT std_logic_vector(31 DOWNTO 0);
        ENABLE_I : OUT STD_LOGIC;
