@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Active-HDL 10.3.3559.6081  2016-07-02 12:41:59
+=======
+Active-HDL 10.3.3559.6081  2016-07-02 15:01:28
+>>>>>>> 26484c481a3445098085d120eba481b90dcf6482
 
 Elaboration top modules:
 Architecture                  proc(proc)
