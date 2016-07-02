@@ -1,0 +1,54 @@
+Active-HDL 10.3.3559.6081  2016-07-02 14:49:33
+
+Elaboration top modules:
+Architecture                  proc(proc)
+
+
+---------------------------------------------------------------------------------------------------------
+Entity           | Architecture     | Library   | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------------
+proc             | proc             | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+MemoriaPrincipal | MemoriaPrincipal | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+CacheI           | CacheI           | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+CacheD           | CacheDI          | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+ForwardingUnit   | ForwardingUnit   | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+HazardUnit       | HazardUnit       | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+PC               | PC               | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+Somador          | Somador          | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+Mux4x1           | Mux4x1           | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+Mux2x1           | Mux2x1           | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+IFID             | IFID             | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+GPR              | GPR              | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+Controle         | Controle         | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+Mux4x1_5b        | Mux4x1_5b        | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+IDEXE            | IDEXE            | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+ULA              | ULA              | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+EXEMEM           | EXEMEM           | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+Mux4x1Bit        | Mux4x1Bit        | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+MEMWB            | MEMWB            | femtomips |      | 10.3.3559.6081  (Windows) | -O3
+---------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+VHDL Package                        | Library   | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------------
+standard                            | std       |      |                           | <unavailable>
+TEXTIO                              | std       |      | 10.3.3559.6081  (Windows) |  -2008
+std_logic_1164                      | ieee      |      | 10.3.3559.6081  (Windows) |  -2008
+NUMERIC_STD                         | ieee      |      | 10.3.3559.6081  (Windows) |  -2008
+std_logic_arith                     | ieee      |      | 10.3.3559.6081  (Windows) | <unavailable>
+STD_LOGIC_UNSIGNED                  | ieee      |      | 10.3.3559.6081  (Windows) | <unavailable>
+---------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+Library                             | Comment
+---------------------------------------------------------------------------------------------------------
+femtomips                           | None
+ieee                                | Standard IEEE packages library
+std                                 | Standard VHDL library
+---------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+proc proc proc
+
+
+The performance of simulation is reduced. Version Student Edition

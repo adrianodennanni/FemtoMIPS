@@ -1,2 +1,0 @@
-00 8 -- Endereço inicial e número de palavras a serem carregadas
-0F0F 1A1A 2B2B 3C3C 4D4D 5E5E 6060 7878 -- Conteúdo das oito palavras a carregar

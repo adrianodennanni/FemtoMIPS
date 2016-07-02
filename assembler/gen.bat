@@ -1,0 +1,1 @@
+python assembler.py %1 > ..\femtomips\prog.txt

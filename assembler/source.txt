@@ -1,0 +1,4 @@
+sort
+addi $sp $sp -20
+sw $ra 16($sp)
+sw $s3 12($sp)

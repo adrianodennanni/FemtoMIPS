@@ -1,2036 +1,0 @@
-I 000046 11 348 1353539755861 absminmaxsomsub
-E absminmaxsomsub VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsom TIME = 5 ns
-G Tabs TIME = 2 ns
-G Tsub TIME = 5 ns
-G Tmm TIME = 3 ns
-P C _in STD_LOGIC_VECTOR[2:0]
-P a _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P b _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P f _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X absminmaxsomsub
-I 000037 11 146 1353539756048 and_ne
-E And_NE VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NE INTEGER = 4
-P Sp _in STD_LOGIC_VECTOR[NE-1:0]
-P P _out STD_LOGIC
-X And_NE
-I 000045 11 264 1353539755705 buffertristate
-E bufferTristate VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tenable TIME = 1 ns
-G Tdisable TIME = 2 ns
-P Oe _in STD_LOGIC
-P I _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P O _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X bufferTristate
-I 000039 11 339 1353539755814 contador
-E contador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsetup TIME = 2 ns
-G Tcarga TIME = 5 ns
-G Tcount TIME = 3 ns
-P C _in STD_LOGIC
-P LC _in STD_LOGIC
-P R _in STD_LOGIC
-P UD _in STD_LOGIC
-P D _in STD_LOGIC_VECTOR[NB-1:0]
-P U _out STD_LOGIC
-P Z _out STD_LOGIC
-P Q _out STD_LOGIC_VECTOR[NB-1:0]
-X contador
-I 000034 11 296 1353539756188 csa
-E CSA VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-P Cin _in STD_LOGIC
-P X _in STD_LOGIC_VECTOR[NB-1:0]
-P Y _in STD_LOGIC_VECTOR[NB-1:0]
-P Z _in STD_LOGIC_VECTOR[NB-1:0]
-P Cout _out STD_LOGIC
-P C _out STD_LOGIC_VECTOR[NB-1:0]
-P S _out STD_LOGIC_VECTOR[NB-1:0]
-X CSA
-I 000044 11 138 1353539755752 decodificador
-E Decodificador VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P In0 _in STD_LOGIC_VECTOR[2:0]
-P Sai _out STD_LOGIC_VECTOR[7:0]
-X Decodificador
-I 000040 11 216 1353539755330 deslocad1
-E DeslocaD1 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tdesl1 TIME = 1 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X DeslocaD1
-I 000040 11 216 1353539755658 deslocad3
-E DeslocaD3 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tdesl3 TIME = 1 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X DeslocaD3
-I 000041 11 344 1353539755611 deslocador
-E deslocador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tcarga TIME = 3 ns
-G Tdesl TIME = 2 ns
-P Clk _in STD_LOGIC
-P D_E _in STD_LOGIC
-P InBit _in STD_LOGIC
-P T_D _in STD_LOGIC
-P InA _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P SaiBit _out STD_LOGIC
-P OutA _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X deslocador
-I 000054 11 251 1353539755518 deslocador_combinatorio
-E deslocador_combinatorio VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G NBD INTEGER = 1
-G Tprop TIME = 1 ns
-P DE _in STD_LOGIC
-P I _in STD_LOGIC_VECTOR[NB-1:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X deslocador_combinatorio
-I 000042 11 418 1353539755564 dualregfile
-E DualRegFile VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBend INTEGER = 4
-G NBdado INTEGER = 8
-G Tread TIME = 5 ns
-G Twrite TIME = 5 ns
-P clk _in STD_LOGIC
-P we _in STD_LOGIC
-P dadoina _in STD_LOGIC_VECTOR[NBdado-1:0]
-P enda _in STD_LOGIC_VECTOR[NBend-1:0]
-P endb _in STD_LOGIC_VECTOR[NBend-1:0]
-P dadoouta _out STD_LOGIC_VECTOR[NBdado-1:0]
-P dadooutb _out STD_LOGIC_VECTOR[NBdado-1:0]
-X DualRegFile
-I 000033 11 145 1353539756095 fa
-E FA VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P ci _in STD_LOGIC
-P x _in STD_LOGIC
-P y _in STD_LOGIC
-P co _out STD_LOGIC
-P s _out STD_LOGIC
-X FA
-I 000035 11 131 1353539755377 fuse
-E Fuse VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P FI _in STD_LOGIC
-P FIL _in STD_LOGIC
-P I _in STD_LOGIC
-P S _out STD_LOGIC
-X Fuse
-V 000039 11 139 1270500471883 fuse_and
-E Fuse_and VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P FI _in STD_LOGIC
-P FIL _in STD_LOGIC
-P I _in STD_LOGIC
-P S _out STD_LOGIC
-X Fuse_and
-I 000038 11 118 1353539756001 fuse_ou
-E fuse_ou VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P Fp _in STD_LOGIC
-P P _in STD_LOGIC
-P Ss _out STD_LOGIC
-X fuse_ou
-I 000033 11 162 1353539755954 ha
-E HA VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G Tgate TIME = 1 ns
-P x _in STD_LOGIC
-P y _in STD_LOGIC
-P g _out STD_LOGIC
-P p _out STD_LOGIC
-X HA
-I 000039 11 218 1353539755424 log_sinc
-E Log_Sinc VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NSb INTEGER = 8
-G Tprop TIME = 1 ns
-P clk _in STD_LOGIC
-P PCborda _in STD_LOGIC_VECTOR[NSb-1:0]
-P Sborda _out STD_LOGIC_VECTOR[NSb-1:0]
-X Log_Sinc
-I 000037 11 180 1353539755471 maisum
-E maisum VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tprop TIME = 2 ns
-P I _in STD_LOGIC_VECTOR[NB-1:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X maisum
-I 000037 11 251 1353539753739 maximo
-E maximo VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tmax TIME = 2 ns
-P In1 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P In2 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X maximo
-I 000037 11 251 1353539755284 minimo
-E minimo VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tmin TIME = 3 ns
-P In1 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P In2 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X minimo
-I 000044 11 298 1353539755237 multiplexador
-E multiplexador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsel TIME = 2 ns
-G Tdata TIME = 1 ns
-P S _in STD_LOGIC
-P I0 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P I1 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P O _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X multiplexador
-I 000037 11 334 1353539755096 mux4x1
-E Mux4x1 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsel TIME = 3 ns
-G Tdata TIME = 2 ns
-P I0 _in STD_LOGIC_VECTOR[NB-1:0]
-P I1 _in STD_LOGIC_VECTOR[NB-1:0]
-P I2 _in STD_LOGIC_VECTOR[NB-1:0]
-P I3 _in STD_LOGIC_VECTOR[NB-1:0]
-P Sel _in STD_LOGIC_VECTOR[1:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X Mux4x1
-I 000037 11 470 1353539755190 mux8x1
-E Mux8x1 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsel TIME = 3 ns
-G Tdata TIME = 2 ns
-P I0 _in STD_LOGIC_VECTOR[NB-1:0]
-P I1 _in STD_LOGIC_VECTOR[NB-1:0]
-P I2 _in STD_LOGIC_VECTOR[NB-1:0]
-P I3 _in STD_LOGIC_VECTOR[NB-1:0]
-P I4 _in STD_LOGIC_VECTOR[NB-1:0]
-P I5 _in STD_LOGIC_VECTOR[NB-1:0]
-P I6 _in STD_LOGIC_VECTOR[NB-1:0]
-P I7 _in STD_LOGIC_VECTOR[NB-1:0]
-P Sel _in STD_LOGIC_VECTOR[2:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X Mux8x1
-I 000036 11 144 1353539755143 ou_np
-E Ou_NP VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NP INTEGER = 4
-P Ss _in STD_LOGIC_VECTOR[NP-1:0]
-P S _out STD_LOGIC
-X Ou_NP
-V 000036 11 144 1353539875426 ou_ns
-E Ou_NS VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NP INTEGER = 4
-P Ss _in STD_LOGIC_VECTOR[NP-1:0]
-P S _out STD_LOGIC
-X Ou_NS
-I 000034 11 373 1354555705492 ram
-E Ram VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G BE INTEGER = 8
-G BP INTEGER = 16
-G NA STRING = "mram.txt"
-G Tz TIME = 2 ns
-G Twrite TIME = 5 ns
-G Tsetup TIME = 2 ns
-G Tread TIME = 5 ns
-P Clock _in STD_LOGIC
-P enable _in STD_LOGIC
-P rw _in STD_LOGIC
-P ender _in STD_LOGIC_VECTOR[BE-1:0]
-P pronto _out STD_LOGIC
-P dado _inout STD_LOGIC_VECTOR[BP-1:0]
-X Ram
-I 000038 11 326 1353539755050 regfile
-E RegFile VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBend INTEGER = 4
-G NBdado INTEGER = 8
-G Tread TIME = 5 ns
-G Twrite TIME = 5 ns
-P clk _in STD_LOGIC
-P we _in STD_LOGIC
-P dadoina _in STD_LOGIC_VECTOR[NBdado-1:0]
-P enda _in STD_LOGIC_VECTOR[NBend-1:0]
-P dadoouta _out STD_LOGIC_VECTOR[NBdado-1:0]
-X RegFile
-I 000042 11 289 1353539755908 registrador
-E registrador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tprop TIME = 5 ns
-G Tsetup TIME = 2 ns
-P C _in STD_LOGIC
-P R _in STD_LOGIC
-P S _in STD_LOGIC
-P D _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P Q _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X registrador
-I 000042 11 181 1353539756142 ringcounter
-E RingCounter VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 1
-P Clk _in STD_LOGIC
-P R _in STD_LOGIC
-P T0 _out STD_LOGIC
-P T1 _out STD_LOGIC
-X RingCounter
-I 000034 11 226 1354555769371 rom
-E ROM VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G BE INTEGER = 8
-G BP INTEGER = 16
-G Tacesso TIME = 5 ns
-G NA STRING = "mrom.txt"
-P ender _in STD_LOGIC_VECTOR[BE-1:0]
-P dado _out STD_LOGIC_VECTOR[BP-1:0]
-X ROM
-I 000038 11 304 1353539754192 somador
-E Somador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsoma TIME = 3 ns
-G Tinc TIME = 2 ns
-P S _in STD_LOGIC
-P Vum _in STD_LOGIC
-P A _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P B _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P C _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X Somador
-I 000037 11 373 1353539754738 somsub
-E SomSub VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsom TIME = 5 ns
-G Tsub TIME = 5 ns
-G Ttrans TIME = 5 ns
-P Veum _in STD_LOGIC
-P A _in STD_LOGIC_VECTOR[NB-1:0]
-P B _in STD_LOGIC_VECTOR[NB-1:0]
-P cUla _in STD_LOGIC_VECTOR[1:0]
-P Sinal _out STD_LOGIC
-P Vaum _out STD_LOGIC
-P Zero _out STD_LOGIC
-P C _out STD_LOGIC_VECTOR[NB-1:0]
-X SomSub
-I 000036 11 301 1353539754800 stack
-E Stack VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBdado INTEGER = 8
-G NBend INTEGER = 4
-G Tpush TIME = 5 ns
-G Tpop TIME = 5 ns
-P Reset _in STD_LOGIC
-P clk _in STD_LOGIC
-P push_pop _in STD_LOGIC
-P din _in STD_LOGIC_VECTOR[NBdado-1:0]
-P dout _out STD_LOGIC_VECTOR[NBdado-1:0]
-X Stack
-I 000040 11 257 1353539840369 subtrator
-E subtrator VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsub TIME = 3 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P In2 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X subtrator
-I 000034 11 387 1353539754660 ula
-E ULA VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsom TIME = 5 ns
-G Tsub TIME = 5 ns
-G Ttrans TIME = 5 ns
-G Tgate TIME = 1 ns
-P Veum _in STD_LOGIC
-P A _in STD_LOGIC_VECTOR[NB-1:0]
-P B _in STD_LOGIC_VECTOR[NB-1:0]
-P cUla _in STD_LOGIC_VECTOR[2:0]
-P Sinal _out STD_LOGIC
-P Vaum _out STD_LOGIC
-P Zero _out STD_LOGIC
-P C _out STD_LOGIC_VECTOR[NB-1:0]
-X ULA
-I 000045 11 224 1353539754332 valor_absoluto
-E valor_absoluto VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G numeroBits INTEGER = 8
-G Tabs TIME = 2 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X valor_absoluto
-I 000036 11 180 1353539754550 xsign
-E xsign VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBE INTEGER = 8
-G NBS INTEGER = 16
-P I _in STD_LOGIC_VECTOR[NBE-1:0]
-P O _out STD_LOGIC_VECTOR[NBS-1:0]
-X xsign
-I 000036 11 180 1353539754379 xzero
-E xzero VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBE INTEGER = 8
-G NBS INTEGER = 16
-P I _in STD_LOGIC_VECTOR[NBE-1:0]
-P O _out STD_LOGIC_VECTOR[NBS-1:0]
-X xzero
-V 000037 11 251 1354555818087 maximo
-E maximo VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tmax TIME = 2 ns
-P In1 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P In2 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X maximo
-V 000058 60 364 1354555818086 ./compile/maximo.vhd*maximo
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВmaximo>ЙAЙВ
-NumeroBitsВintegerДЙВTmaxВtimeДВnsЙЙBЙ ВIn1…Вstd_logic_vectorВ
-NumeroBitsДsД Й!ВIn2…Вstd_logic_vectorВ
-NumeroBitsДsД Й"ВOut1†Вstd_logic_vectorВ
-NumeroBitsДsД Й#Й$@ВmaximoЛ М   @ Б
-V 000062 60 15 1354555818086 ./compile/maximo.vhd*maximo__opt
-222222222222V 000037 70 195 1354555818086 maximo
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000068 60 117 1354555818088 ./compile/maximo.vhd*maximo|21+maximo
-Ver. 1.30.v98.64
-К Й&LВmaximoDВmaximo>Й(?Й+ВOut1 ВIn1ЌВTmaxaВIn1!ВIn2_Й,ВIn2ЌВTmaxЙ.@ВmaximoЛ М   @ Б
-I 000072 60 15 1354555818088 ./compile/maximo.vhd*maximo|21+maximo__opt
-222222222I 000044 70 195 1354555818088 maximo|maximo
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000038 11 304 1354555818121 somador
-E Somador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsoma TIME = 3 ns
-G Tinc TIME = 2 ns
-P S _in STD_LOGIC
-P Vum _in STD_LOGIC
-P A _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P B _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P C _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X Somador
-V 000060 60 423 1354555818120 ./compile/somador.vhd*Somador
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВSomador>ЙAЙВ
-NumeroBitsВintegerДЙВTsomaВtimeДВnsЙВTincВtimeДВnsЙЙ BЙ!ВS…В	std_logicЙ"ВVum…В	std_logicЙ#ВA…Вstd_logic_vectorВ
-NumeroBitsДsД Й$ВB…Вstd_logic_vectorВ
-NumeroBitsДsД Й%ВC†Вstd_logic_vectorВ
-NumeroBitsДsД Й&Й'@ВSomadorЛ М   @ Б
-V 000064 60 15 1354555818120 ./compile/somador.vhd*Somador__opt
-222222222222V 000038 70 195 1354555818120 somador
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000071 60 127 1354555818122 ./compile/somador.vhd*Somador|21+Somador
-Ver. 1.30.v98.64
-К Й)LВSomadorDВSomador>Й+?Й.ВC ВAВBВVumЌВTsomaaВSЕ1_Й/ВAВVumЌВTincЙ1@ВSomadorЛ М   @ Б
-I 000075 60 15 1354555818122 ./compile/somador.vhd*Somador|21+Somador__opt
-222222222I 000046 70 195 1354555818122 somador|Somador
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000045 11 224 1354555818154 valor_absoluto
-E valor_absoluto VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G numeroBits INTEGER = 8
-G Tabs TIME = 2 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X valor_absoluto
-V 000074 60 332 1354555818153 ./compile/valor_absoluto.vhd*valor_absoluto
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВvalor_absoluto>ЙAЙВ
-numeroBitsВintegerДЙВTabsВtimeДВnsЙЙBЙ ВIn1…Вstd_logic_vectorВ
-numeroBitsДsД Й!ВOut1†Вstd_logic_vectorВ
-numeroBitsДsД Й"Й#@Вvalor_absolutoЛ М   @ Б
-V 000078 60 15 1354555818153 ./compile/valor_absoluto.vhd*valor_absoluto__opt
-222222222222V 000045 70 195 1354555818153 valor_absoluto
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000092 60 159 1354555818155 ./compile/valor_absoluto.vhd*valor_absoluto|21+valor_absoluto
-Ver. 1.30.v98.64
-К Й%LВvalor_absolutoDВvalor_absoluto>Й'?Й*ВOut1 ВIn1ЌВTabsaВIn1В
-NumeroBitsДЕ0_Й+pВIn1Е1ЌВTabsЙ-@Вvalor_absolutoЛ М   @ Б
-I 000096 60 15 1354555818155 ./compile/valor_absoluto.vhd*valor_absoluto|21+valor_absoluto__opt
-222222222I 000060 70 195 1354555818155 valor_absoluto|valor_absoluto
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000036 11 180 1354555818185 xzero
-E xzero VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBE INTEGER = 8
-G NBS INTEGER = 16
-P I _in STD_LOGIC_VECTOR[NBE-1:0]
-P O _out STD_LOGIC_VECTOR[NBS-1:0]
-X xzero
-V 000056 60 225 1354555818184 ./compile/xzero.vhd*xzero
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВxzero>ЙAЙВNBEВintegerДЙВNBSВintegerДЙЙBЙВI…Вstd_logic_vectorВNBEДsД Й ВO†Вstd_logic_vectorВNBSДsД Й!Й"@ВxzeroЛ М   @ Б
-V 000060 60 15 1354555818184 ./compile/xzero.vhd*xzero__opt
-222222222222V 000035 70 64 1354555818184 xzero
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000065 60 128 1354555818186 ./compile/xzero.vhd*xzero|21+xzero
-Ver. 1.30.v98.64
-К Й$LВxzeroDВxzero>Й&?Й)ВOВNBEДsД  ВIВNBEДsД Й*ВOВNBSДsВNBE FЕ0Й,@ВxzeroЛ М   @ Б
-I 000069 60 15 1354555818186 ./compile/xzero.vhd*xzero|21+xzero__opt
-222222222I 000041 70 64 1354555818186 xzero|xzero
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000039 11 101 1354555818220 testfill
-E testfill VHDL
-L STD;
-U STD.STANDARD;
-PL 0
-G NP_Mem INTEGER = 256
-G NBP_Mem INTEGER = 16
-X testfill
-V 000061 60 254 1354555818219 ./src/fill_memory.vhd*testfill
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ<ВSynopsysЙ=Вieee
-Вstd_logic_1164
-GЙ=Вsynopsys
-Вstd_logic_signed
-GЙ=Вsynopsys
-Вstd_logic_arith
-GЙ=Вstd
-Вtextio
-GЙHВtestfill>Й	AВNP_MemВintegerДю Й
-ВNBP_MemВintegerДЙ@ВtestfillЛ М   @ Б
-V 000065 60 15 1354555818219 ./src/fill_memory.vhd*testfill__opt
-222222222222V 000039 70 258 1354555818219 testfill
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-Psynopsys|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Psynopsys|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000073 60 1067 1354555818221 ./src/fill_memory.vhd*testfill|21+fillmem
-Ver. 1.30.v98.64
-К ЙLВfillmemDВtestfill>Й}Вtipo_memoria>xД rВNP_MemDВstd_logic_vectorВNBP_MemДsД ЙЃВMemВtipo_memoriaFFЕ0ЙЉВfill_memoryЃВmem‡Вtipo_memoria>Й}ВHexTable>xВ	characterqDВintegerЙ|ВlookupВHexTableЕ0rЕFЙД ДДДДДДДДД	ДДДДДДДД
-ДДДДДЙВinfileВtextIВ	read_mode>Ж	"mem.txt"Й„ВbuffВlineЙ„Вaddr_sВstringДsДЙ„Вdata_sВstringДsДЙ„Вaddr_1Вbyte_cntВintegerЙ„ВdataВintegerqДю sД Й?ЙcpВendfileВinfilebЙВreadlineВinfileВbuffЙ ВreadВbuffВaddr_sЙ!ВreadВbuffВbyte_cnTЙ"Вaddr_1ВlookupВaddr_sДДю ВlookupВaddr_sДДю ВlookupВaddr_sДДВlookupВaddr_sДЙ#ВreadlineВinfileВbuffЙ$EВi…ДrВbyte_cntbЙ%ВreadВbuffВdata_sЙ&ВdataВlookupВdata_sДДВlookupВdata_sДЙ'ВMemВaddr_1 ВCONV_STD_LOGIC_VECTORВdataВNBP_MemЙ(Вaddr_1Вaddr_1ДЙ)@bЙ*@bЙ+@Вfill_memoryЙ,?Й-В	testbenchNЙ.?Й/Вfill_memoryВMemЙ1WЙ2@NЙ3@ВfillmemЛ4 М   @ Б
-V 000076 60 15 1354555818221 ./src/fill_memory.vhd*testfill|21+fillmem__opt
-222222222V 000047 70 258 1354555818221 testfill|fillmem
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-Psynopsys|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Psynopsys|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000036 11 180 1354555818253 xsign
-E xsign VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBE INTEGER = 8
-G NBS INTEGER = 16
-P I _in STD_LOGIC_VECTOR[NBE-1:0]
-P O _out STD_LOGIC_VECTOR[NBS-1:0]
-X xsign
-V 000056 60 225 1354555818252 ./compile/xsign.vhd*xsign
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВxsign>ЙAЙВNBEВintegerДЙВNBSВintegerДЙЙBЙВI…Вstd_logic_vectorВNBEДsД Й ВO†Вstd_logic_vectorВNBSДsД Й!Й"@ВxsignЛ М   @ Б
-V 000060 60 15 1354555818252 ./compile/xsign.vhd*xsign__opt
-222222222222V 000035 70 64 1354555818252 xsign
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000065 60 126 1354555818254 ./compile/xsign.vhd*xsign|21+xsign
-Ver. 1.30.v98.64
-К Й$LВxsignDВxsign>Й&?Й)ВOВNBEДsД  ВIЙ*ВOВNBSДsВNBE FВIВNBEДЙ,@ВxsignЛ М   @ Б
-I 000069 60 15 1354555818254 ./compile/xsign.vhd*xsign|21+xsign__opt
-222222222I 000041 70 64 1354555818254 xsign|xsign
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000040 11 257 1354555818286 subtrator
-E subtrator VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsub TIME = 3 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P In2 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X subtrator
-V 000064 60 370 1354555818285 ./compile/subtrator.vhd*subtrator
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВ	subtrator>ЙAЙВ
-NumeroBitsВintegerДЙВTsubВtimeДВnsЙЙBЙ ВIn1…Вstd_logic_vectorВ
-numeroBitsДsД Й!ВIn2…Вstd_logic_vectorВ
-numeroBitsДsД Й"ВOut1†Вstd_logic_vectorВ
-numeroBitsДsД Й#Й$@В	subtratorЛ М   @ Б
-V 000068 60 15 1354555818285 ./compile/subtrator.vhd*subtrator__opt
-222222222222V 000040 70 195 1354555818285 subtrator
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000077 60 105 1354555818287 ./compile/subtrator.vhd*subtrator|21+subtrator
-Ver. 1.30.v98.64
-К Й&LВ	subtratorDВ	subtrator>Й(?Й+ВOut1 ВIn1ВIn2ЌВTsubЙ-@В	subtratorЛ М   @ Б
-I 000081 60 15 1354555818287 ./compile/subtrator.vhd*subtrator|21+subtrator__opt
-222222222I 000050 70 195 1354555818287 subtrator|subtrator
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000034 11 387 1354555818318 ula
-E ULA VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsom TIME = 5 ns
-G Tsub TIME = 5 ns
-G Ttrans TIME = 5 ns
-G Tgate TIME = 1 ns
-P Veum _in STD_LOGIC
-P A _in STD_LOGIC_VECTOR[NB-1:0]
-P B _in STD_LOGIC_VECTOR[NB-1:0]
-P cUla _in STD_LOGIC_VECTOR[2:0]
-P Sinal _out STD_LOGIC
-P Vaum _out STD_LOGIC
-P Zero _out STD_LOGIC
-P C _out STD_LOGIC_VECTOR[NB-1:0]
-X ULA
-V 000052 60 516 1354555818317 ./compile/ULA.vhd*ULA
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВULA>ЙAЙВNBВintegerДЙВTsomВtimeДВnsЙВTsubВtimeДВnsЙВTtransВtimeДВnsЙ ВTgateВtimeДВnsЙ!Й"BЙ#ВVeum…В	std_logicЙ$ВA…Вstd_logic_vectorВNBДsД Й%ВB…Вstd_logic_vectorВNBДsД Й&ВcUla…Вstd_logic_vectorДsД Й'ВSinal†В	std_logicЙ(ВVaum†В	std_logicЙ)ВZero†В	std_logicЙ*ВC†Вstd_logic_vectorВNBДsД Й+Й,@ВULAЛ М   @ Б
-V 000056 60 15 1354555818317 ./compile/ULA.vhd*ULA__opt
-222222222222V 000034 70 195 1354555818317 ula
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000059 60 913 1354555818319 ./compile/ULA.vhd*ULA|21+ULA
-Ver. 1.30.v98.64
-К Й.LВULADВULA>Й1ЃВS_NBВstd_logic_vectorВNBsД Й2ЃВZerВstd_logic_vectorВNBДsД FЕ0Й3ЃВUpperВstd_logic_vectorВNBsД Е1FЕ0Й6?Й9OВcUlaPЙ:ВS_NB Е0"ВAВVeumaЖ"000"Й;Е0"ВAВBВVeumaЖ"001"Й<Е0"ВBВVeumaЖ"010"Й=Е0"ВAВBВVeumaЖ"011"Й>Е0"ВAhВBaЖ"100"Й?Е0"ВAiВBaЖ"101"Й@Е0"ВAjВBaЖ"110"ЙAЕ0"pВAaЖ"111"ЙBFЕ0aFЙDВVaum ВS_NBВNBЌВTsomЙFВC ВS_NBВNBДsД ЌВTtransaВcUlaЖ"000"_ЙGВS_NBВNBДsД ЌВTsomaВcUlaЖ"001"_ЙHВS_NBВNBДsД ЌВTtransaВcUlaЖ"010"_ЙIВS_NBВNBДsД ЌВTsubaВcUlaЖ"011"_ЙJВS_NBВNBДsД ЌВTgateaВcUlaЖ"100"_ЙKВS_NBВNBДsД ЌВTgateaВcUlaЖ"101"_ЙLВS_NBВNBДsД ЌДВTgateaВcUlaЖ"110"_ЙMВS_NBВNBДsД ЌВTgateaВcUlaЖ"111"ЙOВSinal ВS_NBВNBДЌВTsomЙQВZero Е1ЌВTsomaВS_NBВNBДsД ВZer_ЙRЕ0ЌВTsomЙT@ВULAЛ М   @ Б
-I 000063 60 15 1354555818319 ./compile/ULA.vhd*ULA|21+ULA__opt
-222222222I 000038 70 195 1354555818319 ula|ULA
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000037 11 373 1354555818373 somsub
-E SomSub VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsom TIME = 5 ns
-G Tsub TIME = 5 ns
-G Ttrans TIME = 5 ns
-P Veum _in STD_LOGIC
-P A _in STD_LOGIC_VECTOR[NB-1:0]
-P B _in STD_LOGIC_VECTOR[NB-1:0]
-P cUla _in STD_LOGIC_VECTOR[1:0]
-P Sinal _out STD_LOGIC
-P Vaum _out STD_LOGIC
-P Zero _out STD_LOGIC
-P C _out STD_LOGIC_VECTOR[NB-1:0]
-X SomSub
-V 000058 60 498 1354555818372 ./compile/SomSub.vhd*SomSub
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВSomSub>ЙAЙВNBВintegerДЙВTsomВtimeДВnsЙВTsubВtimeДВnsЙВTtransВtimeДВnsЙ Й!BЙ"ВVeum…В	std_logicЙ#ВA…Вstd_logic_vectorВNBДsД Й$ВB…Вstd_logic_vectorВNBДsД Й%ВcUla…Вstd_logic_vectorДsД Й&ВSinal†В	std_logicЙ'ВVaum†В	std_logicЙ(ВZero†В	std_logicЙ)ВC†Вstd_logic_vectorВNBДsД Й*Й+@ВSomSubЛ М   @ Б
-V 000062 60 15 1354555818372 ./compile/SomSub.vhd*SomSub__opt
-222222222222V 000037 70 195 1354555818372 somsub
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000068 60 567 1354555818374 ./compile/SomSub.vhd*SomSub|21+SomSub
-Ver. 1.30.v98.64
-К Й-LВSomSubDВSomSub>Й0ЃВS_NBВstd_logic_vectorВNBsД Й1ЃВZerВstd_logic_vectorВNBsД FЕ0Й4?Й7OВcUlaPЙ8ВS_NB Е0"ВAВVeumaЖ"00"Й9Е0"ВAВBВVeumaЖ"01"Й:Е0"ВBВVeumaЖ"10"Й;Е0"ВAВBВVeumaЖ"11"Й<FЕ0aFЙ>ВVaum ВS_NBВNBЌВTsomЙ@ВC ВS_NBВNBДsД ЌВTtransaВcUlaЖ"00"_ЙAВS_NBВNBДsД ЌВTsomaВcUlaЖ"01"_ЙBВS_NBВNBДsД ЌВTtransaВcUlaЖ"10"_ЙCВS_NBВNBДsД ЌВTsubaВcUlaЖ"11"_ЙEВSinal ВS_NBВNBДЌВTsomЙGВZero Е1ЌВTsomaВS_NBВZer_ЙHЕ0ЌВTsomЙJ@ВSomSubЛ	 М   @ Б
-I 000072 60 15 1354555818374 ./compile/SomSub.vhd*SomSub|21+SomSub__opt
-222222222I 000044 70 195 1354555818374 somsub|SomSub
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000036 11 301 1354555818411 stack
-E Stack VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBdado INTEGER = 8
-G NBend INTEGER = 4
-G Tpush TIME = 5 ns
-G Tpop TIME = 5 ns
-P Reset _in STD_LOGIC
-P clk _in STD_LOGIC
-P push_pop _in STD_LOGIC
-P din _in STD_LOGIC_VECTOR[NBdado-1:0]
-P dout _out STD_LOGIC_VECTOR[NBdado-1:0]
-X Stack
-V 000056 60 384 1354555818410 ./compile/Stack.vhd*Stack
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=Вieee
-Вnumeric_std
-GЙHВStack>ЙAЙВNBdadoВintegerДЙВNBendВintegerДЙВTpushВtimeДВnsЙВTpopВtimeДВnsЙЙ BЙ!ВReset…В	std_logicЙ"Вclk…В	std_logicЙ#Вpush_pop…В	std_logicЙ$Вdin…Вstd_logic_vectorВNBdadoДsД Й%Вdout†Вstd_logic_vectorВNBdadoДsД Й&Й'@ВStackЛ М   @ Б
-V 000060 60 15 1354555818410 ./compile/Stack.vhd*Stack__opt
-222222222222V 000036 70 125 1354555818410 stack
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000065 60 564 1354555818412 ./compile/Stack.vhd*Stack|21+Stack
-Ver. 1.30.v98.64
-К Й)LВStackDВStack>Й,}Вram_type>xД rДВNBendДЙ-DВstd_logic_vectorВNBdadoДsД Й.ЃВstackВram_typeЙ/ЃВtosВstd_logic_vectorВNBendДsД FЕ0Й2?Й6ВStackMemoryЙ7NВclkВResetЙ;?Й<UВResetЕ1]Й=Вtos FЕ0Й>^ВclkВeventhВclkЕ1]Й?`Вpush_pop>Й@aЕ0ЙAВtos Вstd_logic_vectorВunsignedВtosДЙBВstackВ
-to_integerВunsignedВtos ВdinЌВTpushЙCaЕ1ЙDВdout ВstackВ
-to_integerВunsignedВtosЌВTpopЙEВtos Вstd_logic_vectorВunsignedВtosДЙFaFЙGSЙH@`ЙI@UЙJ@NЙL@ВStackЛ М   @ Б
-I 000069 60 15 1354555818412 ./compile/Stack.vhd*Stack|21+Stack__opt
-222222222I 000042 70 125 1354555818412 stack|Stack
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000034 11 373 1354555818447 ram
-E Ram VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G BE INTEGER = 8
-G BP INTEGER = 16
-G NA STRING = "mram.txt"
-G Tz TIME = 2 ns
-G Twrite TIME = 5 ns
-G Tsetup TIME = 2 ns
-G Tread TIME = 5 ns
-P Clock _in STD_LOGIC
-P enable _in STD_LOGIC
-P rw _in STD_LOGIC
-P ender _in STD_LOGIC_VECTOR[BE-1:0]
-P pronto _out STD_LOGIC
-P dado _inout STD_LOGIC_VECTOR[BP-1:0]
-X Ram
-V 000052 60 518 1354555818446 ./compile/Ram.vhd*Ram
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вnumeric_std
-GЙ=ВIEEE
-Вstd_logic_unsigned
-GЙ=Вstd
-Вtextio
-GЙHВRam>ЙAЙВBEВintegerДЙВBPВintegerДЙВNAВstringЖ
-"mram.txt"Й ВTzВtimeДВnsЙ!ВTwriteВtimeДВnsЙ"ВTsetupВtimeДВnsЙ#ВTreadВtimeДВnsЙ$Й%BЙ&ВClock…В	std_logicЙ'Вenable…В	STD_LOGICЙ(Вrw…В	std_logicЙ)Вender…Вstd_logic_vectorВBEДsД Й*Вpronto†В	std_logicЙ+Вdado‡Вstd_logic_vectorВBPДsД Й,Й-@ВRamЛ М   @ Б
-V 000056 60 15 1354555818446 ./compile/Ram.vhd*Ram__opt
-222222222222V 000034 70 248 1354555818446 ram
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|STD_LOGIC_UNSIGNED|0x48439b24e42036bd46902e1cc55339fafe02e0da
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-I 000060 60 1660 1354555818448 ./compile/Ram.vhd*Ram|21+Ram
-Ver. 1.30.v98.64
-К Й/LВRamDВRam>Й2}Вtipo_memoria>xД rДВBEДDВstd_logic_vectorВBPДsД Й3ЃВMramВtipo_memoriaFFЕ0Й6?Й:ВCarga_Inicial_e_Ram_MemoriaNВClockВdadoВenableВrwЙ;„ВenderecoВintegerqД rДВBEДЙ<„ВinicioВ	std_logicЕ1Й=‹Вfill_memorygВtipo_memoria>Й>}ВHexTable>xВ	characterqDВintegerЙ@|ВlookupВHexTableЕ0rЕFЙAД ДДДДДДДДД	ДДДДДДДД
-ДДДДДЙBВinfileВtextIВ	read_mode>ВNAЙC„ВbuffВlineЙD„Вaddr_sВstringВBEДДsДЙE„Вdata_sВstringВBPДДsДЙF„Вaddr_1Вpal_cntВintegerЙG„ВdataВstd_logic_vectorВBPДsД ЙH„ВMemВtipo_memoriaFFЕ0ЙI?ЙJcpВendfileВinfilebЙKВreadlineВinfileВbuffЙLВreadВbuffВaddr_sЙMВreadВbuffВpal_cnTЙOВaddr_1Д ЙPEВi…ВBEДДsДbЙQВaddr_1Вaddr_1ВlookupВaddr_sВiДВiДЙR@bЙSВreadlineВinfileВbuffЙTEВi…ДrВpal_cntbЙUВreadВbuffВdata_sЙWВdataFЕ0ЙXEВi…ВBPДДsДbЙYВdataВdataВlookupВdata_sВiДВiДЙZ@bЙ[ВMemВaddr_1ВdataЙ\Вaddr_1Вaddr_1ДЙ]@bЙ^@bЙ_gВMemЙ`@Вfill_memoryЙb?ЙcUВinicioЕ1]ЙeВMram Вfill_memoryЙgВinicioЕ0Йh@UЙiUВClockВeventhВClockЕ1hВenableЕ1]ЙjUВenderВ
-last_eventВTsetupiВdadoВ
-last_eventВTsetup]ЙkВdado FЕXЙl_ЙmВenderecoВ
-to_integerВunsignedВenderЙn`Вrw>ЙoaЕ0ЙpВdado ВMramВenderecoЌВTreadЙqВpronto Е1ЌВTreadЙraЕ1ЙsВMramВendereco ВdadoЌВTwriteЙtВpronto Е1ЌВTwriteЙuaFЙvSЙw@`Йx@UЙy@UЙzUВClockВeventhВClockЕ1hВenableЕ0]Й|Вpronto Е0Й}Вdado FЕZЌВTzЙ~@UЙ@NЙЃ@ВRamЛN М   @ Б
-I 000063 60 15 1354555818448 ./compile/Ram.vhd*Ram|21+Ram__opt
-222222222I 000038 70 248 1354555818448 ram|Ram
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|STD_LOGIC_UNSIGNED|0x48439b24e42036bd46902e1cc55339fafe02e0da
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-V 000034 11 226 1354555818488 rom
-E ROM VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G BE INTEGER = 8
-G BP INTEGER = 16
-G Tacesso TIME = 5 ns
-G NA STRING = "mrom.txt"
-P ender _in STD_LOGIC_VECTOR[BE-1:0]
-P dado _out STD_LOGIC_VECTOR[BP-1:0]
-X ROM
-V 000052 60 382 1354555818487 ./compile/ROM.vhd*ROM
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вnumeric_std
-GЙ=ВIEEE
-Вstd_logic_unsigned
-GЙ=Вieee
-В	math_real
-GЙ=Вstd
-Вtextio
-GЙHВROM>ЙAЙВBEВintegerДЙВBPВintegerДЙ ВTacessoВtimeДВnsЙ!ВNAВstringЖ
-"mrom.txt"Й"Й#BЙ$Вender…Вstd_logic_vectorВBEДsД Й%Вdado†Вstd_logic_vectorВBPДsД Й&Й'@ВROMЛ М   @ Б
-V 000056 60 15 1354555818487 ./compile/ROM.vhd*ROM__opt
-222222222222V 000034 70 307 1354555818487 rom
-Pieee|MATH_REAL|0x4ced280da48f576737d3d7ef65b65d56173b9076
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|STD_LOGIC_UNSIGNED|0x48439b24e42036bd46902e1cc55339fafe02e0da
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-I 000060 60 1201 1354555818489 ./compile/ROM.vhd*ROM|21+ROM
-Ver. 1.30.v98.64
-К Й)LВROMDВROM>Й,}Вtipo_memoria>xД rДВBEДDВstd_logic_vectorВBPДsД Й-ЃВmromВtipo_memoriaFFЕ0Й.ЃВenderecoВintegerД Й1?Й5ВCarga_inicialNЙ6‹Вfill_memorygВtipo_memoria>Й7}ВHexTable>xВ	characterqDВintegerЙ9|ВlookupВHexTableЕ0rЕFЙ:Д ДДДДДДДДД	ДДДДДДДД
-ДДДДДЙ;ВinfileВtextIВ	read_mode>ВNAЙ<„ВbuffВlineЙ=„Вaddr_sВstringВBEДДsДЙ>„Вdata_sВstringВBPДДsДЙ?„Вaddr_1Вpal_cntВintegerЙ@„ВdataВstd_logic_vectorВBPДsД ЙA„ВMemВtipo_memoriaFFЕ0ЙB?ЙCcpВendfileВinfilebЙDВreadlineВinfileВbuffЙEВreadВbuffВaddr_sЙFВreadВbuffВpal_cnTЙHВaddr_1Д ЙIEВi…ВBEДДsДbЙJВaddr_1Вaddr_1ВlookupВaddr_sВiДВiДЙK@bЙLВreadlineВinfileВbuffЙMEВi…ДrВpal_cntbЙNВreadВbuffВdata_sЙPВdataFЕ0ЙQ[Вdata_sЙREВi…ВBPДДsДbЙSВdataВdataВlookupВdata_sВiДВiДЙT@bЙUВMemВaddr_1ВdataЙVВaddr_1Вaddr_1ДЙW@bЙX@bЙYgВMemЙZ@Вfill_memoryЙ[?Й\Вmrom Вfill_memoryЙ^WЙ_@NЙbВdado ВmromВ
-to_integerВunsignedВenderЌВTacessoЙd@ВROMЛ@ М   @ Б
-I 000063 60 15 1354555818489 ./compile/ROM.vhd*ROM|21+ROM__opt
-222222222I 000038 70 307 1354555818489 rom|ROM
-Pieee|MATH_REAL|0x4ced280da48f576737d3d7ef65b65d56173b9076
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|STD_LOGIC_UNSIGNED|0x48439b24e42036bd46902e1cc55339fafe02e0da
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-V 000038 11 326 1354555818524 regfile
-E RegFile VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBend INTEGER = 4
-G NBdado INTEGER = 8
-G Tread TIME = 5 ns
-G Twrite TIME = 5 ns
-P clk _in STD_LOGIC
-P we _in STD_LOGIC
-P dadoina _in STD_LOGIC_VECTOR[NBdado-1:0]
-P enda _in STD_LOGIC_VECTOR[NBend-1:0]
-P dadoouta _out STD_LOGIC_VECTOR[NBdado-1:0]
-X RegFile
-V 000060 60 413 1354555818523 ./compile/RegFile.vhd*RegFile
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=Вieee
-Вnumeric_std
-GЙHВRegFile>ЙAЙВNBendВintegerДЙВNBdadoВintegerДЙВTreadВtimeДВnsЙВTwriteВtimeДВnsЙЙ BЙ!Вclk…В	std_logicЙ"Вwe…В	std_logicЙ#Вdadoina…Вstd_logic_vectorВNBdadoДsД Й$Вenda…Вstd_logic_vectorВNBendДsД Й%Вdadoouta†Вstd_logic_vectorВNBdadoДsД Й&Й'@ВRegFileЛ М   @ Б
-V 000064 60 15 1354555818523 ./compile/RegFile.vhd*RegFile__opt
-222222222222V 000038 70 125 1354555818523 regfile
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000071 60 444 1354555818525 ./compile/RegFile.vhd*RegFile|21+RegFile
-Ver. 1.30.v98.64
-К Й)LВRegFileDВRegFile>Й,}Вram_type>xД rДВNBendДЙ-DВstd_logic_vectorВNBdadoДsД Й.ЃВramВram_typeЙ3ЃВenda_regВstd_logic_vectorВNBendДsД Й5?Й9ВRegisterMemoryЙ:NВclkЙ>?Й?UВclkВeventhВclkЕ1]Й@UВweЕ1]ЙAВramВ
-to_integerВunsignedВenda ВdadoinaЌВTwriteЙB@UЙCВenda_reg ВendaЙD@UЙE@NЙHВdadoouta ВramВ
-to_integerВunsignedЙIВenda_regЌВTreadЙK@ВRegFileЛ М   @ Б
-I 000075 60 15 1354555818525 ./compile/RegFile.vhd*RegFile|21+RegFile__opt
-222222222I 000046 70 125 1354555818525 regfile|RegFile
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000037 11 334 1354555818555 mux4x1
-E Mux4x1 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsel TIME = 3 ns
-G Tdata TIME = 2 ns
-P I0 _in STD_LOGIC_VECTOR[NB-1:0]
-P I1 _in STD_LOGIC_VECTOR[NB-1:0]
-P I2 _in STD_LOGIC_VECTOR[NB-1:0]
-P I3 _in STD_LOGIC_VECTOR[NB-1:0]
-P Sel _in STD_LOGIC_VECTOR[1:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X Mux4x1
-V 000058 60 403 1354555818554 ./compile/Mux4x1.vhd*Mux4x1
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВMux4x1>ЙAЙВNBВintegerДЙВTselВtimeДВnsЙВTdataВtimeДВnsЙЙBЙ ВI0…Вstd_logic_vectorВNBДsД Й!ВI1…Вstd_logic_vectorВNBДsД Й"ВI2…Вstd_logic_vectorВNBДsД Й#ВI3…Вstd_logic_vectorВNBДsД Й$ВSel…Вstd_logic_vectorДsД Й%ВO†Вstd_logic_vectorВNBДsД Й&Й'@ВMux4x1Л М   @ Б
-V 000062 60 15 1354555818554 ./compile/Mux4x1.vhd*Mux4x1__opt
-222222222222V 000036 70 64 1354555818554 mux4x1
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000068 60 348 1354555818556 ./compile/Mux4x1.vhd*Mux4x1|21+Mux4x1
-Ver. 1.30.v98.64
-К Й)LВMux4x1DВMux4x1>Й+?Й/ВMux4x1Й0NВI0ВI1ВI2ВI3ВSelЙ3„ВDelayВtimeД ВnsЙ4?Й5UВSelВevent]Й6ВDelayВTselЙ7_Й8ВDelayВTdataЙ9@UЙ:`ВSel>Й;aЖ"00"ВO ВI0ЌВDelayЙ<aЖ"01"ВO ВI1ЌВDelayЙ=aЖ"10"ВO ВI2ЌВDelayЙ>aЖ"11"ВO ВI3ЌВDelayЙ?aFВO FЕXЌВDelayЙ@@`ЙA@NЙC@ВMux4x1Л М   @ Б
-I 000072 60 15 1354555818556 ./compile/Mux4x1.vhd*Mux4x1|21+Mux4x1__opt
-222222222I 000043 70 64 1354555818556 mux4x1|Mux4x1
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000036 11 144 1354555818589 ou_np
-E Ou_NP VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NP INTEGER = 4
-P Ss _in STD_LOGIC_VECTOR[NP-1:0]
-P S _out STD_LOGIC
-X Ou_NP
-V 000056 60 183 1354555818588 ./compile/Ou_NP.vhd*Ou_NP
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВOu_NP>ЙAЙВNPВintegerДЙЙBЙВSs…Вstd_logic_vectorВNPДsД ЙВS†В	std_logicЙ Й!@ВOu_NPЛ М   @ Б
-V 000060 60 15 1354555818588 ./compile/Ou_NP.vhd*Ou_NP__opt
-222222222222V 000035 70 64 1354555818588 ou_np
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000065 60 189 1354555818590 ./compile/Ou_NP.vhd*Ou_NP|21+Ou_NP
-Ver. 1.30.v98.64
-К Й#LВOu_NPDВOu_NP>Й%?Й)ВOu_NPЙ*NВSsЙ.„ВtempВ	std_logicЕ0Й/?Й1ВtempЕ0Й2EВj…Д rВNPДbЙ3ВtempВtempiВSsВjЙ4@bЙ5ВS ВtempЙ6@NЙ8@ВOu_NPЛ	 М   @ Б
-I 000069 60 15 1354555818590 ./compile/Ou_NP.vhd*Ou_NP|21+Ou_NP__opt
-222222222I 000041 70 64 1354555818590 ou_np|Ou_NP
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000037 11 470 1354555818620 mux8x1
-E Mux8x1 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsel TIME = 3 ns
-G Tdata TIME = 2 ns
-P I0 _in STD_LOGIC_VECTOR[NB-1:0]
-P I1 _in STD_LOGIC_VECTOR[NB-1:0]
-P I2 _in STD_LOGIC_VECTOR[NB-1:0]
-P I3 _in STD_LOGIC_VECTOR[NB-1:0]
-P I4 _in STD_LOGIC_VECTOR[NB-1:0]
-P I5 _in STD_LOGIC_VECTOR[NB-1:0]
-P I6 _in STD_LOGIC_VECTOR[NB-1:0]
-P I7 _in STD_LOGIC_VECTOR[NB-1:0]
-P Sel _in STD_LOGIC_VECTOR[2:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X Mux8x1
-V 000058 60 559 1354555818619 ./compile/Mux8x1.vhd*Mux8x1
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВMux8x1>ЙAЙВNBВintegerДЙВTselВtimeДВnsЙВTdataВtimeДВnsЙЙBЙ ВI0…Вstd_logic_vectorВNBДsД Й!ВI1…Вstd_logic_vectorВNBДsД Й"ВI2…Вstd_logic_vectorВNBДsД Й#ВI3…Вstd_logic_vectorВNBДsД Й$ВI4…Вstd_logic_vectorВNBДsД Й%ВI5…Вstd_logic_vectorВNBДsД Й&ВI6…Вstd_logic_vectorВNBДsД Й'ВI7…Вstd_logic_vectorВNBДsД Й(ВSel…Вstd_logic_vectorДsД Й)ВO†Вstd_logic_vectorВNBДsД Й*Й+@ВMux8x1Л! М   @ Б
-V 000062 60 15 1354555818619 ./compile/Mux8x1.vhd*Mux8x1__opt
-222222222222V 000036 70 64 1354555818619 mux8x1
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000068 60 484 1354555818621 ./compile/Mux8x1.vhd*Mux8x1|21+Mux8x1
-Ver. 1.30.v98.64
-К Й-LВMux8x1DВMux8x1>Й/?Й3ВMux8x1Й4NВI0ВI1ВI2ВI3ВI4ВI5ВI6ВI7ВSelЙ7„ВDelayВtimeД ВnsЙ8?Й9UВSelВevent]Й:ВDelayВTselЙ;_Й<ВDelayВTdataЙ=@UЙ>`ВSel>Й?aЖ"000"ВO ВI0ЌВDelayЙ@aЖ"001"ВO ВI1ЌВDelayЙAaЖ"010"ВO ВI2ЌВDelayЙBaЖ"011"ВO ВI3ЌВDelayЙCaЖ"100"ВO ВI4ЌВDelayЙDaЖ"101"ВO ВI5ЌВDelayЙEaЖ"110"ВO ВI6ЌВDelayЙFaЖ"111"ВO ВI7ЌВDelayЙGaFВO FЕXЌВDelayЙH@`ЙI@NЙK@ВMux8x1Л М   @ Б
-I 000072 60 15 1354555818621 ./compile/Mux8x1.vhd*Mux8x1|21+Mux8x1__opt
-222222222I 000043 70 64 1354555818621 mux8x1|Mux8x1
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000044 11 298 1354555818655 multiplexador
-E multiplexador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsel TIME = 2 ns
-G Tdata TIME = 1 ns
-P S _in STD_LOGIC
-P I0 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P I1 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P O _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X multiplexador
-V 000072 60 355 1354555818654 ./compile/multiplexador.vhd*multiplexador
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВmultiplexador>ЙAЙВ
-NumeroBitsВintegerДЙВTselВtimeДВnsЙВTdataВtimeДВnsЙЙBЙ ВS…В	std_logicЙ!ВI0…Вstd_logic_vectorВ
-NumeroBitsДsД Й"ВI1…Вstd_logic_vectorВ
-NumeroBitsДsД Й#ВO†Вstd_logic_vectorВ
-NumeroBitsДsД Й$Й%@ВmultiplexadorЛ М   @ Б
-V 000076 60 15 1354555818654 ./compile/multiplexador.vhd*multiplexador__opt
-222222222222V 000043 70 64 1354555818654 multiplexador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000089 60 288 1354555818656 ./compile/multiplexador.vhd*multiplexador|21+multiplexador
-Ver. 1.30.v98.64
-К Й'LВmultiplexadorDВmultiplexador>Й)?Й-ВMuxЙ.NВI0ВI1ВSЙ1„ВDelayВtimeД ВnsЙ2?Й3UВSВevent]Й4ВDelayВTselЙ5_Й6ВDelayВTdataЙ7@UЙ8`ВS>Й9aЕ0ВO ВI0ЌВDelayЙ:aЕ1ВO ВI1ЌВDelayЙ;aFВO FЕXЌВDelayЙ<@`Й=@NЙ?@ВmultiplexadorЛ
- М   @ Б
-I 000093 60 15 1354555818656 ./compile/multiplexador.vhd*multiplexador|21+multiplexador__opt
-222222222I 000057 70 64 1354555818656 multiplexador|multiplexador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000037 11 251 1354555818687 minimo
-E minimo VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tmin TIME = 3 ns
-P In1 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P In2 _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X minimo
-V 000058 60 364 1354555818686 ./compile/minimo.vhd*minimo
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВminimo>ЙAЙВ
-NumeroBitsВintegerДЙВTminВtimeДВnsЙЙBЙ ВIn1…Вstd_logic_vectorВ
-NumeroBitsДsД Й!ВIn2…Вstd_logic_vectorВ
-NumeroBitsДsД Й"ВOut1†Вstd_logic_vectorВ
-NumeroBitsДsД Й#Й$@ВminimoЛ М   @ Б
-V 000062 60 15 1354555818686 ./compile/minimo.vhd*minimo__opt
-222222222222V 000037 70 195 1354555818686 minimo
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000068 60 117 1354555818688 ./compile/minimo.vhd*minimo|21+minimo
-Ver. 1.30.v98.64
-К Й&LВminimoDВminimo>Й(?Й+ВOut1 ВIn1ЌВTminaВIn1 ВIn2_Й,ВIn2ЌВTminЙ.@ВminimoЛ М   @ Б
-I 000072 60 15 1354555818688 ./compile/minimo.vhd*minimo|21+minimo__opt
-222222222I 000044 70 195 1354555818688 minimo|minimo
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000040 11 216 1354555818720 deslocad1
-E DeslocaD1 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tdesl1 TIME = 1 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X DeslocaD1
-V 000064 60 324 1354555818719 ./compile/deslocad1.vhd*DeslocaD1
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВ	DeslocaD1>ЙAЙВ
-NumeroBitsВintegerДЙВTdesl1ВtimeДВnsЙЙBЙ ВIn1…Вstd_logic_vectorВ
-numeroBitsДsД Й!ВOut1†Вstd_logic_vectorВ
-numeroBitsДsД Й"Й#@В	DeslocaD1Л М   @ Б
-V 000068 60 15 1354555818719 ./compile/deslocad1.vhd*DeslocaD1__opt
-222222222222V 000040 70 195 1354555818719 deslocad1
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000077 60 122 1354555818721 ./compile/deslocad1.vhd*DeslocaD1|21+DeslocaD1
-Ver. 1.30.v98.64
-К Й%LВ	DeslocaD1DВ	DeslocaD1>Й'?Й*ВOut1 Е0"ВIn1В
-NumeroBitsДsДЌВTdesl1Й,@В	DeslocaD1Л М   @ Б
-I 000081 60 15 1354555818721 ./compile/deslocad1.vhd*DeslocaD1|21+DeslocaD1__opt
-222222222I 000050 70 195 1354555818721 deslocad1|DeslocaD1
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000035 11 131 1354555818751 fuse
-E Fuse VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P FI _in STD_LOGIC
-P FIL _in STD_LOGIC
-P I _in STD_LOGIC
-P S _out STD_LOGIC
-X Fuse
-V 000058 60 175 1354555818750 ./compile/Fuse_and.vhd*Fuse
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВFuse>ЙBЙВFI…В	std_logicЙВFIL…В	std_logicЙВI…В	std_logicЙВS†В	std_logicЙЙ @ВFuseЛ М   @ Б
-V 000062 60 15 1354555818750 ./compile/Fuse_and.vhd*Fuse__opt
-222222222222V 000034 70 64 1354555818750 fuse
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000066 60 199 1354555818752 ./compile/Fuse_and.vhd*Fuse|21+Fuse
-Ver. 1.30.v98.64
-К Й"LВFuseDВFuse>Й&ЃВILВ	std_logicЙ'ЃВIL_FВ	std_logicЙ(ЃВI_FВ	std_logicЙ*?Й.ВIL pВIЙ0ВIL_F pВFILiВILЙ2ВS ВI_FhВIL_FЙ4ВI_F pВFIiВIЙ7@ВFuseЛ М   @ Б
-I 000070 60 15 1354555818752 ./compile/Fuse_and.vhd*Fuse|21+Fuse__opt
-222222222I 000039 70 64 1354555818752 fuse|Fuse
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000039 11 218 1354555818782 log_sinc
-E Log_Sinc VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NSb INTEGER = 8
-G Tprop TIME = 1 ns
-P clk _in STD_LOGIC
-P PCborda _in STD_LOGIC_VECTOR[NSb-1:0]
-P Sborda _out STD_LOGIC_VECTOR[NSb-1:0]
-X Log_Sinc
-V 000062 60 266 1354555818781 ./compile/Log_Sinc.vhd*Log_Sinc
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВLog_Sinc>ЙAЙВNSbВintegerДЙВTpropВtimeДВnsЙЙBЙВclk…В	std_logicЙ ВPCborda…Вstd_logic_vectorВNSbДsД Й!ВSborda†Вstd_logic_vectorВNSbДsД Й"Й#@ВLog_SincЛ	 М   @ Б
-V 000066 60 15 1354555818781 ./compile/Log_Sinc.vhd*Log_Sinc__opt
-222222222222V 000038 70 64 1354555818781 log_sinc
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000074 60 119 1354555818783 ./compile/Log_Sinc.vhd*Log_Sinc|21+Log_Sinc
-Ver. 1.30.v98.64
-К Й%LВLog_SincDВLog_Sinc>Й'?Й*ВSborda ВPCbordaЌВTpropaВclkЕ1_Й+FЕ0Й-@ВLog_SincЛ М   @ Б
-I 000078 60 15 1354555818783 ./compile/Log_Sinc.vhd*Log_Sinc|21+Log_Sinc__opt
-222222222I 000047 70 64 1354555818783 log_sinc|Log_Sinc
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000037 11 180 1354555818813 maisum
-E maisum VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tprop TIME = 2 ns
-P I _in STD_LOGIC_VECTOR[NB-1:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X maisum
-V 000058 60 288 1354555818812 ./compile/maisum.vhd*maisum
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВmaisum>ЙAЙВNBВintegerДЙВTpropВtimeДВnsЙЙBЙ ВI…Вstd_logic_vectorВNBДsД Й!ВO†Вstd_logic_vectorВNBДsД Й"Й#@ВmaisumЛ М   @ Б
-V 000062 60 15 1354555818812 ./compile/maisum.vhd*maisum__opt
-222222222222V 000037 70 195 1354555818812 maisum
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000067 60 87 1354555818814 ./compile/maisum.vhd*maisum|21+maisum
-Ver. 1.30.v98.64
-К Й%LВmaisumDВmaisum>Й'?Й*ВO ВIДЌВTpropЙ,@ВmaisumЛ М   @ Б
-I 000072 60 15 1354555818814 ./compile/maisum.vhd*maisum|21+maisum__opt
-222222222I 000044 70 195 1354555818814 maisum|maisum
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000054 11 251 1354555818846 deslocador_combinatorio
-E deslocador_combinatorio VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G NBD INTEGER = 1
-G Tprop TIME = 1 ns
-P DE _in STD_LOGIC
-P I _in STD_LOGIC_VECTOR[NB-1:0]
-P O _out STD_LOGIC_VECTOR[NB-1:0]
-X deslocador_combinatorio
-V 000092 60 302 1354555818845 ./compile/deslocador_combinatorio.vhd*deslocador_combinatorio
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВdeslocador_combinatorio>ЙAЙВNBВintegerДЙВNBDВintegerДЙВTpropВtimeДВnsЙЙBЙ ВDE…В	std_logicЙ!ВI…Вstd_logic_vectorВNBДsД Й"ВO†Вstd_logic_vectorВNBДsД Й#Й$@Вdeslocador_combinatorioЛ
- М   @ Б
-V 000096 60 15 1354555818845 ./compile/deslocador_combinatorio.vhd*deslocador_combinatorio__opt
-222222222222V 000053 70 64 1354555818845 deslocador_combinatorio
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000119 60 296 1354555818847 ./compile/deslocador_combinatorio.vhd*deslocador_combinatorio|21+deslocador_combinatorio
-Ver. 1.30.v98.64
-К Й&LВdeslocador_combinatorioDВdeslocador_combinatorio>Й)|ВZerВstd_logic_vectorВNBДsД FЕ0Й,?Й/OВDEPЙ0ВO ВZerВNBДsВNBВNBD"ВIВNBДsВNBDЌВTpropaЕ0Й1ВIВNBДВNBDsД "ВZerВNBDДsД ЌВTpropaЕ1Й2ВIaFЙ4@Вdeslocador_combinatorioЛ М   @ Б
-I 000123 60 15 1354555818847 ./compile/deslocador_combinatorio.vhd*deslocador_combinatorio|21+deslocador_combinatorio__opt
-222222222I 000077 70 64 1354555818847 deslocador_combinatorio|deslocador_combinatorio
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000042 11 418 1354555818880 dualregfile
-E DualRegFile VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NBend INTEGER = 4
-G NBdado INTEGER = 8
-G Tread TIME = 5 ns
-G Twrite TIME = 5 ns
-P clk _in STD_LOGIC
-P we _in STD_LOGIC
-P dadoina _in STD_LOGIC_VECTOR[NBdado-1:0]
-P enda _in STD_LOGIC_VECTOR[NBend-1:0]
-P endb _in STD_LOGIC_VECTOR[NBend-1:0]
-P dadoouta _out STD_LOGIC_VECTOR[NBdado-1:0]
-P dadooutb _out STD_LOGIC_VECTOR[NBdado-1:0]
-X DualRegFile
-V 000068 60 514 1354555818879 ./compile/DualRegFile.vhd*DualRegFile
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=Вieee
-Вnumeric_std
-GЙHВDualRegFile>ЙAЙВNBendВintegerДЙВNBdadoВintegerДЙВTreadВtimeДВnsЙВTwriteВtimeДВnsЙЙ BЙ!Вclk…В	std_logicЙ"Вwe…В	std_logicЙ#Вdadoina…Вstd_logic_vectorВNBdadoДsД Й$Вenda…Вstd_logic_vectorВNBendДsД Й%Вendb…Вstd_logic_vectorВNBendДsД Й&Вdadoouta†Вstd_logic_vectorВNBdadoДsД Й'Вdadooutb†Вstd_logic_vectorВNBdadoДsД Й(Й)@ВDualRegFileЛ М   @ Б
-V 000072 60 15 1354555818879 ./compile/DualRegFile.vhd*DualRegFile__opt
-222222222222V 000042 70 125 1354555818879 dualregfile
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000083 60 591 1354555818881 ./compile/DualRegFile.vhd*DualRegFile|21+DualRegFile
-Ver. 1.30.v98.64
-К Й+LВDualRegFileDВDualRegFile>Й.}Вram_type>xД rДВNBendДЙ/DВstd_logic_vectorВNBdadoДsД Й0ЃВramВram_typeЙ5ЃВenda_regВstd_logic_vectorВNBendДsД Й6ЃВendb_regВstd_logic_vectorВNBendДsД Й8?Й<ВRegisterMemoryЙ=NВclkЙA?ЙBUВclkВeventhВclkЕ1]ЙCUВweЕ1]ЙDВramВ
-to_integerВunsignedВenda ВdadoinaЌВTwriteЙE@UЙFВenda_reg ВendaЙGВendb_reg ВendbЙH@UЙI@NЙLВdadoouta ВramВ
-to_integerВunsignedЙMВenda_regЌВTreadЙNВdadooutb ВramВ
-to_integerВunsignedЙOВendb_regЌВTreadЙQ@ВDualRegFileЛ М   @ Б
-I 000087 60 15 1354555818881 ./compile/DualRegFile.vhd*DualRegFile|21+DualRegFile__opt
-222222222I 000054 70 125 1354555818881 dualregfile|DualRegFile
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000041 11 344 1354555818914 deslocador
-E deslocador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tcarga TIME = 3 ns
-G Tdesl TIME = 2 ns
-P Clk _in STD_LOGIC
-P D_E _in STD_LOGIC
-P InBit _in STD_LOGIC
-P T_D _in STD_LOGIC
-P InA _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P SaiBit _out STD_LOGIC
-P OutA _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X deslocador
-V 000066 60 399 1354555818913 ./compile/deslocador.vhd*deslocador
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВ
-deslocador>ЙAЙВ
-NumeroBitsВintegerДЙВTcargaВtimeДВnsЙВTdeslВtimeДВnsЙЙBЙ ВClk…В	std_logicЙ!ВD_E…В	std_logicЙ"ВInBit…В	std_logicЙ#ВT_D…В	std_logicЙ$ВInA…Вstd_logic_vectorВ
-NumeroBitsДsД Й%ВSaiBit†В	std_logicЙ&ВOutA†Вstd_logic_vectorВ
-NumeroBitsДsД Й'Й(@В
-deslocadorЛ М   @ Б
-V 000070 60 15 1354555818913 ./compile/deslocador.vhd*deslocador__opt
-222222222222V 000040 70 64 1354555818913 deslocador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000080 60 434 1354555818915 ./compile/deslocador.vhd*deslocador|21+deslocador
-Ver. 1.30.v98.64
-К Й*LВ
-deslocadorDВ
-deslocador>Й,?Й/В
-deslocadorMВClkВeventhВClkЕ1Й0?Й1ВOutA QВInAЌВTcargaaВT_DЕ0_Й2ВInAВ
-NumeroBitsДsД "ВInBitЌВTdeslaВT_DЕ1hВD_EЕ0_Й3ВInBit"ВInAВ
-NumeroBitsДsДЌВTdeslaВT_DЕ1hВD_EЕ1Й5ВSaiBit QЕ0ЌВTcargaaВT_DЕ0_Й6ВInAВ
-NumeroBitsДЌВTdeslaВT_DЕ1hВD_EЕ0_Й7ВInAД ЌВTdeslaВT_DЕ1hВD_EЕ1Й8@MВ
-deslocadorЙ:@В
-deslocadorЛ М   @ Б
-I 000084 60 15 1354555818915 ./compile/deslocador.vhd*deslocador|21+deslocador__opt
-222222222I 000051 70 64 1354555818915 deslocador|deslocador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000040 11 216 1354555818953 deslocad3
-E DeslocaD3 VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tdesl3 TIME = 1 ns
-P In1 _in STD_LOGIC_VECTOR[numeroBits-1:0]
-P Out1 _out STD_LOGIC_VECTOR[numeroBits-1:0]
-X DeslocaD3
-V 000064 60 324 1354555818952 ./compile/deslocad3.vhd*DeslocaD3
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВ	DeslocaD3>ЙAЙВ
-NumeroBitsВintegerДЙВTdesl3ВtimeДВnsЙЙBЙ ВIn1…Вstd_logic_vectorВ
-numeroBitsДsД Й!ВOut1†Вstd_logic_vectorВ
-numeroBitsДsД Й"Й#@В	DeslocaD3Л М   @ Б
-V 000068 60 15 1354555818952 ./compile/deslocad3.vhd*DeslocaD3__opt
-222222222222V 000040 70 195 1354555818952 deslocad3
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000077 60 127 1354555818954 ./compile/deslocad3.vhd*DeslocaD3|21+DeslocaD3
-Ver. 1.30.v98.64
-К Й%LВ	DeslocaD3DВ	DeslocaD3>Й'?Й*ВOut1 Ж"000""ВIn1В
-NumeroBitsДsДЌВTdesl3Й,@В	DeslocaD3Л М   @ Б
-I 000081 60 15 1354555818954 ./compile/deslocad3.vhd*DeslocaD3|21+DeslocaD3__opt
-222222222I 000050 70 195 1354555818954 deslocad3|DeslocaD3
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000045 11 264 1354555818985 buffertristate
-E bufferTristate VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tenable TIME = 1 ns
-G Tdisable TIME = 2 ns
-P Oe _in STD_LOGIC
-P I _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P O _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X bufferTristate
-V 000074 60 316 1354555818984 ./compile/buffertristate.vhd*bufferTristate
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВbufferTristate>ЙAЙВ
-NumeroBitsВintegerДЙВTenableВtimeДВnsЙВTdisableВtimeДВnsЙЙBЙ ВOe…В	std_logicЙ!ВI…Вstd_logic_vectorВ
-NumeroBitsДsД Й"ВO†Вstd_logic_vectorВ
-NumeroBitsДsД Й#Й$@ВbufferTristateЛ
- М   @ Б
-V 000078 60 15 1354555818984 ./compile/buffertristate.vhd*bufferTristate__opt
-222222222222V 000044 70 64 1354555818984 buffertristate
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000092 60 138 1354555818986 ./compile/buffertristate.vhd*bufferTristate|21+bufferTristate
-Ver. 1.30.v98.64
-К Й&LВbufferTristateDВbufferTristate>Й(?Й+ВO ВIЌВTenableaВOeЕ1_Й,FЕZЌВTdisableЙ.@ВbufferTristateЛ М   @ Б
-I 000096 60 15 1354555818986 ./compile/buffertristate.vhd*bufferTristate|21+bufferTristate__opt
-222222222I 000059 70 64 1354555818986 buffertristate|bufferTristate
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000044 11 138 1354555819015 decodificador
-E Decodificador VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P In0 _in STD_LOGIC_VECTOR[2:0]
-P Sai _out STD_LOGIC_VECTOR[7:0]
-X Decodificador
-V 000072 60 184 1354555819014 ./compile/Decodificador.vhd*Decodificador
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВDecodificador>ЙBЙВIn0…Вstd_logic_vectorДsД ЙВSai†Вstd_logic_vectorДsД ЙЙ@ВDecodificadorЛ М   @ Б
-V 000076 60 15 1354555819014 ./compile/Decodificador.vhd*Decodificador__opt
-222222222222V 000043 70 64 1354555819014 decodificador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000089 60 303 1354555819016 ./compile/Decodificador.vhd*Decodificador|21+Decodificador
-Ver. 1.30.v98.64
-К ЙLВDecodificadorDВDecodificador>Й!?Й$OВIn0PЙ%Вsai Ж
-"00000001"aЖ"000"Й&Ж
-"00000010"aЖ"001"Й'Ж
-"00000100"aЖ"010"Й(Ж
-"00001000"aЖ"011"Й)Ж
-"00010000"aЖ"100"Й*Ж
-"00100000"aЖ"101"Й+Ж
-"01000000"aЖ"110"Й,Ж
-"10000000"aЖ"111"Й-Ж
-"XXXXXXXX"aFЙ/@ВDecodificadorЛ М   @ Б
-I 000093 60 15 1354555819016 ./compile/Decodificador.vhd*Decodificador|21+Decodificador__opt
-222222222I 000057 70 64 1354555819016 decodificador|Decodificador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000039 11 339 1354555819044 contador
-E contador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-G Tsetup TIME = 2 ns
-G Tcarga TIME = 5 ns
-G Tcount TIME = 3 ns
-P C _in STD_LOGIC
-P LC _in STD_LOGIC
-P R _in STD_LOGIC
-P UD _in STD_LOGIC
-P D _in STD_LOGIC_VECTOR[NB-1:0]
-P U _out STD_LOGIC
-P Z _out STD_LOGIC
-P Q _out STD_LOGIC_VECTOR[NB-1:0]
-X contador
-V 000062 60 459 1354555819043 ./compile/contador.vhd*contador
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВcontador>ЙAЙВNBВintegerДЙВTsetupВtimeДВnsЙВTcargaВtimeДВnsЙВTcountВtimeДВnsЙ Й!BЙ"ВC…В	std_logicЙ#ВLC…В	std_logicЙ$ВR…В	std_logicЙ%ВUD…В	std_logicЙ&ВD…Вstd_logic_vectorВNBДsД Й'ВU†В	std_logicЙ(ВZ†В	std_logicЙ)ВQ†Вstd_logic_vectorВNBДsД Й*Й+@ВcontadorЛ М   @ Б
-V 000066 60 15 1354555819043 ./compile/contador.vhd*contador__opt
-222222222222V 000039 70 195 1354555819043 contador
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000074 60 616 1354555819045 ./compile/contador.vhd*contador|21+contador
-Ver. 1.30.v98.64
-К Й-LВcontadorDВcontador>Й0|ВZeroВstd_logic_vectorВNBДsД FЕ0Й1|ВTudoUmВstd_logic_vectorВNBДsД FЕ1Й6ЃВQiВstd_logic_vectorВNBДsД Й8?Й<ВcountЙ=NВCВRЙ@?ЙAUВRЕ1]ЙBВQi FЕ0ЌВTcargaЙC^ВcВeventhВcЕ1]ЙE`ВLC>ЙFaЕ0ЙGUВDВ
-last_eventВTsetup]ЙHВQi FЕXЌВTcargaЙI_ЙJВQi ВDЌВTcargaЙK@UЙLaЕ1ЙM`ВUD>ЙNaЕ0ЙOВQi ВQiДЌВTcountЙPaЕ1ЙQВQi ВQiДЌВTcountЙRaFЙSВQi ВQiЙT@`ЙUaFЙVВQi ВQiЙW@`ЙX@UЙY@NЙ\ВQ ВQiЙ]ВZ Е1ЌВTcountaВQiВZero_Й^Е0ЌВTcountЙ_ВU Е1ЌВTcountaВQiВTudoUm_Й`Е0ЌВTcountЙb@ВcontadorЛ М   @ Б
-I 000078 60 15 1354555819045 ./compile/contador.vhd*contador|21+contador__opt
-222222222I 000048 70 195 1354555819045 contador|contador
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000046 11 348 1354555819083 absminmaxsomsub
-E absminmaxsomsub VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tsom TIME = 5 ns
-G Tabs TIME = 2 ns
-G Tsub TIME = 5 ns
-G Tmm TIME = 3 ns
-P C _in STD_LOGIC_VECTOR[2:0]
-P a _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P b _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P f _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X absminmaxsomsub
-V 000076 60 476 1354555819082 ./compile/absminmaxsomsub.vhd*absminmaxsomsub
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ=ВIEEE
-Вstd_logic_arith
-GЙ=ВIEEE
-Вstd_logic_signed
-GЙHВabsminmaxsomsub>ЙAЙВ
-NumeroBitsВintegerДЙВTsomВtimeДВnsЙВTabsВtimeДВnsЙВTsubВtimeДВnsЙ ВTmmВtimeДВnsЙ!Й"BЙ#ВC…Вstd_logic_vectorДsД Й$Вa…Вstd_logic_vectorВ
-NumeroBitsДsД Й%Вb…Вstd_logic_vectorВ
-NumeroBitsДsД Й&Вf†Вstd_logic_vectorВ
-NumeroBitsДsД Й'Й(@ВabsminmaxsomsubЛ М   @ Б
-V 000080 60 15 1354555819082 ./compile/absminmaxsomsub.vhd*absminmaxsomsub__opt
-222222222222V 000046 70 195 1354555819082 absminmaxsomsub
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-I 000095 60 536 1354555819084 ./compile/absminmaxsomsub.vhd*absminmaxsomsub|21+absminmaxsomsub
-Ver. 1.30.v98.64
-К Й*LВabsminmaxsomsubDВabsminmaxsomsub>Й-ЃВminВmaxВabsaВabsbВstd_logic_vectorВ
-NumeroBitsДsД Й0?Й3Вmin ВaaВa Вb_Й4ВbЙ5Вmax ВaaВa!Вb_Й6ВbЙ7Вabsa ВaaВaВ
-NumeroBitsДЕ0_Й8pВaДЙ9Вabsb ВbaВbВ
-NumeroBitsДЕ0_Й:pВbДЙ;Вunidade_funcionalЙ<OВCPЙ=Вf ВaВbЌВTsomaЖ"001"Й>ВabsbЌВTabsaЖ"010"Й?ВbВaЌВTsubaЖ"011"Й@ВabsaЌВTabsaЖ"100"ЙAВaВbЌВTsubaЖ"101"ЙBВminЌВTmmaЖ"110"ЙCВmaxЌВTmmaЖ"111"ЙDFЕ0aFЙF@ВabsminmaxsomsubЛ М   @ Б
-I 000099 60 15 1354555819084 ./compile/absminmaxsomsub.vhd*absminmaxsomsub|21+absminmaxsomsub__opt
-222222222I 000062 70 195 1354555819084 absminmaxsomsub|absminmaxsomsub
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000042 11 289 1354555819118 registrador
-E registrador VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NumeroBits INTEGER = 8
-G Tprop TIME = 5 ns
-G Tsetup TIME = 2 ns
-P C _in STD_LOGIC
-P R _in STD_LOGIC
-P S _in STD_LOGIC
-P D _in STD_LOGIC_VECTOR[NumeroBits-1:0]
-P Q _out STD_LOGIC_VECTOR[NumeroBits-1:0]
-X registrador
-V 000068 60 343 1354555819117 ./compile/registrador.vhd*registrador
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВregistrador>ЙAЙВ
-NumeroBitsВINTEGERДЙВTpropВtimeДВnsЙВTsetupВtimeДВnsЙЙBЙВC…В	std_logicЙ ВR…В	std_logicЙ!ВS…В	std_logicЙ"ВD…Вstd_logic_vectorВ
-NumeroBitsДsД Й#ВQ†Вstd_logic_vectorВ
-NumeroBitsДsД Й$Й%@ВregistradorЛ М   @ Б
-V 000072 60 15 1354555819117 ./compile/registrador.vhd*registrador__opt
-222222222222V 000041 70 64 1354555819117 registrador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000083 60 444 1354555819119 ./compile/registrador.vhd*registrador|21+registrador
-Ver. 1.30.v98.64
-К Й'LВregistradorDВregistrador>Й+ЃВqiВstd_logic_vectorВ
-NumeroBitsДsД Й-?Й1ВRegistradorЙ2NВCВSВRЙ5?Й6UВRЕ1]Й7ВqiВ
-NumeroBitsДsД  FЕ0Й8^ВSЕ1]Й9ВqiВ
-NUmeroBitsДsД  FЕ1Й:^ВCВeventhВCЕ1]Й;UВDВ
-last_eventВTsetup]Й<[ЖH"Violaзгo de Set-up time no registrador, valor da saнda indefinido = U."Й=Вqi FЕUЙ>_Й?Вqi ВDЙ@@UЙA@UЙB@NЙEВQ ВqiЌВTpropЙG@ВregistradorЛ М   @ Б
-I 000087 60 15 1354555819119 ./compile/registrador.vhd*registrador|21+registrador__opt
-222222222I 000053 70 64 1354555819119 registrador|registrador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000033 11 162 1354555819149 ha
-E HA VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G Tgate TIME = 1 ns
-P x _in STD_LOGIC
-P y _in STD_LOGIC
-P g _out STD_LOGIC
-P p _out STD_LOGIC
-X HA
-V 000050 60 199 1354555819148 ./compile/HA.vhd*HA
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВHA>ЙAЙВTgateВtimeДВnsЙЙBЙВx…В	std_logicЙВy…В	std_logicЙ Вg†В	std_logicЙ!Вp†В	std_logicЙ"Й#@ВHAЛ М   @ Б
-V 000054 60 15 1354555819148 ./compile/HA.vhd*HA__opt
-222222222222V 000032 70 64 1354555819148 ha
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000056 60 101 1354555819150 ./compile/HA.vhd*HA|21+HA
-Ver. 1.30.v98.64
-К Й%LВHADВHA>Й'?Й*Вp ВxjВyЌДВTgateЙ+Вg ВxhВyЌВTgateЙ-@ВHAЛ М   @ Б
-I 000060 60 15 1354555819150 ./compile/HA.vhd*HA|21+HA__opt
-222222222I 000035 70 64 1354555819150 ha|HA
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000038 11 118 1354555819178 fuse_ou
-E fuse_ou VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P Fp _in STD_LOGIC
-P P _in STD_LOGIC
-P Ss _out STD_LOGIC
-X fuse_ou
-V 000060 60 161 1354555819177 ./compile/fuse_ou.vhd*fuse_ou
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВfuse_ou>ЙBЙВFp…В	std_logicЙВP…В	std_logicЙВSs†В	std_logicЙЙ@Вfuse_ouЛ М   @ Б
-V 000064 60 15 1354555819177 ./compile/fuse_ou.vhd*fuse_ou__opt
-222222222222V 000037 70 64 1354555819177 fuse_ou
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000070 60 85 1354555819179 ./compile/fuse_ou.vhd*fuse_ou|21+fuse_ou
-Ver. 1.30.v98.64
-К Й!LВfuse_ouDВfuse_ou>Й#?Й&ВSs ВPhВFpЙ(@Вfuse_ouЛ М   @ Б
-I 000075 60 15 1354555819179 ./compile/fuse_ou.vhd*fuse_ou|21+fuse_ou__opt
-222222222I 000045 70 64 1354555819179 fuse_ou|fuse_ou
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000037 11 146 1354555819213 and_ne
-E And_NE VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NE INTEGER = 4
-P Sp _in STD_LOGIC_VECTOR[NE-1:0]
-P P _out STD_LOGIC
-X And_NE
-V 000058 60 185 1354555819212 ./compile/And_NE.vhd*And_NE
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВAnd_NE>ЙAЙВNEВintegerДЙЙBЙВSp…Вstd_logic_vectorВNEДsД ЙВP†В	std_logicЙ Й!@ВAnd_NEЛ М   @ Б
-V 000062 60 15 1354555819212 ./compile/And_NE.vhd*And_NE__opt
-222222222222V 000036 70 64 1354555819212 and_ne
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000068 60 193 1354555819214 ./compile/And_NE.vhd*And_NE|21+And_NE
-Ver. 1.30.v98.64
-К Й#LВAnd_NEDВAnd_NE>Й%?Й)ВAnd_NEЙ*NВSpЙ.„ВtempВ	std_logicЕ1Й/?Й1ВtempЕ1Й2EВi…Д rВNEДbЙ3ВtempВtemphВSpВiЙ4@bЙ5ВP ВtempЙ6@NЙ8@ВAnd_NEЛ	 М   @ Б
-I 000072 60 15 1354555819214 ./compile/And_NE.vhd*And_NE|21+And_NE__opt
-222222222I 000043 70 64 1354555819214 and_ne|And_NE
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000033 11 145 1354555819245 fa
-E FA VHDL
-L IEEE;
-U ieee.std_logic_1164;
-PL 0
-P ci _in STD_LOGIC
-P x _in STD_LOGIC
-P y _in STD_LOGIC
-P co _out STD_LOGIC
-P s _out STD_LOGIC
-X FA
-V 000050 60 220 1354555819244 ./compile/FA.vhd*FA
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ<ВBiblioteca_de_ComponentesЙHВFA>ЙBЙВci…В	std_logicЙВx…В	std_logicЙ Вy…В	std_logicЙ!Вco†В	std_logicЙ"Вs†В	std_logicЙ#Й$@ВFAЛ М   @ Б
-V 000054 60 15 1354555819244 ./compile/FA.vhd*FA__opt
-222222222222V 000032 70 64 1354555819244 fa
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000056 60 410 1354555819246 ./compile/FA.vhd*FA|21+FA
-Ver. 1.30.v98.64
-К Й&LВFADВFA>Й*zВhaЙ+AЙ,ВTgateВTIMEДВnsЙ-Й.BЙ/Вx…В	STD_LOGICЙ0Вy…В	STD_LOGICЙ1Вg†В	STD_LOGICЙ2Вp†В	STD_LOGICЙ3Й4@zЙ8ЃВNET103В	STD_LOGICЙ9ЃВNET83В	STD_LOGICЙ:ЃВNET95В	STD_LOGICЙ<?Й@ВU1ВhaЙABJЙBВgВNET95ЙCВpВNET83ЙDВxВxЙEВyВyЙFЙHВU2ВhaЙIBJЙJВgВNET103ЙKВpВsЙLВxВNET83ЙMВyВciЙNЙPВco ВNET95iВNET103ЙS@ВFAЛ М   @ Б
-I 000060 60 15 1354555819246 ./compile/FA.vhd*FA|21+FA__opt
-222222222I 000036 70 113 1354555819246 fa|FA
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|ha|0x3b2c4334b4225eee826d4630d69c57ef2dd4e177
-V 000042 11 181 1354555819277 ringcounter
-E RingCounter VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 1
-P Clk _in STD_LOGIC
-P R _in STD_LOGIC
-P T0 _out STD_LOGIC
-P T1 _out STD_LOGIC
-X RingCounter
-V 000068 60 248 1354555819276 ./compile/RingCounter.vhd*RingCounter
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙ<ВBiblioteca_de_ComponentesЙHВRingCounter>ЙAЙВNBВintegerДЙЙ BЙ!ВClk…В	std_logicЙ"ВR…В	std_logicЙ#ВT0†В	std_logicЙ$ВT1†В	std_logicЙ%Й&@ВRingCounterЛ М   @ Б
-V 000072 60 15 1354555819276 ./compile/RingCounter.vhd*RingCounter__opt
-222222222222V 000041 70 64 1354555819276 ringcounter
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000084 60 1283 1354555819278 ./compile/RingCounter.vhd*RingCounter|21+RingCounter
-Ver. 1.30.v98.64
-К Й(LВRingCounterDВRingCounter>Й,zВregistradorЙ-AЙ.В
-NumeroBitsВINTEGERДЙ/ВTpropВtimeДВnsЙ0ВTsetupВtimeДВnsЙ1Й2BЙ3ВC…В	STD_LOGICЙ4ВD…ВSTD_LOGIC_VECTORВ
-NumeroBitsДsД Й5ВR…В	STD_LOGICЙ6ВS…В	std_logicЙ7ВQ†ВSTD_LOGIC_VECTORВ
-NumeroBitsДsД Й8Й9@zЙ<|ВGND_CONSTANTВ	STD_LOGICЕ0Й@ЃВGNDВ	STD_LOGICЙAЃВsQ1Вstd_logic_vectorВNBДsД ЙBЃВsQ2Вstd_logic_vectorВNBДsД ЙCЃВsQ3Вstd_logic_vectorВNBДsД ЙDЃВsQ4Вstd_logic_vectorВNBДsД ЙF?ЙJВQ1ВregistradorЙKAJЙLВ
-NumeroBitsВNBЙMВTpropДВnsЙNВTsetupДВnsЙOЙPBJЙQВCВClkЙRВDВsQ4ВNBДsД ЙSВQВsQ1ВNBДsД ЙTВRВGNDЙUВSВRЙVЙXВQ2ВregistradorЙYAJЙZВ
-NumeroBitsВNBЙ[ВTpropДВnsЙ\ВTsetupДВnsЙ]Й^BJЙ_ВCВClkЙ`ВDВsQ1ВNBДsД ЙaВQВsQ2ВNBДsД ЙbВRВGNDЙcВSВRЙdЙfВQ3ВregistradorЙgAJЙhВ
-NumeroBitsВNBЙiВTpropДВnsЙjВTsetupДВnsЙkЙlBJЙmВCВClkЙnВDВsQ2ВNBДsД ЙoВQВsQ3ВNBДsД ЙpВRВRЙqВSВGNDЙrЙtВQ4ВregistradorЙuAJЙvВ
-NumeroBitsВNBЙwВTpropДВnsЙxЙyBJЙzВCВClkЙ{ВDВsQ3ВNBДsД Й|ВQВsQ4ВNBДsД Й}ВRВRЙ~ВSВGNDЙЙ„ВGND ВGND_CONSTANTЙ‰ВT0 ВsQ2Д ЙЉВT1 ВsQ3Д ЙЌ@ВRingCounterЛ М   @ Б
-I 000087 60 15 1354555819278 ./compile/RingCounter.vhd*RingCounter|21+RingCounter__opt
-222222222I 000054 70 122 1354555819278 ringcounter|RingCounter
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|registrador|0x74684a439ec8b366224cf402db66084951845bbf
-V 000034 11 296 1354555819311 csa
-E CSA VHDL
-L STD;IEEE;
-U STD.STANDARD;ieee.std_logic_1164;
-PL 0
-G NB INTEGER = 8
-P Cin _in STD_LOGIC
-P X _in STD_LOGIC_VECTOR[NB-1:0]
-P Y _in STD_LOGIC_VECTOR[NB-1:0]
-P Z _in STD_LOGIC_VECTOR[NB-1:0]
-P Cout _out STD_LOGIC
-P C _out STD_LOGIC_VECTOR[NB-1:0]
-P S _out STD_LOGIC_VECTOR[NB-1:0]
-X CSA
-V 000052 60 354 1354555819310 ./compile/CSA.vhd*CSA
-Ver. 1.30.v98.64
-К Й<ВIEEEЙ=ВIEEE
-Вstd_logic_1164
-GЙHВCSA>ЙAЙВNBВintegerДЙЙBЙВCin…В	std_logicЙВX…Вstd_logic_vectorВNBДsД Й ВY…Вstd_logic_vectorВNBДsД Й!ВZ…Вstd_logic_vectorВNBДsД Й"ВCout†В	std_logicЙ#ВC†Вstd_logic_vectorВNBДsД Й$ВS†Вstd_logic_vectorВNBДsД Й%Й&@ВCSAЛ М   @ Б
-V 000056 60 15 1354555819310 ./compile/CSA.vhd*CSA__opt
-222222222222V 000033 70 64 1354555819310 csa
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-I 000059 60 433 1354555819312 ./compile/CSA.vhd*CSA|21+CSA
-Ver. 1.30.v98.64
-К Й(LВCSADВCSA>Й+zВFAЙ,BЙ-Вci…В	std_logicЙ.Вx…В	std_logicЙ/Вy…В	std_logicЙ0Вco†В	std_logicЙ1Вs†В	std_logicЙ2Й3@zЙ6?Й9ВCSAEВI…Д rВNBДTЙ:ВFAxВFAЙ;BJЙ<ВciВZВIЙ=ВxВXВIЙ>ВyВYВIЙ?ВsВSВIЙ@ВcoВCВIДЙAЙB@TЙDВFA_NBВFAЙEBJЙFВciВZВNBДЙGВxВXВNBДЙHВyВYВNBДЙIВsВSВNBДЙJВcoВCoutЙKЙMВcД  ВCinЙO@ВCSAЛ М   @ Б
-I 000063 60 15 1354555819312 ./compile/CSA.vhd*CSA|21+CSA__opt
-222222222I 000038 70 113 1354555819312 csa|CSA
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|fa|0xe4c7f0bacb14ddcfccbbfe0858130fda7f45f0c7
-I 000056 60 410 1354555894438 ./compile/FA.vhd*FA|21+FA
-Ver. 1.30.v98.64
-К Й&LВFADВFA>Й*zВhaЙ+AЙ,ВTgateВtimeДВnsЙ-Й.BЙ/Вx…В	STD_LOGICЙ0Вy…В	STD_LOGICЙ1Вg†В	STD_LOGICЙ2Вp†В	STD_LOGICЙ3Й4@zЙ8ЃВNET103В	STD_LOGICЙ9ЃВNET83В	STD_LOGICЙ:ЃВNET95В	STD_LOGICЙ<?Й@ВU1ВhaЙABJЙBВgВNET95ЙCВpВNET83ЙDВxВxЙEВyВyЙFЙHВU2ВhaЙIBJЙJВgВNET103ЙKВpВsЙLВxВNET83ЙMВyВciЙNЙPВco ВNET95iВNET103ЙS@ВFAЛ М   @ Б
-I 000060 60 15 1354555894438 ./compile/FA.vhd*FA|21+FA__opt
-222222222I 000036 70 113 1354555894438 fa|FA
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|ha|0x3b2c4334b4225eee826d4630d69c57ef2dd4e177
-I 000084 60 1283 1354555898852 ./compile/RingCounter.vhd*RingCounter|21+RingCounter
-Ver. 1.30.v98.64
-К Й(LВRingCounterDВRingCounter>Й,zВregistradorЙ-AЙ.В
-NumeroBitsВINTEGERДЙ/ВTpropВtimeДВnsЙ0ВTsetupВtimeДВnsЙ1Й2BЙ3ВC…В	STD_LOGICЙ4ВD…ВSTD_LOGIC_VECTORВ
-NumeroBitsДsД Й5ВR…В	STD_LOGICЙ6ВS…В	STD_LOGICЙ7ВQ†ВSTD_LOGIC_VECTORВ
-NumeroBitsДsД Й8Й9@zЙ<|ВGND_CONSTANTВ	STD_LOGICЕ0Й@ЃВGNDВ	STD_LOGICЙAЃВsQ1Вstd_logic_vectorВNBДsД ЙBЃВsQ2Вstd_logic_vectorВNBДsД ЙCЃВsQ3Вstd_logic_vectorВNBДsД ЙDЃВsQ4Вstd_logic_vectorВNBДsД ЙF?ЙJВQ1ВregistradorЙKAJЙLВ
-NumeroBitsВNBЙMВTpropДВnsЙNВTsetupДВnsЙOЙPBJЙQВCВClkЙRВDВsQ4ВNBДsД ЙSВQВsQ1ВNBДsД ЙTВRВGNDЙUВSВRЙVЙXВQ2ВregistradorЙYAJЙZВ
-NumeroBitsВNBЙ[ВTpropДВnsЙ\ВTsetupДВnsЙ]Й^BJЙ_ВCВClkЙ`ВDВsQ1ВNBДsД ЙaВQВsQ2ВNBДsД ЙbВRВGNDЙcВSВRЙdЙfВQ3ВregistradorЙgAJЙhВ
-NumeroBitsВNBЙiВTpropДВnsЙjВTsetupДВnsЙkЙlBJЙmВCВClkЙnВDВsQ2ВNBДsД ЙoВQВsQ3ВNBДsД ЙpВRВRЙqВSВGNDЙrЙtВQ4ВregistradorЙuAJЙvВ
-NumeroBitsВNBЙwВTpropДВnsЙxЙyBJЙzВCВClkЙ{ВDВsQ3ВNBДsД Й|ВQВsQ4ВNBДsД Й}ВRВRЙ~ВSВGNDЙЙ„ВGND ВGND_CONSTANTЙ‰ВT0 ВsQ2Д ЙЉВT1 ВsQ3Д ЙЌ@ВRingCounterЛ М   @ Б
-I 000087 60 15 1354555898852 ./compile/RingCounter.vhd*RingCounter|21+RingCounter__opt
-222222222I 000054 70 122 1354555898852 ringcounter|RingCounter
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|registrador|0x74684a439ec8b366224cf402db66084951845bbf
-V 000068 60 117 1354555902834 ./compile/maximo.vhd*maximo|21+maximo
-Ver. 1.30.v98.64
-К Й&LВmaximoDВmaximo>Й(?Й+ВOut1 ВIn1ЌВTmaxaВIn1!ВIn2_Й,ВIn2ЌВTmaxЙ.@ВmaximoЛ М   @ Б
-V 000072 60 15 1354555902834 ./compile/maximo.vhd*maximo|21+maximo__opt
-222222222V 000044 70 195 1354555902834 maximo|maximo
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000071 60 127 1354555902881 ./compile/somador.vhd*Somador|21+Somador
-Ver. 1.30.v98.64
-К Й)LВSomadorDВSomador>Й+?Й.ВC ВAВBВVumЌВTsomaaВSЕ1_Й/ВAВVumЌВTincЙ1@ВSomadorЛ М   @ Б
-V 000075 60 15 1354555902881 ./compile/somador.vhd*Somador|21+Somador__opt
-222222222V 000046 70 195 1354555902881 somador|Somador
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000092 60 159 1354555902918 ./compile/valor_absoluto.vhd*valor_absoluto|21+valor_absoluto
-Ver. 1.30.v98.64
-К Й%LВvalor_absolutoDВvalor_absoluto>Й'?Й*ВOut1 ВIn1ЌВTabsaВIn1В
-NumeroBitsДЕ0_Й+pВIn1Е1ЌВTabsЙ-@Вvalor_absolutoЛ М   @ Б
-V 000096 60 15 1354555902918 ./compile/valor_absoluto.vhd*valor_absoluto|21+valor_absoluto__opt
-222222222V 000060 70 195 1354555902918 valor_absoluto|valor_absoluto
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000065 60 128 1354555902950 ./compile/xzero.vhd*xzero|21+xzero
-Ver. 1.30.v98.64
-К Й$LВxzeroDВxzero>Й&?Й)ВOВNBEДsД  ВIВNBEДsД Й*ВOВNBSДsВNBE FЕ0Й,@ВxzeroЛ М   @ Б
-V 000069 60 15 1354555902950 ./compile/xzero.vhd*xzero|21+xzero__opt
-222222222V 000041 70 64 1354555902950 xzero|xzero
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000065 60 126 1354555903022 ./compile/xsign.vhd*xsign|21+xsign
-Ver. 1.30.v98.64
-К Й$LВxsignDВxsign>Й&?Й)ВOВNBEДsД  ВIЙ*ВOВNBSДsВNBE FВIВNBEДЙ,@ВxsignЛ М   @ Б
-V 000069 60 15 1354555903022 ./compile/xsign.vhd*xsign|21+xsign__opt
-222222222V 000041 70 64 1354555903022 xsign|xsign
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000077 60 105 1354555903055 ./compile/subtrator.vhd*subtrator|21+subtrator
-Ver. 1.30.v98.64
-К Й&LВ	subtratorDВ	subtrator>Й(?Й+ВOut1 ВIn1ВIn2ЌВTsubЙ-@В	subtratorЛ М   @ Б
-V 000081 60 15 1354555903055 ./compile/subtrator.vhd*subtrator|21+subtrator__opt
-222222222V 000050 70 195 1354555903055 subtrator|subtrator
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000059 60 913 1354555903089 ./compile/ULA.vhd*ULA|21+ULA
-Ver. 1.30.v98.64
-К Й.LВULADВULA>Й1ЃВS_NBВstd_logic_vectorВNBsД Й2ЃВZerВstd_logic_vectorВNBДsД FЕ0Й3ЃВUpperВstd_logic_vectorВNBsД Е1FЕ0Й6?Й9OВcUlaPЙ:ВS_NB Е0"ВAВVeumaЖ"000"Й;Е0"ВAВBВVeumaЖ"001"Й<Е0"ВBВVeumaЖ"010"Й=Е0"ВAВBВVeumaЖ"011"Й>Е0"ВAhВBaЖ"100"Й?Е0"ВAiВBaЖ"101"Й@Е0"ВAjВBaЖ"110"ЙAЕ0"pВAaЖ"111"ЙBFЕ0aFЙDВVaum ВS_NBВNBЌВTsomЙFВC ВS_NBВNBДsД ЌВTtransaВcUlaЖ"000"_ЙGВS_NBВNBДsД ЌВTsomaВcUlaЖ"001"_ЙHВS_NBВNBДsД ЌВTtransaВcUlaЖ"010"_ЙIВS_NBВNBДsД ЌВTsubaВcUlaЖ"011"_ЙJВS_NBВNBДsД ЌВTgateaВcUlaЖ"100"_ЙKВS_NBВNBДsД ЌВTgateaВcUlaЖ"101"_ЙLВS_NBВNBДsД ЌДВTgateaВcUlaЖ"110"_ЙMВS_NBВNBДsД ЌВTgateaВcUlaЖ"111"ЙOВSinal ВS_NBВNBДЌВTsomЙQВZero Е1ЌВTsomaВS_NBВNBДsД ВZer_ЙRЕ0ЌВTsomЙT@ВULAЛ М   @ Б
-V 000063 60 15 1354555903089 ./compile/ULA.vhd*ULA|21+ULA__opt
-222222222V 000038 70 195 1354555903089 ula|ULA
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000068 60 567 1354555903148 ./compile/SomSub.vhd*SomSub|21+SomSub
-Ver. 1.30.v98.64
-К Й-LВSomSubDВSomSub>Й0ЃВS_NBВstd_logic_vectorВNBsД Й1ЃВZerВstd_logic_vectorВNBsД FЕ0Й4?Й7OВcUlaPЙ8ВS_NB Е0"ВAВVeumaЖ"00"Й9Е0"ВAВBВVeumaЖ"01"Й:Е0"ВBВVeumaЖ"10"Й;Е0"ВAВBВVeumaЖ"11"Й<FЕ0aFЙ>ВVaum ВS_NBВNBЌВTsomЙ@ВC ВS_NBВNBДsД ЌВTtransaВcUlaЖ"00"_ЙAВS_NBВNBДsД ЌВTsomaВcUlaЖ"01"_ЙBВS_NBВNBДsД ЌВTtransaВcUlaЖ"10"_ЙCВS_NBВNBДsД ЌВTsubaВcUlaЖ"11"_ЙEВSinal ВS_NBВNBДЌВTsomЙGВZero Е1ЌВTsomaВS_NBВZer_ЙHЕ0ЌВTsomЙJ@ВSomSubЛ	 М   @ Б
-V 000072 60 15 1354555903148 ./compile/SomSub.vhd*SomSub|21+SomSub__opt
-222222222V 000044 70 195 1354555903148 somsub|SomSub
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000065 60 564 1354555903188 ./compile/Stack.vhd*Stack|21+Stack
-Ver. 1.30.v98.64
-К Й)LВStackDВStack>Й,}Вram_type>xД rДВNBendДЙ-DВstd_logic_vectorВNBdadoДsД Й.ЃВstackВram_typeЙ/ЃВtosВstd_logic_vectorВNBendДsД FЕ0Й2?Й6ВStackMemoryЙ7NВclkВResetЙ;?Й<UВResetЕ1]Й=Вtos FЕ0Й>^ВclkВeventhВclkЕ1]Й?`Вpush_pop>Й@aЕ0ЙAВtos Вstd_logic_vectorВunsignedВtosДЙBВstackВ
-to_integerВunsignedВtos ВdinЌВTpushЙCaЕ1ЙDВdout ВstackВ
-to_integerВunsignedВtosЌВTpopЙEВtos Вstd_logic_vectorВunsignedВtosДЙFaFЙGSЙH@`ЙI@UЙJ@NЙL@ВStackЛ М   @ Б
-V 000069 60 15 1354555903188 ./compile/Stack.vhd*Stack|21+Stack__opt
-222222222V 000042 70 125 1354555903188 stack|Stack
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000060 60 1660 1354555903226 ./compile/Ram.vhd*Ram|21+Ram
-Ver. 1.30.v98.64
-К Й/LВRamDВRam>Й2}Вtipo_memoria>xД rДВBEДDВstd_logic_vectorВBPДsД Й3ЃВMramВtipo_memoriaFFЕ0Й6?Й:ВCarga_Inicial_e_Ram_MemoriaNВClockВdadoВenableВrwЙ;„ВenderecoВintegerqД rДВBEДЙ<„ВinicioВ	std_logicЕ1Й=‹Вfill_memorygВtipo_memoria>Й>}ВHexTable>xВ	characterqDВintegerЙ@|ВlookupВHexTableЕ0rЕFЙAД ДДДДДДДДД	ДДДДДДДД
-ДДДДДЙBВinfileВtextIВ	read_mode>ВNAЙC„ВbuffВlineЙD„Вaddr_sВstringВBEДДsДЙE„Вdata_sВstringВBPДДsДЙF„Вaddr_1Вpal_cntВintegerЙG„ВdataВstd_logic_vectorВBPДsД ЙH„ВMemВtipo_memoriaFFЕ0ЙI?ЙJcpВendfileВinfilebЙKВreadlineВinfileВbuffЙLВreadВbuffВaddr_sЙMВreadВbuffВpal_cnTЙOВaddr_1Д ЙPEВi…ВBEДДsДbЙQВaddr_1Вaddr_1ВlookupВaddr_sВiДВiДЙR@bЙSВreadlineВinfileВbuffЙTEВi…ДrВpal_cntbЙUВreadВbuffВdata_sЙWВdataFЕ0ЙXEВi…ВBPДДsДbЙYВdataВdataВlookupВdata_sВiДВiДЙZ@bЙ[ВMemВaddr_1ВdataЙ\Вaddr_1Вaddr_1ДЙ]@bЙ^@bЙ_gВMemЙ`@Вfill_memoryЙb?ЙcUВinicioЕ1]ЙeВMram Вfill_memoryЙgВinicioЕ0Йh@UЙiUВClockВeventhВClockЕ1hВenableЕ1]ЙjUВenderВ
-last_eventВTsetupiВdadoВ
-last_eventВTsetup]ЙkВdado FЕXЙl_ЙmВenderecoВ
-to_integerВunsignedВenderЙn`Вrw>ЙoaЕ0ЙpВdado ВMramВenderecoЌВTreadЙqВpronto Е1ЌВTreadЙraЕ1ЙsВMramВendereco ВdadoЌВTwriteЙtВpronto Е1ЌВTwriteЙuaFЙvSЙw@`Йx@UЙy@UЙzUВClockВeventhВClockЕ1hВenableЕ0]Й|Вpronto Е0Й}Вdado FЕZЌВTzЙ~@UЙ@NЙЃ@ВRamЛN М   @ Б
-V 000063 60 15 1354555903226 ./compile/Ram.vhd*Ram|21+Ram__opt
-222222222V 000038 70 248 1354555903226 ram|Ram
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|STD_LOGIC_UNSIGNED|0x48439b24e42036bd46902e1cc55339fafe02e0da
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-V 000060 60 1201 1354555903268 ./compile/ROM.vhd*ROM|21+ROM
-Ver. 1.30.v98.64
-К Й)LВROMDВROM>Й,}Вtipo_memoria>xД rДВBEДDВstd_logic_vectorВBPДsД Й-ЃВmromВtipo_memoriaFFЕ0Й.ЃВenderecoВintegerД Й1?Й5ВCarga_inicialNЙ6‹Вfill_memorygВtipo_memoria>Й7}ВHexTable>xВ	characterqDВintegerЙ9|ВlookupВHexTableЕ0rЕFЙ:Д ДДДДДДДДД	ДДДДДДДД
-ДДДДДЙ;ВinfileВtextIВ	read_mode>ВNAЙ<„ВbuffВlineЙ=„Вaddr_sВstringВBEДДsДЙ>„Вdata_sВstringВBPДДsДЙ?„Вaddr_1Вpal_cntВintegerЙ@„ВdataВstd_logic_vectorВBPДsД ЙA„ВMemВtipo_memoriaFFЕ0ЙB?ЙCcpВendfileВinfilebЙDВreadlineВinfileВbuffЙEВreadВbuffВaddr_sЙFВreadВbuffВpal_cnTЙHВaddr_1Д ЙIEВi…ВBEДДsДbЙJВaddr_1Вaddr_1ВlookupВaddr_sВiДВiДЙK@bЙLВreadlineВinfileВbuffЙMEВi…ДrВpal_cntbЙNВreadВbuffВdata_sЙPВdataFЕ0ЙQ[Вdata_sЙREВi…ВBPДДsДbЙSВdataВdataВlookupВdata_sВiДВiДЙT@bЙUВMemВaddr_1ВdataЙVВaddr_1Вaddr_1ДЙW@bЙX@bЙYgВMemЙZ@Вfill_memoryЙ[?Й\Вmrom Вfill_memoryЙ^WЙ_@NЙbВdado ВmromВ
-to_integerВunsignedВenderЌВTacessoЙd@ВROMЛ@ М   @ Б
-V 000063 60 15 1354555903268 ./compile/ROM.vhd*ROM|21+ROM__opt
-222222222V 000038 70 307 1354555903268 rom|ROM
-Pieee|MATH_REAL|0x4ced280da48f576737d3d7ef65b65d56173b9076
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|STD_LOGIC_UNSIGNED|0x48439b24e42036bd46902e1cc55339fafe02e0da
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pstd|TEXTIO|0x18b76317249a6df577e61bc3752501cf99739f92
-V 000071 60 444 1354555903304 ./compile/RegFile.vhd*RegFile|21+RegFile
-Ver. 1.30.v98.64
-К Й)LВRegFileDВRegFile>Й,}Вram_type>xД rДВNBendДЙ-DВstd_logic_vectorВNBdadoДsД Й.ЃВramВram_typeЙ3ЃВenda_regВstd_logic_vectorВNBendДsД Й5?Й9ВRegisterMemoryЙ:NВclkЙ>?Й?UВclkВeventhВclkЕ1]Й@UВweЕ1]ЙAВramВ
-to_integerВunsignedВenda ВdadoinaЌВTwriteЙB@UЙCВenda_reg ВendaЙD@UЙE@NЙHВdadoouta ВramВ
-to_integerВunsignedЙIВenda_regЌВTreadЙK@ВRegFileЛ М   @ Б
-V 000075 60 15 1354555903304 ./compile/RegFile.vhd*RegFile|21+RegFile__opt
-222222222V 000046 70 125 1354555903304 regfile|RegFile
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000068 60 348 1354555903336 ./compile/Mux4x1.vhd*Mux4x1|21+Mux4x1
-Ver. 1.30.v98.64
-К Й)LВMux4x1DВMux4x1>Й+?Й/ВMux4x1Й0NВI0ВI1ВI2ВI3ВSelЙ3„ВDelayВtimeД ВnsЙ4?Й5UВSelВevent]Й6ВDelayВTselЙ7_Й8ВDelayВTdataЙ9@UЙ:`ВSel>Й;aЖ"00"ВO ВI0ЌВDelayЙ<aЖ"01"ВO ВI1ЌВDelayЙ=aЖ"10"ВO ВI2ЌВDelayЙ>aЖ"11"ВO ВI3ЌВDelayЙ?aFВO FЕXЌВDelayЙ@@`ЙA@NЙC@ВMux4x1Л М   @ Б
-V 000072 60 15 1354555903336 ./compile/Mux4x1.vhd*Mux4x1|21+Mux4x1__opt
-222222222V 000043 70 64 1354555903336 mux4x1|Mux4x1
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000065 60 189 1354555903370 ./compile/Ou_NP.vhd*Ou_NP|21+Ou_NP
-Ver. 1.30.v98.64
-К Й#LВOu_NPDВOu_NP>Й%?Й)ВOu_NPЙ*NВSsЙ.„ВtempВ	std_logicЕ0Й/?Й1ВtempЕ0Й2EВj…Д rВNPДbЙ3ВtempВtempiВSsВjЙ4@bЙ5ВS ВtempЙ6@NЙ8@ВOu_NPЛ	 М   @ Б
-V 000069 60 15 1354555903370 ./compile/Ou_NP.vhd*Ou_NP|21+Ou_NP__opt
-222222222V 000041 70 64 1354555903370 ou_np|Ou_NP
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000068 60 484 1354555903402 ./compile/Mux8x1.vhd*Mux8x1|21+Mux8x1
-Ver. 1.30.v98.64
-К Й-LВMux8x1DВMux8x1>Й/?Й3ВMux8x1Й4NВI0ВI1ВI2ВI3ВI4ВI5ВI6ВI7ВSelЙ7„ВDelayВtimeД ВnsЙ8?Й9UВSelВevent]Й:ВDelayВTselЙ;_Й<ВDelayВTdataЙ=@UЙ>`ВSel>Й?aЖ"000"ВO ВI0ЌВDelayЙ@aЖ"001"ВO ВI1ЌВDelayЙAaЖ"010"ВO ВI2ЌВDelayЙBaЖ"011"ВO ВI3ЌВDelayЙCaЖ"100"ВO ВI4ЌВDelayЙDaЖ"101"ВO ВI5ЌВDelayЙEaЖ"110"ВO ВI6ЌВDelayЙFaЖ"111"ВO ВI7ЌВDelayЙGaFВO FЕXЌВDelayЙH@`ЙI@NЙK@ВMux8x1Л М   @ Б
-V 000072 60 15 1354555903402 ./compile/Mux8x1.vhd*Mux8x1|21+Mux8x1__opt
-222222222V 000043 70 64 1354555903402 mux8x1|Mux8x1
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000089 60 288 1354555903438 ./compile/multiplexador.vhd*multiplexador|21+multiplexador
-Ver. 1.30.v98.64
-К Й'LВmultiplexadorDВmultiplexador>Й)?Й-ВMuxЙ.NВI0ВI1ВSЙ1„ВDelayВtimeД ВnsЙ2?Й3UВSВevent]Й4ВDelayВTselЙ5_Й6ВDelayВTdataЙ7@UЙ8`ВS>Й9aЕ0ВO ВI0ЌВDelayЙ:aЕ1ВO ВI1ЌВDelayЙ;aFВO FЕXЌВDelayЙ<@`Й=@NЙ?@ВmultiplexadorЛ
- М   @ Б
-V 000093 60 15 1354555903438 ./compile/multiplexador.vhd*multiplexador|21+multiplexador__opt
-222222222V 000057 70 64 1354555903438 multiplexador|multiplexador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000068 60 117 1354555903472 ./compile/minimo.vhd*minimo|21+minimo
-Ver. 1.30.v98.64
-К Й&LВminimoDВminimo>Й(?Й+ВOut1 ВIn1ЌВTminaВIn1 ВIn2_Й,ВIn2ЌВTminЙ.@ВminimoЛ М   @ Б
-V 000072 60 15 1354555903472 ./compile/minimo.vhd*minimo|21+minimo__opt
-222222222V 000044 70 195 1354555903472 minimo|minimo
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000077 60 122 1354555903505 ./compile/deslocad1.vhd*DeslocaD1|21+DeslocaD1
-Ver. 1.30.v98.64
-К Й%LВ	DeslocaD1DВ	DeslocaD1>Й'?Й*ВOut1 Е0"ВIn1В
-NumeroBitsДsДЌВTdesl1Й,@В	DeslocaD1Л М   @ Б
-V 000081 60 15 1354555903505 ./compile/deslocad1.vhd*DeslocaD1|21+DeslocaD1__opt
-222222222V 000050 70 195 1354555903505 deslocad1|DeslocaD1
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000066 60 199 1354555903542 ./compile/Fuse_and.vhd*Fuse|21+Fuse
-Ver. 1.30.v98.64
-К Й"LВFuseDВFuse>Й&ЃВILВ	std_logicЙ'ЃВIL_FВ	std_logicЙ(ЃВI_FВ	std_logicЙ*?Й.ВIL pВIЙ0ВIL_F pВFILiВILЙ2ВS ВI_FhВIL_FЙ4ВI_F pВFIiВIЙ7@ВFuseЛ М   @ Б
-V 000070 60 15 1354555903542 ./compile/Fuse_and.vhd*Fuse|21+Fuse__opt
-222222222V 000039 70 64 1354555903542 fuse|Fuse
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000074 60 119 1354555903578 ./compile/Log_Sinc.vhd*Log_Sinc|21+Log_Sinc
-Ver. 1.30.v98.64
-К Й%LВLog_SincDВLog_Sinc>Й'?Й*ВSborda ВPCbordaЌВTpropaВclkЕ1_Й+FЕ0Й-@ВLog_SincЛ М   @ Б
-V 000078 60 15 1354555903578 ./compile/Log_Sinc.vhd*Log_Sinc|21+Log_Sinc__opt
-222222222V 000047 70 64 1354555903578 log_sinc|Log_Sinc
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000067 60 87 1354555903615 ./compile/maisum.vhd*maisum|21+maisum
-Ver. 1.30.v98.64
-К Й%LВmaisumDВmaisum>Й'?Й*ВO ВIДЌВTpropЙ,@ВmaisumЛ М   @ Б
-V 000072 60 15 1354555903615 ./compile/maisum.vhd*maisum|21+maisum__opt
-222222222V 000044 70 195 1354555903615 maisum|maisum
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000119 60 296 1354555903653 ./compile/deslocador_combinatorio.vhd*deslocador_combinatorio|21+deslocador_combinatorio
-Ver. 1.30.v98.64
-К Й&LВdeslocador_combinatorioDВdeslocador_combinatorio>Й)|ВZerВstd_logic_vectorВNBДsД FЕ0Й,?Й/OВDEPЙ0ВO ВZerВNBДsВNBВNBD"ВIВNBДsВNBDЌВTpropaЕ0Й1ВIВNBДВNBDsД "ВZerВNBDДsД ЌВTpropaЕ1Й2ВIaFЙ4@Вdeslocador_combinatorioЛ М   @ Б
-V 000123 60 15 1354555903653 ./compile/deslocador_combinatorio.vhd*deslocador_combinatorio|21+deslocador_combinatorio__opt
-222222222V 000077 70 64 1354555903653 deslocador_combinatorio|deslocador_combinatorio
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000083 60 591 1354555903694 ./compile/DualRegFile.vhd*DualRegFile|21+DualRegFile
-Ver. 1.30.v98.64
-К Й+LВDualRegFileDВDualRegFile>Й.}Вram_type>xД rДВNBendДЙ/DВstd_logic_vectorВNBdadoДsД Й0ЃВramВram_typeЙ5ЃВenda_regВstd_logic_vectorВNBendДsД Й6ЃВendb_regВstd_logic_vectorВNBendДsД Й8?Й<ВRegisterMemoryЙ=NВclkЙA?ЙBUВclkВeventhВclkЕ1]ЙCUВweЕ1]ЙDВramВ
-to_integerВunsignedВenda ВdadoinaЌВTwriteЙE@UЙFВenda_reg ВendaЙGВendb_reg ВendbЙH@UЙI@NЙLВdadoouta ВramВ
-to_integerВunsignedЙMВenda_regЌВTreadЙNВdadooutb ВramВ
-to_integerВunsignedЙOВendb_regЌВTreadЙQ@ВDualRegFileЛ М   @ Б
-V 000087 60 15 1354555903694 ./compile/DualRegFile.vhd*DualRegFile|21+DualRegFile__opt
-222222222V 000054 70 125 1354555903694 dualregfile|DualRegFile
-Pieee|NUMERIC_STD|0xd8bc1b96dde6ca4440943b5645e903df9b347cdd
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000080 60 434 1354555903737 ./compile/deslocador.vhd*deslocador|21+deslocador
-Ver. 1.30.v98.64
-К Й*LВ
-deslocadorDВ
-deslocador>Й,?Й/В
-deslocadorMВClkВeventhВClkЕ1Й0?Й1ВOutA QВInAЌВTcargaaВT_DЕ0_Й2ВInAВ
-NumeroBitsДsД "ВInBitЌВTdeslaВT_DЕ1hВD_EЕ0_Й3ВInBit"ВInAВ
-NumeroBitsДsДЌВTdeslaВT_DЕ1hВD_EЕ1Й5ВSaiBit QЕ0ЌВTcargaaВT_DЕ0_Й6ВInAВ
-NumeroBitsДЌВTdeslaВT_DЕ1hВD_EЕ0_Й7ВInAД ЌВTdeslaВT_DЕ1hВD_EЕ1Й8@MВ
-deslocadorЙ:@В
-deslocadorЛ М   @ Б
-V 000084 60 15 1354555903737 ./compile/deslocador.vhd*deslocador|21+deslocador__opt
-222222222V 000051 70 64 1354555903737 deslocador|deslocador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000077 60 127 1354555903827 ./compile/deslocad3.vhd*DeslocaD3|21+DeslocaD3
-Ver. 1.30.v98.64
-К Й%LВ	DeslocaD3DВ	DeslocaD3>Й'?Й*ВOut1 Ж"000""ВIn1В
-NumeroBitsДsДЌВTdesl3Й,@В	DeslocaD3Л М   @ Б
-V 000081 60 15 1354555903827 ./compile/deslocad3.vhd*DeslocaD3|21+DeslocaD3__opt
-222222222V 000050 70 195 1354555903827 deslocad3|DeslocaD3
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000092 60 138 1354555903864 ./compile/buffertristate.vhd*bufferTristate|21+bufferTristate
-Ver. 1.30.v98.64
-К Й&LВbufferTristateDВbufferTristate>Й(?Й+ВO ВIЌВTenableaВOeЕ1_Й,FЕZЌВTdisableЙ.@ВbufferTristateЛ М   @ Б
-V 000096 60 15 1354555903864 ./compile/buffertristate.vhd*bufferTristate|21+bufferTristate__opt
-222222222V 000059 70 64 1354555903864 buffertristate|bufferTristate
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000089 60 303 1354555903899 ./compile/Decodificador.vhd*Decodificador|21+Decodificador
-Ver. 1.30.v98.64
-К ЙLВDecodificadorDВDecodificador>Й!?Й$OВIn0PЙ%Вsai Ж
-"00000001"aЖ"000"Й&Ж
-"00000010"aЖ"001"Й'Ж
-"00000100"aЖ"010"Й(Ж
-"00001000"aЖ"011"Й)Ж
-"00010000"aЖ"100"Й*Ж
-"00100000"aЖ"101"Й+Ж
-"01000000"aЖ"110"Й,Ж
-"10000000"aЖ"111"Й-Ж
-"XXXXXXXX"aFЙ/@ВDecodificadorЛ М   @ Б
-V 000093 60 15 1354555903899 ./compile/Decodificador.vhd*Decodificador|21+Decodificador__opt
-222222222V 000057 70 64 1354555903899 decodificador|Decodificador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000074 60 616 1354555903932 ./compile/contador.vhd*contador|21+contador
-Ver. 1.30.v98.64
-К Й-LВcontadorDВcontador>Й0|ВZeroВstd_logic_vectorВNBДsД FЕ0Й1|ВTudoUmВstd_logic_vectorВNBДsД FЕ1Й6ЃВQiВstd_logic_vectorВNBДsД Й8?Й<ВcountЙ=NВCВRЙ@?ЙAUВRЕ1]ЙBВQi FЕ0ЌВTcargaЙC^ВcВeventhВcЕ1]ЙE`ВLC>ЙFaЕ0ЙGUВDВ
-last_eventВTsetup]ЙHВQi FЕXЌВTcargaЙI_ЙJВQi ВDЌВTcargaЙK@UЙLaЕ1ЙM`ВUD>ЙNaЕ0ЙOВQi ВQiДЌВTcountЙPaЕ1ЙQВQi ВQiДЌВTcountЙRaFЙSВQi ВQiЙT@`ЙUaFЙVВQi ВQiЙW@`ЙX@UЙY@NЙ\ВQ ВQiЙ]ВZ Е1ЌВTcountaВQiВZero_Й^Е0ЌВTcountЙ_ВU Е1ЌВTcountaВQiВTudoUm_Й`Е0ЌВTcountЙb@ВcontadorЛ М   @ Б
-V 000078 60 15 1354555903932 ./compile/contador.vhd*contador|21+contador__opt
-222222222V 000048 70 195 1354555903932 contador|contador
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000095 60 536 1354555903968 ./compile/absminmaxsomsub.vhd*absminmaxsomsub|21+absminmaxsomsub
-Ver. 1.30.v98.64
-К Й*LВabsminmaxsomsubDВabsminmaxsomsub>Й-ЃВminВmaxВabsaВabsbВstd_logic_vectorВ
-NumeroBitsДsД Й0?Й3Вmin ВaaВa Вb_Й4ВbЙ5Вmax ВaaВa!Вb_Й6ВbЙ7Вabsa ВaaВaВ
-NumeroBitsДЕ0_Й8pВaДЙ9Вabsb ВbaВbВ
-NumeroBitsДЕ0_Й:pВbДЙ;Вunidade_funcionalЙ<OВCPЙ=Вf ВaВbЌВTsomaЖ"001"Й>ВabsbЌВTabsaЖ"010"Й?ВbВaЌВTsubaЖ"011"Й@ВabsaЌВTabsaЖ"100"ЙAВaВbЌВTsubaЖ"101"ЙBВminЌВTmmaЖ"110"ЙCВmaxЌВTmmaЖ"111"ЙDFЕ0aFЙF@ВabsminmaxsomsubЛ М   @ Б
-V 000099 60 15 1354555903968 ./compile/absminmaxsomsub.vhd*absminmaxsomsub|21+absminmaxsomsub__opt
-222222222V 000062 70 195 1354555903968 absminmaxsomsub|absminmaxsomsub
-Pieee|STD_LOGIC_SIGNED|0x94f918b1e494f1bfb7a4930182d4cd69bbf57482
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-Pieee|std_logic_arith|0x26e96c4420e454dc00ab0be5058f777ff60bc1c0
-V 000083 60 444 1354555904004 ./compile/registrador.vhd*registrador|21+registrador
-Ver. 1.30.v98.64
-К Й'LВregistradorDВregistrador>Й+ЃВqiВstd_logic_vectorВ
-NumeroBitsДsД Й-?Й1ВRegistradorЙ2NВCВSВRЙ5?Й6UВRЕ1]Й7ВqiВ
-NumeroBitsДsД  FЕ0Й8^ВSЕ1]Й9ВqiВ
-NUmeroBitsДsД  FЕ1Й:^ВCВeventhВCЕ1]Й;UВDВ
-last_eventВTsetup]Й<[ЖH"Violaзгo de Set-up time no registrador, valor da saнda indefinido = U."Й=Вqi FЕUЙ>_Й?Вqi ВDЙ@@UЙA@UЙB@NЙEВQ ВqiЌВTpropЙG@ВregistradorЛ М   @ Б
-V 000087 60 15 1354555904004 ./compile/registrador.vhd*registrador|21+registrador__opt
-222222222V 000053 70 64 1354555904004 registrador|registrador
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000056 60 101 1354555904041 ./compile/HA.vhd*HA|21+HA
-Ver. 1.30.v98.64
-К Й%LВHADВHA>Й'?Й*Вp ВxjВyЌДВTgateЙ+Вg ВxhВyЌВTgateЙ-@ВHAЛ М   @ Б
-V 000060 60 15 1354555904041 ./compile/HA.vhd*HA|21+HA__opt
-222222222V 000035 70 64 1354555904041 ha|HA
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000070 60 85 1354555904074 ./compile/fuse_ou.vhd*fuse_ou|21+fuse_ou
-Ver. 1.30.v98.64
-К Й!LВfuse_ouDВfuse_ou>Й#?Й&ВSs ВPhВFpЙ(@Вfuse_ouЛ М   @ Б
-V 000075 60 15 1354555904074 ./compile/fuse_ou.vhd*fuse_ou|21+fuse_ou__opt
-222222222V 000045 70 64 1354555904074 fuse_ou|fuse_ou
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000068 60 193 1354555904107 ./compile/And_NE.vhd*And_NE|21+And_NE
-Ver. 1.30.v98.64
-К Й#LВAnd_NEDВAnd_NE>Й%?Й)ВAnd_NEЙ*NВSpЙ.„ВtempВ	std_logicЕ1Й/?Й1ВtempЕ1Й2EВi…Д rВNEДbЙ3ВtempВtemphВSpВiЙ4@bЙ5ВP ВtempЙ6@NЙ8@ВAnd_NEЛ	 М   @ Б
-V 000072 60 15 1354555904107 ./compile/And_NE.vhd*And_NE|21+And_NE__opt
-222222222V 000043 70 64 1354555904107 and_ne|And_NE
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-V 000056 60 410 1354555904140 ./compile/FA.vhd*FA|21+FA
-Ver. 1.30.v98.64
-К Й&LВFADВFA>Й*zВhaЙ+AЙ,ВTgateВtimeДВnsЙ-Й.BЙ/Вx…В	STD_LOGICЙ0Вy…В	STD_LOGICЙ1Вg†В	STD_LOGICЙ2Вp†В	STD_LOGICЙ3Й4@zЙ8ЃВNET103В	STD_LOGICЙ9ЃВNET83В	STD_LOGICЙ:ЃВNET95В	STD_LOGICЙ<?Й@ВU1ВhaЙABJЙBВgВNET95ЙCВpВNET83ЙDВxВxЙEВyВyЙFЙHВU2ВhaЙIBJЙJВgВNET103ЙKВpВsЙLВxВNET83ЙMВyВciЙNЙPВco ВNET95iВNET103ЙS@ВFAЛ М   @ Б
-V 000060 60 15 1354555904140 ./compile/FA.vhd*FA|21+FA__opt
-222222222V 000036 70 113 1354555904140 fa|FA
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|ha|0x3b2c4334b4225eee826d4630d69c57ef2dd4e177
-V 000084 60 1283 1354555904173 ./compile/RingCounter.vhd*RingCounter|21+RingCounter
-Ver. 1.30.v98.64
-К Й(LВRingCounterDВRingCounter>Й,zВregistradorЙ-AЙ.В
-NumeroBitsВINTEGERДЙ/ВTpropВtimeДВnsЙ0ВTsetupВtimeДВnsЙ1Й2BЙ3ВC…В	STD_LOGICЙ4ВD…ВSTD_LOGIC_VECTORВ
-NumeroBitsДsД Й5ВR…В	STD_LOGICЙ6ВS…В	STD_LOGICЙ7ВQ†ВSTD_LOGIC_VECTORВ
-NumeroBitsДsД Й8Й9@zЙ<|ВGND_CONSTANTВ	STD_LOGICЕ0Й@ЃВGNDВ	STD_LOGICЙAЃВsQ1Вstd_logic_vectorВNBДsД ЙBЃВsQ2Вstd_logic_vectorВNBДsД ЙCЃВsQ3Вstd_logic_vectorВNBДsД ЙDЃВsQ4Вstd_logic_vectorВNBДsД ЙF?ЙJВQ1ВregistradorЙKAJЙLВ
-NumeroBitsВNBЙMВTpropДВnsЙNВTsetupДВnsЙOЙPBJЙQВCВClkЙRВDВsQ4ВNBДsД ЙSВQВsQ1ВNBДsД ЙTВRВGNDЙUВSВRЙVЙXВQ2ВregistradorЙYAJЙZВ
-NumeroBitsВNBЙ[ВTpropДВnsЙ\ВTsetupДВnsЙ]Й^BJЙ_ВCВClkЙ`ВDВsQ1ВNBДsД ЙaВQВsQ2ВNBДsД ЙbВRВGNDЙcВSВRЙdЙfВQ3ВregistradorЙgAJЙhВ
-NumeroBitsВNBЙiВTpropДВnsЙjВTsetupДВnsЙkЙlBJЙmВCВClkЙnВDВsQ2ВNBДsД ЙoВQВsQ3ВNBДsД ЙpВRВRЙqВSВGNDЙrЙtВQ4ВregistradorЙuAJЙvВ
-NumeroBitsВNBЙwВTpropДВnsЙxЙyBJЙzВCВClkЙ{ВDВsQ3ВNBДsД Й|ВQВsQ4ВNBДsД Й}ВRВRЙ~ВSВGNDЙЙ„ВGND ВGND_CONSTANTЙ‰ВT0 ВsQ2Д ЙЉВT1 ВsQ3Д ЙЌ@ВRingCounterЛ М   @ Б
-V 000087 60 15 1354555904173 ./compile/RingCounter.vhd*RingCounter|21+RingCounter__opt
-222222222V 000054 70 122 1354555904173 ringcounter|RingCounter
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|registrador|0x74684a439ec8b366224cf402db66084951845bbf
-V 000059 60 433 1354555904213 ./compile/CSA.vhd*CSA|21+CSA
-Ver. 1.30.v98.64
-К Й(LВCSADВCSA>Й+zВFAЙ,BЙ-Вci…В	std_logicЙ.Вx…В	std_logicЙ/Вy…В	std_logicЙ0Вco†В	std_logicЙ1Вs†В	std_logicЙ2Й3@zЙ6?Й9ВCSAEВI…Д rВNBДTЙ:ВFAxВFAЙ;BJЙ<ВciВZВIЙ=ВxВXВIЙ>ВyВYВIЙ?ВsВSВIЙ@ВcoВCВIДЙAЙB@TЙDВFA_NBВFAЙEBJЙFВciВZВNBДЙGВxВXВNBДЙHВyВYВNBДЙIВsВSВNBДЙJВcoВCoutЙKЙMВcД  ВCinЙO@ВCSAЛ М   @ Б
-V 000063 60 15 1354555904213 ./compile/CSA.vhd*CSA|21+CSA__opt
-222222222V 000038 70 113 1354555904213 csa|CSA
-Pieee|std_logic_1164|0x6b4bedf824d40a83aab6e5942fb96dfbfa842ddb
-E.|fa|0xe4c7f0bacb14ddcfccbbfe0858130fda7f45f0c7

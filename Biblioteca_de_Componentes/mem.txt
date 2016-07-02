@@ -1,4 +1,0 @@
-0000 10 -- Carrega apartir do endereço 0 10 palavras de memoria 
-AA F1 C2 DB 01 35 9D 8C 9A 14 -- Já foi lido todos os bytes 
-000F 2 -- Carrega mais dois bytes a partir do endereço 15
-FE CD -- Encerra a caraga de memória

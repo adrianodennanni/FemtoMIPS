@@ -1,0 +1,119 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=femtomips
+
+[Library]
+femtomips=.\femtomips\femtomips.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[SpecTracer]
+WindowVisible=0
+
+[$LibMap$]
+femtomips=.
+Active_lib=
+
+[HierarchyViewer]
+HierarchyInformation=proc|proc|0                      
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name3=Makefiles
+Directory3=C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\
+Extension3=mak
+Name4=Memory
+Directory4=C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\
+Extension5=dll
+Name6=PDF
+Directory6=C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\Users\joaoh\Desktop\FEMTOMIPS\femtomips\
+Extension7=htm;html
+
+[Files]
+/ULA.vhd=-1
+/CacheI.vhd=-1
+/MemoriaPrincipal.vhd=-1
+/Mux2x1.vhd=-1
+/Mux4x1.vhd=-1
+/Mux2x1Bit.vhd=-1
+/Mux4x1Bit.vhd=-1
+/PC.vhd=-1
+/IFID.vhd=-1
+/IDEXE.vhd=-1
+/EXEMEM.vhd=-1
+/MEMWB.vhd=-1
+/EPC.vhd=-1
+/Somador.vhd=-1
+/IFE.vhd=-1
+/IDE.vhd=-1
+/EXE.vhd=-1
+/MEM.vhd=-1
+/WBA.vhd=-1
+/Controle.vhd=-1
+/GPR.vhd=-1
+/HazardUnit.vhd=-1
+/ForwardingUnit.vhd=-1
+/Mux4x1_5b.vhd=-1
+/proc.vhd=-1
+/CacheD.vhd=-1
+
+[Files.Data]
+.\src\ULA.vhd=VHDL Source Code
+.\src\CacheI.vhd=VHDL Source Code
+.\src\MemoriaPrincipal.vhd=VHDL Source Code
+.\src\Mux2x1.vhd=VHDL Source Code
+.\src\Mux4x1.vhd=VHDL Source Code
+.\src\Mux2x1Bit.vhd=VHDL Source Code
+.\src\Mux4x1Bit.vhd=VHDL Source Code
+.\src\PC.vhd=VHDL Source Code
+.\src\IFID.vhd=VHDL Source Code
+.\src\IDEXE.vhd=VHDL Source Code
+.\src\EXEMEM.vhd=VHDL Source Code
+.\src\MEMWB.vhd=VHDL Source Code
+.\src\EPC.vhd=VHDL Source Code
+.\src\Somador.vhd=VHDL Source Code
+.\src\IFE.vhd=VHDL Source Code
+.\src\IDE.vhd=VHDL Source Code
+.\src\EXE.vhd=VHDL Source Code
+.\src\MEM.vhd=VHDL Source Code
+.\src\WBA.vhd=VHDL Source Code
+.\src\Controle.vhd=VHDL Source Code
+.\src\GPR.vhd=VHDL Source Code
+.\src\HazardUnit.vhd=VHDL Source Code
+.\src\ForwardingUnit.vhd=VHDL Source Code
+.\src\Mux4x1_5b.vhd=VHDL Source Code
+.\src\proc.vhd=VHDL Source Code
+.\src\CacheD.vhd=VHDL Source Code
+
