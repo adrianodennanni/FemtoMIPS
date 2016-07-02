@@ -6,8 +6,8 @@ use std.textio.all;
 
 entity CacheD is
   port(
-       Clock : in std_logic;
-       enable : in STD_LOGIC;
+       Clock : in std_logic; -- Clock de entrada
+       enable : in STD_LOGIC; --
        readD, writeD : in std_logic;
        ender : in std_logic_vector(31 downto 0);
        writeDado : in std_logic_vector(31 downto 0);
@@ -16,11 +16,11 @@ entity CacheD is
 
        dumpMemory : in std_logic;
 
-       MAIN_DATA : in std_logic_vector(127 downto 0);
+       MAIN_DATA : in std_logic_vector(127 downto 0); -- Onde a memória manda os dados
        MAIN_RW : out std_logic := '0';
-       MAIN_END : OUT std_logic_vector(31 DOWNTO 0);
-       ENABLE_I : OUT STD_LOGIC;
-       MAIN_PRONTO : IN std_logic
+       MAIN_END : OUT std_logic_vector(31 DOWNTO 0); -- Endereço que o cache quer acessar na memória
+       ENABLE_I : OUT STD_LOGIC; -- Serve para o cache avisar a memória que quer acessá-la
+       MAIN_PRONTO : IN std_logic -- É para a memória avisar que 4 words pedidas a partir do endereço MAIN_END estão disponíveis no MAIN_DATA
   );
 end CacheD;
 
