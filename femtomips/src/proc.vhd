@@ -28,11 +28,31 @@ architecture proc of proc is
 		MAIN_RW : out STD_LOGIC;
 		MAIN_END : out STD_LOGIC_VECTOR(31 downto 0);
 		ENABLE_I : out STD_LOGIC;
-		MAIN_PRONTO : in STD_LOGIC);
+		MAIN_PRONTO : in STD_LOGIC;
+		BUFFER_BUSY : in std_logic;
+
+		BUFFER_END : out std_logic_vector(31 DOWNTO 0);
+		BUFFER_DADOS : out std_logic_vector(31 DOWNTO 0);
+		BUFFER_PEDIDO : out std_logic
+		);
 	end component;
 	for all: CacheD use entity work.CacheD(CacheDI);
 
+	-- Cache responsável pelo Buffer de escrita
+	component CacheBuffer
+	port(
+		Clock : in STD_LOGIC;
+		ender_in : in STD_LOGIC_VECTOR(31 downto 0);
+		dados_in : in STD_LOGIC_VECTOR(31 downto 0);
+		pedido_in : in STD_LOGIC;
+		ready_in : in STD_LOGIC;
 
+		busy : out STD_LOGIC;
+		pedido_out : out STD_LOGIC;
+		dados_out : out STD_LOGIC_VECTOR(127 downto 0);
+		ender_out : out STD_LOGIC_VECTOR(31 downto 0));
+	end component;
+	for all: CacheBuffer use entity work.CacheBuffer(CacheBuffer);
 
 	-- Component declaration of the "ForwardingUnit(ForwardingUnit)" unit defined in
 	-- file: "./../src/ForwardingUnit.vhd"
@@ -499,25 +519,11 @@ end component;
 for all: ULA use entity work.ULA(ULA);
 
 
-
-
-
 signal PC_STALL_DEF : STD_LOGIC;
-
-
-
-
-
-
-
-
-
 
 signal clk : std_logic := '0';
 signal over : std_logic := '0';
 SIGNAL CACHED_DM : STD_LOGIC := '0';
-
-
 
 SIGNAL CCICLOS : INTEGER := 0;
 
@@ -545,10 +551,16 @@ SIGNAL CCACHEDMISS : INTEGER := 0;
 SIGNAL CCACHEDACC : INTEGER := 0;
 SIGNAL CMEMACC : INTEGER := 0;
 
-
+-- SINAIS DA MEMÓRIA
 SIGNAL MP_RW, MP_enableD, MP_prontoD : STD_LOGIC := '0';
 SIGNAL MP_ENDERD : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 SIGNAL MP_dadoD : STD_LOGIC_VECTOR(127 DOWNTO 0) := (OTHERS => '0');
+
+-- SINAIS DO CACHED/BUFFER
+SIGNAL B_BUSY : std_logic;
+SIGNAL B_END :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL B_PEDIDO : std_logic;
+SIGNAL B_DADOS : STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 begin
 
@@ -620,7 +632,25 @@ begin
 		MAIN_RW => MP_RW,
 		MAIN_END => MP_ENDERD,
 		ENABLE_I => MP_enableD,
-		MAIN_PRONTO => MP_prontoD
+		MAIN_PRONTO => MP_prontoD,
+		BUFFER_BUSY => B_BUSY,
+		BUFFER_END =>  B_END,
+		BUFFER_DADOS => B_DADOS,
+		BUFFER_PEDIDO => B_PEDIDO
+	);
+
+
+	CB : CacheBuffer
+	port map(
+		Clock => Clk,
+		ender_in => B_END,
+		dados_in => B_DADOS,
+		pedido_in => B_PEDIDO,
+		ready_in => MP_prontoD,
+		busy => B_BUSY,
+		pedido_out => MP_enableD,
+		dados_out => MP_dadoD,
+		ender_out => MP_ENDERD
 	);
 
 

@@ -1,3 +1,2243 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# Design Explorer: Shortcut to "C:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\femtomips.aws" design added.
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Error: COMP96_0078: CacheBuffer.vhd : (40, 22): Unknown identifier "dado_in".
+# Error: COMP96_0133: CacheBuffer.vhd : (40, 22): Cannot find object declaration.
+# Error: COMP96_0077: CacheBuffer.vhd : (40, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: CacheBuffer.vhd : (46, 11): Unknown identifier "end_out".
+# Error: COMP96_0133: CacheBuffer.vhd : (46, 11): Cannot find object declaration.
+# Error: COMP96_0301: CacheBuffer.vhd : (33, 5): The choice 'others' must be present when all alternatives are not covered.
+# Error: COMP96_0078: CacheBuffer.vhd : (62, 30): Unknown identifier "ender".
+# Error: COMP96_0133: CacheBuffer.vhd : (62, 30): Cannot find object declaration.
+# Error: COMP96_0149: CacheBuffer.vhd : (62, 30): Explicit type conversions are allowed between closely related types only.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Error: COMP96_0078: CacheBuffer.vhd : (40, 22): Unknown identifier "dado_in".
+# Error: COMP96_0133: CacheBuffer.vhd : (40, 22): Cannot find object declaration.
+# Error: COMP96_0077: CacheBuffer.vhd : (40, 22): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: CacheBuffer.vhd : (46, 11): Unknown identifier "end_out".
+# Error: COMP96_0133: CacheBuffer.vhd : (46, 11): Cannot find object declaration.
+# Error: COMP96_0078: CacheBuffer.vhd : (62, 30): Unknown identifier "ender".
+# Error: COMP96_0133: CacheBuffer.vhd : (62, 30): Cannot find object declaration.
+# Error: COMP96_0149: CacheBuffer.vhd : (62, 30): Explicit type conversions are allowed between closely related types only.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Error: COMP96_0078: CacheBuffer.vhd : (46, 11): Unknown identifier "end_out".
+# Error: COMP96_0133: CacheBuffer.vhd : (46, 11): Cannot find object declaration.
+# Error: COMP96_0078: CacheBuffer.vhd : (62, 30): Unknown identifier "ender".
+# Error: COMP96_0133: CacheBuffer.vhd : (62, 30): Cannot find object declaration.
+# Error: COMP96_0149: CacheBuffer.vhd : (62, 30): Explicit type conversions are allowed between closely related types only.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Error: COMP96_0078: CacheBuffer.vhd : (62, 30): Unknown identifier "ender".
+# Error: COMP96_0133: CacheBuffer.vhd : (62, 30): Cannot find object declaration.
+# Error: COMP96_0149: CacheBuffer.vhd : (62, 30): Explicit type conversions are allowed between closely related types only.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0018: proc.vhd : (48, 2): Identifier expected.
+# Error: COMP96_0015: proc.vhd : (48, 2): ')' expected.
+# Error: COMP96_0015: proc.vhd : (48, 2): ';' expected.
+# Error: COMP96_0724: proc.vhd : (644, 12): ',' or ')' expected.
+# Error: COMP96_0015: proc.vhd : (644, 14): ';' expected.
+# Error: COMP96_0028: proc.vhd : (645, 15): Identifier or keyword expected.
+# Error: COMP96_0028: proc.vhd : (646, 14): Identifier or keyword expected.
+# Error: COMP96_0028: proc.vhd : (648, 10): Identifier or keyword expected.
+# Error: COMP96_0028: proc.vhd : (649, 16): Identifier or keyword expected.
+# Error: COMP96_0028: proc.vhd : (650, 15): Identifier or keyword expected.
+# Error: COMP96_0028: proc.vhd : (651, 15): Identifier or keyword expected.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 13 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/CacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0018: proc.vhd : (48, 2): Identifier expected.
+# Error: COMP96_0015: proc.vhd : (48, 2): ')' expected.
+# Error: COMP96_0015: proc.vhd : (48, 2): ';' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0018: proc.vhd : (48, 2): Identifier expected.
+# Error: COMP96_0015: proc.vhd : (48, 2): ')' expected.
+# Error: COMP96_0015: proc.vhd : (48, 2): ';' expected.
+# Error: COMP96_0018: proc.vhd : (554, 17): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (555, 16): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (556, 19): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (557, 18): Identifier expected.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0015: CacheD.vhd : (167, 9): ';' expected.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0015: proc.vhd : (48, 2): ')' expected.
+# Error: COMP96_0015: proc.vhd : (48, 2): ';' expected.
+# Error: COMP96_0018: proc.vhd : (554, 17): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (555, 16): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (556, 19): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (557, 18): Identifier expected.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0015: CacheD.vhd : (167, 9): ';' expected.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0018: proc.vhd : (554, 17): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (555, 16): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (556, 19): Identifier expected.
+# Error: COMP96_0018: proc.vhd : (557, 18): Identifier expected.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0015: CacheD.vhd : (167, 9): ';' expected.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: ELAB1_0011: proc.vhd : (33, 0): Port "BUFFER_BUSY" is on entity "CacheD" but not on the component declaration.
+# Error: COMP96_0078: proc.vhd : (630, 3): Unknown identifier "BUFFER_BUSY".
+# Error: COMP96_0078: proc.vhd : (631, 3): Unknown identifier "BUFFER_END".
+# Error: COMP96_0078: proc.vhd : (632, 3): Unknown identifier "BUFFER_DADOS".
+# Error: COMP96_0078: proc.vhd : (633, 3): Unknown identifier "BUFFER_PEDIDO".
+# Error: COMP96_0133: proc.vhd : (630, 3): Cannot find object declaration.
+# Error: COMP96_0112: proc.vhd : (630, 3): "BUFFER_BUSY" does not match the formal name.
+# Error: COMP96_0367: proc.vhd : (646, 16): Improper array length (128). Expected length is 32.
+# Error: COMP96_0100: proc.vhd : (640, 3): Actual parameter type in port map does not match the type of the formal port 'ender_in'.
+# Error: COMP96_0100: proc.vhd : (641, 3): Actual parameter type in port map does not match the type of the formal port 'dados_in'.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0015: CacheD.vhd : (167, 9): ';' expected.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0100: proc.vhd : (637, 3): Actual parameter type in port map does not match the type of the formal port 'BUFFER_END'.
+# Error: COMP96_0100: proc.vhd : (638, 3): Actual parameter type in port map does not match the type of the formal port 'BUFFER_DADOS'.
+# Error: COMP96_0367: proc.vhd : (652, 16): Improper array length (128). Expected length is 32.
+# Error: COMP96_0100: proc.vhd : (646, 3): Actual parameter type in port map does not match the type of the formal port 'ender_in'.
+# Error: COMP96_0100: proc.vhd : (647, 3): Actual parameter type in port map does not match the type of the formal port 'dados_in'.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0015: CacheD.vhd : (167, 9): ';' expected.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0100: proc.vhd : (637, 3): Actual parameter type in port map does not match the type of the formal port 'BUFFER_END'.
+# Error: COMP96_0100: proc.vhd : (638, 3): Actual parameter type in port map does not match the type of the formal port 'BUFFER_DADOS'.
+# Error: COMP96_0367: proc.vhd : (652, 16): Improper array length (128). Expected length is 32.
+# Error: COMP96_0100: proc.vhd : (646, 3): Actual parameter type in port map does not match the type of the formal port 'ender_in'.
+# Error: COMP96_0100: proc.vhd : (647, 3): Actual parameter type in port map does not match the type of the formal port 'dados_in'.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Error: COMP96_0078: CacheD.vhd : (95, 19): Unknown identifier "bf0".
+# Error: COMP96_0133: CacheD.vhd : (95, 19): Cannot find object declaration.
+# Error: COMP96_0077: CacheD.vhd : (95, 19): Undefined type of expression. Expected type 'stateType'.
+# Error: COMP96_0078: CacheD.vhd : (164, 10): Unknown identifier "bf0".
+# Error: COMP96_0078: CacheD.vhd : (215, 10): Unknown identifier "bf0".
+# Error: COMP96_0078: CacheD.vhd : (217, 19): Unknown identifier "bf1".
+# Error: COMP96_0133: CacheD.vhd : (217, 19): Cannot find object declaration.
+# Error: COMP96_0077: CacheD.vhd : (217, 19): Undefined type of expression. Expected type 'stateType'.
+# Error: COMP96_0078: CacheD.vhd : (219, 10): Unknown identifier "bf1".
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 16 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0100: proc.vhd : (637, 3): Actual parameter type in port map does not match the type of the formal port 'BUFFER_END'.
+# Error: COMP96_0100: proc.vhd : (638, 3): Actual parameter type in port map does not match the type of the formal port 'BUFFER_DADOS'.
+# Error: COMP96_0367: proc.vhd : (652, 16): Improper array length (128). Expected length is 32.
+# Error: COMP96_0100: proc.vhd : (646, 3): Actual parameter type in port map does not match the type of the formal port 'ender_in'.
+# Error: COMP96_0100: proc.vhd : (647, 3): Actual parameter type in port map does not match the type of the formal port 'dados_in'.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0367: proc.vhd : (652, 16): Improper array length (128). Expected length is 32.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Error: COMP96_0367: proc.vhd : (652, 16): Improper array length (128). Expected length is 32.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# Error: COMP96_0111: CacheD.vhd : (270, 5): Labels do not match.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# Warning: COMP96_0994: Multiple architecture "CacheD" of entity "CacheD" found in "c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd", "c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd".
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: COMP96_0641: CacheD.vhd : (33, 12): Name "CacheD" does not refer to a component declaration.
+# Error: COMP96_0134: CacheD.vhd : (33, 12): Cannot find component declaration.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: ELBWRITE_0028: CacheD.vhd : (185, 0): The unresolved signal "next_s" received values from multiple sources at 185 and 93 lines.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Error: ELBWRITE_0028: CacheD.vhd : (185, 0): The unresolved signal "next_s" received values from multiple sources at 185 and 93 lines.
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/ULA.vhd $dsn/src/CacheI.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/Mux2x1.vhd $dsn/src/Mux4x1.vhd $dsn/src/Mux2x1Bit.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/PC.vhd $dsn/src/IFID.vhd $dsn/src/IDEXE.vhd $dsn/src/EXEMEM.vhd $dsn/src/MEMWB.vhd $dsn/src/EPC.vhd $dsn/src/Somador.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/MEM.vhd $dsn/src/WBA.vhd $dsn/src/Controle.vhd $dsn/src/GPR.vhd $dsn/src/HazardUnit.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/proc.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Forwardi

@@ -7,45 +7,47 @@ use std.textio.all;
 entity CacheD is
   port(
        Clock : in std_logic; -- Clock de entrada
-       enable : in STD_LOGIC; --
+       enable : in STD_LOGIC;
        readD, writeD : in std_logic;
-       ender : in std_logic_vector(31 downto 0);
+       ender : in std_logic_vector(31 downto 0); -- Endereço de memória que entra no cache a partir do processador
        writeDado : in std_logic_vector(31 downto 0);
+       dumpMemory : in std_logic; -- Responsável por definir quando será feito um dump da memória
+       MAIN_PRONTO : IN std_logic; -- É para a memória avisar que 4 words pedidas a partir do endereço MAIN_END estão disponíveis no MAIN_DATA
+       MAIN_DATA : in std_logic_vector(127 downto 0); -- Onde a memória manda os dados
+       BUFFER_BUSY : in std_logic; -- Recebe estado de disponível ou ocupado do Buffer de Escrita
+
+       BUFFER_END : out std_logic_vector(31 DOWNTO 0); -- Endereço que o cache quer acessar na memória que irá para o Buffer de Escrita
+       BUFFER_DADOS : out std_logic_vector(31 DOWNTO 0); -- Dados que queremos gravar na memória através do Buffer de Escrita
+       BUFFER_PEDIDO : out std_logic; -- Pedido para o Buffer
        dado : out std_logic_vector(31 downto 0) := (others => '0');
        CacheD_MISS : out std_logic := '0';
-
-       dumpMemory : in std_logic;
-
-       MAIN_DATA : in std_logic_vector(127 downto 0); -- Onde a memória manda os dados
        MAIN_RW : out std_logic := '0';
-       MAIN_END : OUT std_logic_vector(31 DOWNTO 0); -- Endereço que o cache quer acessar na memória
-       ENABLE_I : OUT STD_LOGIC; -- Serve para o cache avisar a memória que quer acessá-la
-       MAIN_PRONTO : IN std_logic -- É para a memória avisar que 4 words pedidas a partir do endereço MAIN_END estão disponíveis no MAIN_DATA
+       MAIN_END : out std_logic_vector(31 DOWNTO 0); -- Endereço que o cache quer acessar na memória
+       ENABLE_I : out STD_LOGIC -- Serve para o cache avisar a memória que quer acessá-la
   );
 end CacheD;
-
-
 
 
 architecture CacheDI of CacheD is
 
 -- endereços de 32 bits
--- 2 bits inuteis
+-- 2 bits inuteis (Menos significativos)
 -- 16 palavras no bloco --> 4 bits para word no bloco
 -- 128 pares de blocos --> 7 bits para definir a frame
--- tag := 32 - 13 = 19 bits
+-- TAG := 32 - 13 = 19 bits
 type bloco_type is array(15 downto 0) of std_logic_vector(31 downto 0);
 type mem_type is array (255 downto 0) of bloco_type;
 signal mem : mem_type := (others => (others => (others => 'X')));
 
 type tags_type is array(255 downto 0) of std_logic_vector(18 downto 0);
 signal tags : tags_type := (others => (others => '0'));
-signal valids : std_logic_vector(256 downto 0) := (others => '0');
+signal valids : std_logic_vector(255 downto 0) := (others => '0'); -- Quando vale 0 significa que está limpo, quando vale 1 está sujo
 signal LRU : std_logic_vector(127 downto 0) := (others => '0');
 
-type stateType is (ready, le0, b0, le1, b1, le2, b2, le3, b3);
+type stateType is (ready, le0, b0, le1, b1, le2, b2, le3, b3, bf0, bf1);
 signal current_s, next_s : stateType;
 
+signal BUFFER_CONTADOR : integer := 0;
 
 signal auxe : std_logic_vector(7 downto 0) := "00000000";
 
@@ -85,8 +87,9 @@ begin
         aux_b := to_integer(unsigned(ender(5 downto 2)));
         dado <= mem(aux)(aux_b);
         LRU(aux) <= not (auxe(0));
-      elsif valids(aux) = '1' and tags(aux) = ender(31 downto 13) and writeD = '1' and clock'event and clock = '0' then
+      elsif valids(aux) = '1' and tags(aux) = ender(31 downto 13) and writeD = '1' and clock'event and clock = '0' then -- Este é o caso que vai ser necessário substituir um bloco
         aux_b := to_integer(unsigned(ender(5 downto 2)));
+        BUFFER_CONTADOR <= 15;
         mem(aux)(aux_b) <= writeDado;
         LRU(aux) <= not (auxe(0));
       elsif (readD = '1' or writeD = '1') and clock'event and clock = '0' then
@@ -139,7 +142,6 @@ begin
           mem(aux_c)(13) <= MAIN_DATA(95 DOWNTO 64);
           mem(aux_c)(14) <= MAIN_DATA(63 DOWNTO 32);
           mem(aux_c)(15) <= MAIN_DATA(31 DOWNTO 0);
-
       END IF;
     when b0 =>
         MAIN_END <= (OTHERS => '0');
@@ -156,6 +158,13 @@ begin
 
         valids(aux_c) <= '1';
   		  tags(aux_c) <= enderc(31 downto 13);
+    when bf0 =>
+      if BUFFER_BUSY = '0' then
+        BUFFER_PEDIDO <= '1';
+        BUFFER_DADOS <= mem(aux_c)(BUFFER_CONTADOR);
+        BUFFER_END <= ender(31 downto 4) & std_logic_vector(to_unsigned(BUFFER_CONTADOR, 4));
+        BUFFER_CONTADOR <= BUFFER_CONTADOR - 1;
+      end if;
 
     when others =>
       null;
@@ -171,8 +180,10 @@ begin
   aux := to_integer(unsigned(auxe));
   case current_s is
     when ready =>
-      if valids(aux) = '1' and tags(aux) = ender(31 downto 13) then
+		  if valids(aux) = '1' and tags(aux) = ender(31 downto 13) and readD = '1' then
         next_s <= ready;
+      elsif valids(aux) = '1' and tags(aux) = ender(31 downto 13) and writeD = '1' then
+        next_s <= bf0;
       elsif writeD = '1' or readD = '1' then
         next_s <= le0;
       end if;
@@ -199,6 +210,12 @@ begin
     when b2 =>
       next_s <= le3;
     when b3 =>
+      next_s <= ready;
+    when bf0 =>
+      if BUFFER_CONTADOR = 0 then
+        next_s <= bf1;
+      end if;
+    when bf1 =>
       next_s <= ready;
     when others =>
       null;
@@ -250,9 +267,6 @@ begin
 end process;
 
 end CacheDI;
-
-
-
 
 
 

@@ -1,9 +1,11 @@
-543
+569
+~E 1 "./../src/CacheBuffer.vhd" 7 CacheBuffer
+~A 1 "./../src/CacheBuffer.vhd" 22 CacheBuffer
 ~E 1 "./../src/CacheD.vhd" 7 CacheD
-~A 1 "./../src/CacheD.vhd" 263 CacheD
-~A 1 "./../src/CacheD.vhd" 30 CacheDI
+~A 1 "./../src/CacheD.vhd" 277 CacheD
+~A 1 "./../src/CacheD.vhd" 31 CacheDI
 ~E 1 "./../src/CacheI.vhd" 7 CacheI
-~A 1 "./../src/CacheI.vhd" 23 CacheI
+~A 1 "./../src/CacheI.vhd" 22 CacheI
 ~E 1 "./../src/Controle.vhd" 4 Controle
 ~A 1 "./../src/Controle.vhd" 27 Controle
 ~E 1 "./../src/EPC.vhd" 4 EPC
