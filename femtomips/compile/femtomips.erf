@@ -1,106 +1,60 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ULA.vhd" 
-MESSAGE "Compile Entity "ULA"" 
-MESSAGE "Compile Architecture "ULA" of Entity "ULA"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheI.vhd" 
-MESSAGE "Compile Entity "CacheI"" 
-MESSAGE "Compile Architecture "CacheI" of Entity "CacheI"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd" 
-MESSAGE "Compile Entity "MemoriaPrincipal"" 
-MESSAGE "Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1.vhd" 
-MESSAGE "Compile Entity "Mux2x1"" 
-MESSAGE "Compile Architecture "Mux2x1" of Entity "Mux2x1"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1.vhd" 
-MESSAGE "Compile Entity "Mux4x1"" 
-MESSAGE "Compile Architecture "Mux4x1" of Entity "Mux4x1"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd" 
 MESSAGE "Compile Entity "Mux2x1Bit"" 
 MESSAGE "Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd" 
-MESSAGE "Compile Entity "Mux4x1Bit"" 
-MESSAGE "Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\PC.vhd" 
-MESSAGE "Compile Entity "PC"" 
-MESSAGE "Compile Architecture "PC" of Entity "PC"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFID.vhd" 
-MESSAGE "Compile Entity "IFID"" 
-MESSAGE "Compile Architecture "IFID" of Entity "IFID"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDEXE.vhd" 
-MESSAGE "Compile Entity "IDEXE"" 
-MESSAGE "Compile Architecture "IDEXE" of Entity "IDEXE"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXEMEM.vhd" 
-MESSAGE "Compile Entity "EXEMEM"" 
-MESSAGE "Compile Architecture "EXEMEM" of Entity "EXEMEM"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEMWB.vhd" 
-MESSAGE "Compile Entity "MEMWB"" 
-MESSAGE "Compile Architecture "MEMWB" of Entity "MEMWB"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EPC.vhd" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd" 
 MESSAGE "Compile Entity "EPC"" 
 MESSAGE "Compile Architecture "EPC" of Entity "EPC"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Somador.vhd" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd" 
+MESSAGE "Compile Entity "IFID"" 
+MESSAGE "Compile Architecture "IFID" of Entity "IFID"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd" 
+MESSAGE "Compile Entity "Mux4x1"" 
+MESSAGE "Compile Architecture "Mux4x1" of Entity "Mux4x1"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd" 
+MESSAGE "Compile Entity "PC"" 
+MESSAGE "Compile Architecture "PC" of Entity "PC"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd" 
 MESSAGE "Compile Entity "Somador"" 
 MESSAGE "Compile Architecture "Somador" of Entity "Somador"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IFE.vhd" 
-MESSAGE "Compile Entity "IFE"" 
-MESSAGE "Compile Architecture "IFE" of Entity "IFE"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\IDE.vhd" 
-MESSAGE "Compile Entity "IDE"" 
-MESSAGE "Compile Architecture "IDE" of Entity "IDE"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\EXE.vhd" 
-MESSAGE "Compile Entity "EXE"" 
-MESSAGE "Compile Architecture "EXE" of Entity "EXE"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\MEM.vhd" 
-MESSAGE "Compile Entity "MEM"" 
-MESSAGE "Compile Architecture "MEM" of Entity "MEM"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\WBA.vhd" 
-MESSAGE "Compile Entity "WBA"" 
-MESSAGE "Compile Architecture "WBA" of Entity "WBA"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Controle.vhd" 
-MESSAGE "Compile Entity "Controle"" 
-MESSAGE "Compile Architecture "Controle" of Entity "Controle"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\GPR.vhd" 
-MESSAGE "Compile Entity "GPR"" 
-MESSAGE "Compile Architecture "GPR" of Entity "GPR"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\HazardUnit.vhd" 
-MESSAGE "Compile Entity "HazardUnit"" 
-MESSAGE "Compile Architecture "HazardUnit" of Entity "HazardUnit"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\ForwardingUnit.vhd" 
-MESSAGE "Compile Entity "ForwardingUnit"" 
-MESSAGE "Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd" 
+MESSAGE "Compile Entity "Mux4x1Bit"" 
+MESSAGE "Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd" 
 MESSAGE "Compile Entity "Mux4x1_5b"" 
 MESSAGE "Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"" 
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd" 
-BEGINPROGRESS c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
-MESSAGE "Compile Entity "proc"" 
-MESSAGE "Compile Architecture "proc" of Entity "proc"" 
-UPDATEPROGRESS 6
-UPDATEPROGRESS 9
-UPDATEPROGRESS 14
-UPDATEPROGRESS 18
-UPDATEPROGRESS 22
-UPDATEPROGRESS 24
-UPDATEPROGRESS 27
-UPDATEPROGRESS 32
-UPDATEPROGRESS 36
-UPDATEPROGRESS 40
-UPDATEPROGRESS 44
-UPDATEPROGRESS 46
-UPDATEPROGRESS 49
-UPDATEPROGRESS 52
-UPDATEPROGRESS 55
-UPDATEPROGRESS 58
-UPDATEPROGRESS 61
-UPDATEPROGRESS 64
-UPDATEPROGRESS 69
-UPDATEPROGRESS 73
-UPDATEPROGRESS 75
-UPDATEPROGRESS 78
-UPDATEPROGRESS 100
-ENDPROGRESS c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\proc.vhd
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd" 
-BEGINPROGRESS c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd" 
+MESSAGE "Compile Entity "Mux2x1"" 
+MESSAGE "Compile Architecture "Mux2x1" of Entity "Mux2x1"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd" 
+MESSAGE "Compile Entity "MemoriaPrincipal"" 
+MESSAGE "Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd" 
+MESSAGE "Compile Entity "MEMWB"" 
+MESSAGE "Compile Architecture "MEMWB" of Entity "MEMWB"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXEMEM.vhd" 
+MESSAGE "Compile Entity "EXEMEM"" 
+MESSAGE "Compile Architecture "EXEMEM" of Entity "EXEMEM"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\HazardUnit.vhd" 
+MESSAGE "Compile Entity "HazardUnit"" 
+MESSAGE "Compile Architecture "HazardUnit" of Entity "HazardUnit"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDEXE.vhd" 
+MESSAGE "Compile Entity "IDEXE"" 
+MESSAGE "Compile Architecture "IDEXE" of Entity "IDEXE"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\GPR.vhd" 
+MESSAGE "Compile Entity "GPR"" 
+MESSAGE "Compile Architecture "GPR" of Entity "GPR"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ForwardingUnit.vhd" 
+MESSAGE "Compile Entity "ForwardingUnit"" 
+MESSAGE "Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheI.vhd" 
+MESSAGE "Compile Entity "CacheI"" 
+MESSAGE "Compile Architecture "CacheI" of Entity "CacheI"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Controle.vhd" 
+MESSAGE "Compile Entity "Controle"" 
+MESSAGE "Compile Architecture "Controle" of Entity "Controle"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd" 
+BEGINPROGRESS C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
 UPDATEPROGRESS 1
 MESSAGE "Compile Entity "CacheD"" 
 UPDATEPROGRESS 7
@@ -135,8 +89,63 @@ UPDATEPROGRESS 93
 UPDATEPROGRESS 94
 UPDATEPROGRESS 99
 UPDATEPROGRESS 100
-ENDPROGRESS c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheD.vhd
-MESSAGE "File: c:\Users\joaoh\Documents\GitHub\FemtoMIPS\femtomips\src\CacheBuffer.vhd" 
+ENDPROGRESS C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheBuffer.vhd" 
 MESSAGE "Compile Entity "CacheBuffer"" 
 MESSAGE "Compile Architecture "CacheBuffer" of Entity "CacheBuffer"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ULA.vhd" 
+MESSAGE "Compile Entity "ULA"" 
+MESSAGE "Compile Architecture "ULA" of Entity "ULA"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\WBA.vhd" 
+MESSAGE "Compile Entity "WBA"" 
+MESSAGE "Compile Architecture "WBA" of Entity "WBA"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd" 
+MESSAGE "Compile Entity "MEM"" 
+MESSAGE "Compile Architecture "MEM" of Entity "MEM"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd" 
+MESSAGE "Compile Entity "IFE"" 
+MESSAGE "Compile Architecture "IFE" of Entity "IFE"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd" 
+MESSAGE "Compile Entity "IDE"" 
+MESSAGE "Compile Architecture "IDE" of Entity "IDE"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd" 
+MESSAGE "Compile Entity "EXE"" 
+MESSAGE "Compile Architecture "EXE" of Entity "EXE"" 
+MESSAGE "File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd" 
+BEGINPROGRESS C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+MESSAGE "Compile Entity "proc"" 
+MESSAGE "Compile Architecture "proc" of Entity "proc"" 
+UPDATEPROGRESS 6
+UPDATEPROGRESS 9
+UPDATEPROGRESS 14
+UPDATEPROGRESS 18
+UPDATEPROGRESS 22
+UPDATEPROGRESS 24
+UPDATEPROGRESS 27
+UPDATEPROGRESS 32
+UPDATEPROGRESS 36
+UPDATEPROGRESS 40
+UPDATEPROGRESS 44
+UPDATEPROGRESS 46
+UPDATEPROGRESS 49
+UPDATEPROGRESS 52
+UPDATEPROGRESS 55
+UPDATEPROGRESS 58
+UPDATEPROGRESS 61
+UPDATEPROGRESS 64
+UPDATEPROGRESS 69
+UPDATEPROGRESS 73
+UPDATEPROGRESS 75
+UPDATEPROGRESS 78
+UPDATEPROGRESS 100
+ENDPROGRESS C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity => WBA" 
+MESSAGE "Entity => proc" 
+MESSAGE "Entity => Mux2x1Bit" 
+MESSAGE "Entity => MEM" 
+MESSAGE "Entity => IFE" 
+MESSAGE "Entity => IDE" 
+MESSAGE "Entity => EPC" 
+MESSAGE "Entity => EXE" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]" 

@@ -10,7 +10,7 @@ entity CacheBuffer is
        ender_in : in std_logic_vector(31 downto 0); -- Endereço de entrada do buffer (do cache para o buffer)
        dados_in : in std_logic_vector(31 downto 0); -- Dados de entrada do buffer
        pedido_in : in std_logic; -- Recebimento de pedido do cache de dados (Um bit)
-       ready_in : in std_logic; -- Bit que a memória avisa que está pronta para ser gravada
+       ready_in : in std_logic; -- Bit que a memória avisa que está os dados foram gravados
 
        busy : out std_logic; -- Informação do estado atual, se está ocupado ou não (1 - ocupado, 0 - disponível)
        pedido_out : out std_logic; -- Realizar pedido de escrita para a memória principal
@@ -33,7 +33,7 @@ begin
     case current_s is
       when e0 =>
         busy <= '0';
-        pedido_out <= '0';
+        pedido_out <= 'Z';
       when e1 => -- Nesse estado, salvamos no Buffer os valores recebidos em dado_in e ender_in
         if pedido_in = '1' and Clock'event and Clock = '0' then
           endereco <= ender_in;

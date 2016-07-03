@@ -25,3 +25,4 @@ i<>.\src\Mux4x1_5b.vhd
 i<>.\src\proc.vhd
 i<>.\src\CacheD.vhd
 i<>.\src\CacheBuffer.vhd
+i<>.\src\PROC.bde
