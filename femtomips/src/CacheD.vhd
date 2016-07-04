@@ -145,7 +145,6 @@ begin
     when b0 =>
         MAIN_END <= (OTHERS => '0');
         CACHED_MISS <= '1';
-        -- ENABLE_I <= 'Z';
     when b1 =>
         MAIN_END <= (OTHERS => '0');
         CACHED_MISS <= '1';
@@ -159,13 +158,17 @@ begin
         valids(aux_c) <= '1';
   		  tags(aux_c) <= enderc(31 downto 13);
     when bf0 =>
-      if BUFFER_BUSY = '0' then
+      if BUFFER_BUSY = '0' and BUFFER_CONTADOR /= 0 then
+        ENABLE_I <= 'Z';
         BUFFER_PEDIDO <= '1';
         BUFFER_DADOS <= mem(aux_c)(BUFFER_CONTADOR);
         BUFFER_END <= ender(31 downto 4) & std_logic_vector(to_unsigned(BUFFER_CONTADOR, 4));
         BUFFER_CONTADOR <= BUFFER_CONTADOR - 1;
         MAIN_RW <= 'Z';
       end if;
+
+    when bf1 =>
+      BUFFER_PEDIDO <= '0';
 
     when others =>
       null;
@@ -189,19 +192,19 @@ begin
         next_s <= le0;
       end if;
     when le0 =>
-      if MAIN_PRONTO'event and MAIN_PRONTO ='1' then
+      if  MAIN_PRONTO ='1' then
         next_s <= b0;
       end if;
     when le1 =>
-      if MAIN_PRONTO'event and MAIN_PRONTO ='1' then
+      if MAIN_PRONTO ='1' then
         next_s <= b1;
       end if;
     when le2 =>
-      if MAIN_PRONTO'event and MAIN_PRONTO ='1' then
+      if  MAIN_PRONTO ='1' then
         next_s <= b2;
       end if;
     when le3 =>
-      if MAIN_PRONTO'event and MAIN_PRONTO ='1' then
+      if  MAIN_PRONTO ='1' then
         next_s <= b3;
       end if;
     when b0 =>
@@ -213,11 +216,13 @@ begin
     when b3 =>
       next_s <= ready;
     when bf0 =>
-      if BUFFER_CONTADOR = 0 then
         next_s <= bf1;
-      end if;
     when bf1 =>
-      next_s <= ready;
+      if BUFFER_CONTADOR = 0 then
+        next_s <= ready;
+      else
+        next_s <= bf0;
+      end if;
     when others =>
       null;
   end case;
