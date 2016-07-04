@@ -88,7 +88,7 @@ begin
         LRU(aux) <= not (auxe(0));
       elsif valids(aux) = '1' and tags(aux) = ender(31 downto 13) and writeD = '1' and clock'event and clock = '0' then -- Este é o caso que vai ser necessário substituir um bloco
         aux_b := to_integer(unsigned(ender(5 downto 2)));
-        BUFFER_CONTADOR <= 15;
+        BUFFER_CONTADOR <= 15;  -- Vamos utilizá-lo para gravar na memória as 16 palavras do bloco sujo
         mem(aux)(aux_b) <= writeDado;
         LRU(aux) <= not (auxe(0));
       elsif (readD = '1' or writeD = '1') and clock'event and clock = '0' then
@@ -218,7 +218,7 @@ begin
     when bf0 =>
         next_s <= bf1;
     when bf1 =>
-      if BUFFER_CONTADOR = 0 then
+      if BUFFER_CONTADOR = 0 then --acabou de transferir o bloco, volte para ready
         next_s <= ready;
       else
         next_s <= bf0;

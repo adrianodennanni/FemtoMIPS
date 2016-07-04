@@ -34,7 +34,7 @@ begin
     case current_s is
       when e0 =>
         busy <= '0';
-        pedido_out <= 'Z';
+        pedido_out <= 'Z'; -- A alta impedância seria para não haver conflito com o sinal ENABLE_I, só que acho que não sabemos mexer com alta impedância
       when e1 => -- Nesse estado, salvamos no Buffer os valores recebidos em dado_in e ender_in
         if pedido_in = '1' and Clock'event and Clock = '0' then
           endereco <= ender_in;
