@@ -23,7 +23,7 @@ entity CacheD is
        CacheD_MISS : out std_logic := '0';
        MAIN_RW : out std_logic := '0';
        MAIN_END : out std_logic_vector(31 DOWNTO 0); -- Endereço que o cache quer acessar na memória
-       ENABLE_I : out STD_LOGIC -- Serve para o cache avisar a memória que quer acessá-la
+       ENABLE_I : out STD_LOGIC := '0'-- Serve para o cache avisar a memória que quer acessá-la
   );
 end CacheD;
 
@@ -77,9 +77,8 @@ begin
   aux := to_integer(unsigned(auxe));
   --aux_c := to_integer(unsigned(enderc(13 downto 6)));
   CACHED_MISS <= '0';
-  ENABLE_I <= '0';
   MAIN_END <= (OTHERS => '0');
-  MAIN_RW <= '0';
+  --MAIN_RW <= '0';
   case current_s is
     when ready =>
       MAIN_END <= (others =>'U');
@@ -146,6 +145,7 @@ begin
     when b0 =>
         MAIN_END <= (OTHERS => '0');
         CACHED_MISS <= '1';
+        -- ENABLE_I <= 'Z';
     when b1 =>
         MAIN_END <= (OTHERS => '0');
         CACHED_MISS <= '1';
@@ -164,6 +164,7 @@ begin
         BUFFER_DADOS <= mem(aux_c)(BUFFER_CONTADOR);
         BUFFER_END <= ender(31 downto 4) & std_logic_vector(to_unsigned(BUFFER_CONTADOR, 4));
         BUFFER_CONTADOR <= BUFFER_CONTADOR - 1;
+        MAIN_RW <= 'Z';
       end if;
 
     when others =>
@@ -231,7 +232,7 @@ file outfile : text open write_mode is "cdd.txt";
 begin
   if (dumpMemory'event and dumpMemory = '1') then
 
-    for i in 1 to 256 loop
+    for i in 1 to 255 loop
 
       if valids(i) = '1' then
         write(l,"Bloco ");

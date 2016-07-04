@@ -15,7 +15,8 @@ entity CacheBuffer is
        busy : out std_logic; -- Informação do estado atual, se está ocupado ou não (1 - ocupado, 0 - disponível)
        pedido_out : out std_logic; -- Realizar pedido de escrita para a memória principal
        dados_out : out std_logic_vector(127 downto 0) := (others => '0'); -- Dados que irão para a memória
-       ender_out : out std_logic_vector(31 downto 0) -- Dados que irão para a memória
+       ender_out : out std_logic_vector(31 downto 0); -- Dados que irão para a memória
+       rw_out : out std_logic -- Indica à memória que quero escrever
   );
 end CacheBuffer;
 
@@ -34,6 +35,7 @@ begin
       when e0 =>
         busy <= '0';
         pedido_out <= 'Z';
+        rw_out <= 'Z';
       when e1 => -- Nesse estado, salvamos no Buffer os valores recebidos em dado_in e ender_in
         if pedido_in = '1' and Clock'event and Clock = '0' then
           endereco <= ender_in;
@@ -41,10 +43,11 @@ begin
           busy <= '1';
         end if;
       when e2 =>
-        if ready_in = '1' and Clock'event and Clock = '0' then
+        if Clock'event and Clock = '0' then
           dados_out(31 downto 0) <= palavra;
           ender_out <= endereco;
           pedido_out <= '1';
+          rw_out <= '0';
         end if;
     end case;
 
@@ -62,11 +65,11 @@ begin
       when e0 =>
         next_s <= e1;
       when e1 =>
-        if pedido_in'event and pedido_in = '1' then
+        if pedido_in = '1' then
           next_s <= e2;
         end if;
       when e2 =>
-        if ready_in'event and ready_in = '1' then
+        if ready_in = '1' then
           next_s <= e0;
         end if;
       when others =>

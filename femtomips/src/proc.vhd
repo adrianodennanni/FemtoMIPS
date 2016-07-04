@@ -50,7 +50,9 @@ architecture proc of proc is
 		busy : out STD_LOGIC;
 		pedido_out : out STD_LOGIC;
 		dados_out : out STD_LOGIC_VECTOR(127 downto 0);
-		ender_out : out STD_LOGIC_VECTOR(31 downto 0));
+		ender_out : out STD_LOGIC_VECTOR(31 downto 0);
+		rw_out : out STD_LOGIC);	 
+		
 	end component;
 	for all: CacheBuffer use entity work.CacheBuffer(CacheBuffer);
 
@@ -650,8 +652,10 @@ begin
 		busy => B_BUSY,
 		pedido_out => MP_enableD,
 		dados_out => MP_dadoD,
-		ender_out => MP_ENDERD
+		ender_out => MP_ENDERD,
+		rw_out => MP_RW
 	);
+
 
 
 	--
