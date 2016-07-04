@@ -27,7 +27,7 @@ architecture proc of proc is
 		MAIN_DATA : in STD_LOGIC_VECTOR(127 downto 0);
 		MAIN_RW : out STD_LOGIC;
 		MAIN_END : out STD_LOGIC_VECTOR(31 downto 0);
-		ENABLE_I : out STD_LOGIC;
+		ENABLE_D : out STD_LOGIC;
 		MAIN_PRONTO : in STD_LOGIC;
 		BUFFER_BUSY : in std_logic;
 
@@ -351,17 +351,22 @@ architecture proc of proc is
 	-- file: "./../src/MemoriaPrincipal.vhd"
 	component MemoriaPrincipal
 	port(
-		Clock : in STD_LOGIC;
-		rw : in STD_LOGIC;
+		clock : in STD_LOGIC;
+		rwD : in STD_LOGIC;
+		rwI : in STD_LOGIC;
+		rwB : in STD_LOGIC;
 		enableI : in STD_LOGIC;
 		enableD : in STD_LOGIC;
+		enableB : in STD_LOGIC;
 		enderI : in STD_LOGIC_VECTOR(31 downto 0);
 		enderD : in STD_LOGIC_VECTOR(31 downto 0);
+		enderB : in STD_LOGIC_VECTOR(31 downto 0);
 		dadoD_w : in STD_LOGIC_VECTOR(127 downto 0);
 		dadoI : out STD_LOGIC_VECTOR(127 downto 0);
 		dadoD_r : out STD_LOGIC_VECTOR(127 downto 0);
 		prontoI : out STD_LOGIC;
 		prontoD : out STD_LOGIC;
+		prontoB : out STD_LOGIC;
 		memDump : in STD_LOGIC);
 	end component;
 	for all: MemoriaPrincipal use entity work.MemoriaPrincipal(MemoriaPrincipal);
@@ -372,7 +377,7 @@ architecture proc of proc is
 	port(
 		Clock : in STD_LOGIC;
 		enable : in STD_LOGIC;
-		rw : in STD_LOGIC;
+		rw : out STD_LOGIC;
 		ender : in STD_LOGIC_VECTOR(31 downto 0);
 		dado : out STD_LOGIC_VECTOR(31 downto 0);
 		CACHEI_MISS : out STD_LOGIC;
@@ -554,9 +559,11 @@ SIGNAL CCACHEDACC : INTEGER := 0;
 SIGNAL CMEMACC : INTEGER := 0;
 
 -- SINAIS DA MEMÓRIA
-SIGNAL MP_RW, MP_enableD, MP_prontoD : STD_LOGIC := '0';
+SIGNAL MP_RW_D,MP_RW_I, MP_RW_B, MP_enableD, MP_prontoD, MP_enableB, MP_prontoB : STD_LOGIC := '0';
 SIGNAL MP_ENDERD : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
+SIGNAL MP_ENDERB : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 SIGNAL MP_dadoD : STD_LOGIC_VECTOR(127 DOWNTO 0) := (OTHERS => '0');
+SIGNAL MP_dadoB : STD_LOGIC_VECTOR(127 DOWNTO 0) := (OTHERS => '0');
 
 -- SINAIS DO CACHED/BUFFER
 SIGNAL B_BUSY : std_logic;
@@ -591,17 +598,22 @@ begin
 
 	MP : MemoriaPrincipal
 	port map(
-		Clock => ClK,
-		rw => MP_RW,
+		clock => ClK,
+		rwD => MP_RW_D,
+		rwI => MP_RW_I,
+		rwB => MP_RW_B,
 		enableI => MP_enableI,
 		enableD => MP_enableD,
+		enableB => MP_enableB,
 		enderI => MP_ENDERI,
 		enderD => MP_ENDERD,
-		dadoD_w => (others => '0'),
+		enderB => MP_ENDERB,
+		dadoD_w => MP_dadoB,
 		dadoI => MP_dadoI,
 		dadoD_r => MP_dadoD,
 		prontoI => MP_prontoI,
 		prontoD => MP_prontoD,
+		prontoB => MP_prontoB,
 		memDump => '0'
 	);
 
@@ -609,7 +621,7 @@ begin
 	port map(
 		Clock => clk,
 		enable => '1',
-		rw => '1',
+		rw => MP_RW_I,
 		ender => IFE_PC_DATA,
 		dado => IFE_INST,
 		CACHEI_MISS => CACHEI_MISS,
@@ -631,9 +643,9 @@ begin
 		CacheD_MISS => CACHED_MISS,
 		dumpMemory => over,
 		MAIN_DATA => MP_dadoD,
-		MAIN_RW => MP_RW,
+		MAIN_RW => MP_RW_D,
 		MAIN_END => MP_ENDERD,
-		ENABLE_I => MP_enableD,
+		ENABLE_D => MP_enableD,
 		MAIN_PRONTO => MP_prontoD,
 		BUFFER_BUSY => B_BUSY,
 		BUFFER_END =>  B_END,
@@ -648,12 +660,12 @@ begin
 		ender_in => B_END,
 		dados_in => B_DADOS,
 		pedido_in => B_PEDIDO,
-		ready_in => MP_prontoD,
+		ready_in => MP_prontoB,
 		busy => B_BUSY,
-		pedido_out => MP_enableD,
-		dados_out => MP_dadoD,
-		ender_out => MP_ENDERD,
-		rw_out => MP_RW
+		pedido_out => MP_enableB,
+		dados_out => MP_dadoB,
+		ender_out => MP_ENDERB,
+		rw_out => MP_RW_B
 	);
 
 

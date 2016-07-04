@@ -8,7 +8,7 @@ entity CacheI is
   port(
        Clock : in std_logic;
        enable : in STD_LOGIC;
-       rw : in std_logic;
+       rw : out std_logic := '1';
        ender : in std_logic_vector(31 downto 0);
        dado : out std_logic_vector(31 downto 0);
        CACHEI_MISS : out std_logic := '0'; -- sinal indicando ao processsador que ocorreu um miss

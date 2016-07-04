@@ -1,4 +1,5 @@
 library IEEE;
+
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
@@ -6,17 +7,16 @@ use std.textio.all;
 
 entity MemoriaPrincipal is
   port(
-       Clock : in std_logic;
-       rw : in std_logic;
+       clock : in std_logic;
+       rwD, rwI, rwB : in std_logic;
 
-       enableI, enableD : in std_logic;
-	   enderI, enderD : in std_logic_vector(31 downto 0);
+       enableI, enableD, enableB : in std_logic; -- um enable para cada bloco que se conecta à memória (CD, CI, CB)
+       enderI, enderD, enderB : in std_logic_vector(31 downto 0); -- uma via de endereços para cada cache
        dadoD_w : in std_logic_vector(127 downto 0);
        dadoI, dadoD_r : out std_logic_vector(127 downto 0);
-	   prontoI, prontoD : out std_logic;
+       prontoI, prontoD, prontoB : out std_logic;
 
-
-	   memDump : in std_logic
+       memDump : in std_logic
   );
 end MemoriaPrincipal;
 
@@ -26,7 +26,7 @@ architecture MemoriaPrincipal of MemoriaPrincipal is
 type tipo_memoria  is array (0 to 2**14 - 1) of std_logic_vector(31 downto 0);
 signal Mram: tipo_memoria := ( others  => (others => '0')) ;
 
-type state_type is (liv, esp_I, pro_I, esp_DR, pro_DR, esp_DW, pro_DW);
+type state_type is (liv, esp_I, pro_I, esp_D, pro_D, esp_B, pro_B);
 
 signal cstate : state_type := liv;
 signal nstate : state_type := liv;
@@ -73,54 +73,54 @@ begin
 	inicio := '0';
   end if;
 
-  if clock'event and clock = '1' and cstate = pro_DW then
-    Mram(to_integer(unsigned(enderD))) <= dadoD_w(31 downto 0);
+  if clock'event and clock = '1' and cstate = pro_B then
+    Mram(to_integer(unsigned(enderB))) <= dadoD_w(31 downto 0);
   end if;
 end process;
 
-maintainStates : process(cnt, enableI, enableD, clock)
+maintainStates : process(cnt, enableI, enableD, enableB, clock)
 begin
 	if (clock'event and clock = '1') then
 		cstate <= nstate;
-		if cstate = esp_I or cstate = esp_DW or cstate = esp_DR then
+		if cstate = esp_I or cstate = esp_B or cstate = esp_D then
 			cnt <= cnt - 1;
 		end if;
 	end if;
 	case cstate is
 		when liv =>
-			if enableI = '1' then
+			if enableI = '1' and rwI = '1' then
 				nstate <= esp_I;
 			end if;
-			if enableD = '1' then
-				nstate <= esp_DR;
+			if enableD = '1'  and rwD = '1' then
+				nstate <= esp_D;
 			end if;
-			if enableD = '1' and rw = '0' then
-				nstate <= esp_DW;
+			if enableB = '1' and rwB = '0' then
+				nstate <= esp_B;
 			end if;
 		when esp_I =>
 			if cnt = 0 then
 				nstate <= pro_I;
 			end if;
-		when esp_DR =>
+		when esp_D =>
 			if cnt = 0 then
-				nstate <= pro_DR;
+				nstate <= pro_D;
 			end if;
-		when esp_DW =>
+		when esp_B =>
 			if cnt = 0 then
-				nstate <= pro_DW;
+				nstate <= pro_B;
 			end if;
 		when pro_I =>
 			if enableI = '0' or enderI'event then
 				nstate <= liv;
 				cnt <= 7;
 			end if;
-		when pro_DR =>
+		when pro_D =>
 			if enableD = '0' or enderD'event then
 				nstate <= liv;
 				cnt <= 7;
 			end if;
-		when pro_DW =>
-			if enableD = '0' or enderD'event then
+		when pro_B =>
+			if enableB = '0' or enderB'event then
 				nstate <= liv;
 				cnt <= 7;
 			end if;
@@ -135,19 +135,20 @@ begin
 	 dadoD_r <= (others => '0');
 	 prontoI <= '0';
 	 prontoD <= '0';
+   prontoB <= '0';
 	 case cstate is
 		when pro_I =>
 			prontoI <= '1';
       ai := to_integer(unsigned(enderI));
 			dadoI <= Mram(ai) & Mram(ai+4) & Mram(ai+8) & Mram(ai+12);
-		when pro_DR =>
+		when pro_D =>
 	      prontoD <= '1';
 	      ai := to_integer(unsigned(enderD));
         --report "aaa" ;
 	      dadoD_r <= Mram(ai) & Mram(ai+4) & Mram(ai+8) & Mram(ai+12);
-		when pro_DW =>
-			prontoD <= '1';
-      ai := to_integer(unsigned(enderD));
+		when pro_B =>
+			prontoB <= '1';
+      ai := to_integer(unsigned(enderB));
     when others =>
       null;
 	end case;

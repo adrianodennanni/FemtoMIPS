@@ -1,8 +1,8 @@
-617
+635
 ~E 1 "./../src/CacheBuffer.vhd" 7 CacheBuffer
 ~A 1 "./../src/CacheBuffer.vhd" 23 CacheBuffer
 ~E 1 "./../src/CacheD.vhd" 7 CacheD
-~A 1 "./../src/CacheD.vhd" 283 CacheD
+~A 1 "./../src/CacheD.vhd" 281 CacheD
 ~A 1 "./../src/CacheD.vhd" 31 CacheDI
 ~E 1 "./../src/CacheI.vhd" 7 CacheI
 ~A 1 "./../src/CacheI.vhd" 22 CacheI
@@ -30,7 +30,7 @@
 ~A 1 "./../src/IFID.vhd" 23 IFID
 ~E 1 "./../src/MEM.vhd" 4 MEM
 ~A 1 "./../src/MEM.vhd" 16 MEM
-~E 1 "./../src/MemoriaPrincipal.vhd" 7 MemoriaPrincipal
+~E 1 "./../src/MemoriaPrincipal.vhd" 8 MemoriaPrincipal
 ~A 1 "./../src/MemoriaPrincipal.vhd" 23 MemoriaPrincipal
 ~E 1 "./../src/MEMWB.vhd" 4 MEMWB
 ~A 1 "./../src/MEMWB.vhd" 35 MEMWB

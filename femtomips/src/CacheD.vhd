@@ -21,9 +21,9 @@ entity CacheD is
        BUFFER_PEDIDO : out std_logic; -- Pedido para o Buffer
        dado : out std_logic_vector(31 downto 0) := (others => '0');
        CacheD_MISS : out std_logic := '0';
-       MAIN_RW : out std_logic := '0';
+       MAIN_RW : out std_logic := '1';
        MAIN_END : out std_logic_vector(31 DOWNTO 0); -- Endereço que o cache quer acessar na memória
-       ENABLE_I : out STD_LOGIC := '0'-- Serve para o cache avisar a memória que quer acessá-la
+       ENABLE_D : out STD_LOGIC := '0'-- Serve para o cache avisar a memória que quer acessá-la
   );
 end CacheD;
 
@@ -101,7 +101,7 @@ begin
     when le0 =>
         MAIN_END <= enderc;
         CACHED_MISS <= '1';
-        ENABLE_I <= '1';
+        ENABLE_D <= '1';
         MAIN_RW <= '1';
         if MAIN_PRONTO = '1' and clock'event and clock = '0' then
           mem(aux_c)(0) <= MAIN_DATA(127 DOWNTO 96);
@@ -110,7 +110,7 @@ begin
           mem(aux_c)(3) <= MAIN_DATA(31 DOWNTO 0);
         END IF;
     when le1 =>
-        ENABLE_I <= '1';
+        ENABLE_D <= '1';
         MAIN_END <= enderc + 16;
         CACHED_MISS <= '1';
         MAIN_RW <= '1';
@@ -123,7 +123,7 @@ begin
     when le2 =>
         MAIN_END <= enderc + 32;
         CACHED_MISS <= '1';
-        ENABLE_I <= '1';
+        ENABLE_D <= '1';
         MAIN_RW <= '1';
         if MAIN_PRONTO = '1' and clock'event and clock = '0' then
           mem(aux_c)(8) <= MAIN_DATA(127 DOWNTO 96);
@@ -134,7 +134,7 @@ begin
     when le3 =>
         MAIN_END <= enderc + 48;
         CACHED_MISS <= '1';
-        ENABLE_I <= '1';
+        ENABLE_D <= '1';
         MAIN_RW <= '1';
         if MAIN_PRONTO = '1' and clock'event and clock = '0' then
           mem(aux_c)(12) <= MAIN_DATA(127 DOWNTO 96);
@@ -154,17 +154,15 @@ begin
     when b3 =>
         MAIN_END <= (OTHERS => 'X');
         CACHED_MISS <= '1';
-
+        ENABLE_D <= '0';
         valids(aux_c) <= '1';
   		  tags(aux_c) <= enderc(31 downto 13);
     when bf0 =>
-      if BUFFER_BUSY = '0' and BUFFER_CONTADOR /= 0 then
-        ENABLE_I <= 'Z';
+    if BUFFER_BUSY = '0' and BUFFER_CONTADOR /= 0 then
         BUFFER_PEDIDO <= '1';
         BUFFER_DADOS <= mem(aux_c)(BUFFER_CONTADOR);
         BUFFER_END <= ender(31 downto 4) & std_logic_vector(to_unsigned(BUFFER_CONTADOR, 4));
         BUFFER_CONTADOR <= BUFFER_CONTADOR - 1;
-        MAIN_RW <= 'Z';
       end if;
 
     when bf1 =>
