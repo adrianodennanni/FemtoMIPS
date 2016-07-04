@@ -51,8 +51,8 @@ architecture proc of proc is
 		pedido_out : out STD_LOGIC;
 		dados_out : out STD_LOGIC_VECTOR(127 downto 0);
 		ender_out : out STD_LOGIC_VECTOR(31 downto 0);
-		rw_out : out STD_LOGIC);	 
-		
+		rw_out : out STD_LOGIC);
+
 	end component;
 	for all: CacheBuffer use entity work.CacheBuffer(CacheBuffer);
 

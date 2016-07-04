@@ -41,7 +41,7 @@ femtomips=.
 Active_lib=
 
 [HierarchyViewer]
-HierarchyInformation=proc|proc|0 
+HierarchyInformation=proc|proc|0  
 ShowHide=ShowTopLevel
 Selected=
 
