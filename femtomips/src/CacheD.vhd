@@ -77,6 +77,7 @@ begin
   aux := to_integer(unsigned(auxe));
   --aux_c := to_integer(unsigned(enderc(13 downto 6)));
   CACHED_MISS <= '0';
+  ENABLE_D <= '0';
   MAIN_END <= (OTHERS => '0');
   --MAIN_RW <= '0';
   case current_s is
@@ -86,13 +87,17 @@ begin
         aux_b := to_integer(unsigned(ender(5 downto 2)));
         dado <= mem(aux)(aux_b);
         LRU(aux) <= not (auxe(0));
-      elsif valids(aux) = '1' and tags(aux) = ender(31 downto 13) and writeD = '1' and clock'event and clock = '0' then -- Este é o caso que vai ser necessário substituir um bloco
+      elsif valids(aux) = '1' and tags(aux) = ender(31 downto 13) and writeD = '1' and clock'event and clock = '0' then
         aux_b := to_integer(unsigned(ender(5 downto 2)));
-        BUFFER_CONTADOR <= 15;  -- Vamos utilizá-lo para gravar na memória as 16 palavras do bloco sujo
         mem(aux)(aux_b) <= writeDado;
         LRU(aux) <= not (auxe(0));
+
+      elsif valids(aux) = '1' and tags(aux) /= ender(31 downto 13) and writeD = '1' and clock'event and clock = '0' then
+          BUFFER_CONTADOR <= 15;  -- Vamos utilizá-lo para gravar na memória as 16 palavras do bloco sujo
+          tags(aux) <= ender(31 downto 13);
+
       elsif (readD = '1' or writeD = '1') and clock'event and clock = '0' then
-        CACHED_MISS <= '1';
+        --CACHED_MISS <= '1';
         enderc := ender(31 downto 6) & "000000" ;
         aux_c := aux;
       else
@@ -158,15 +163,17 @@ begin
         valids(aux_c) <= '1';
   		  tags(aux_c) <= enderc(31 downto 13);
     when bf0 =>
-    if BUFFER_BUSY = '0' and BUFFER_CONTADOR /= 0 then
+    CACHED_MISS <= '1';
+    if BUFFER_BUSY = '0' and BUFFER_CONTADOR /= 0 and clock'event and clock = '0' then
         BUFFER_PEDIDO <= '1';
+        BUFFER_CONTADOR <= BUFFER_CONTADOR - 1;
         BUFFER_DADOS <= mem(aux_c)(BUFFER_CONTADOR);
         BUFFER_END <= ender(31 downto 4) & std_logic_vector(to_unsigned(BUFFER_CONTADOR, 4));
-        BUFFER_CONTADOR <= BUFFER_CONTADOR - 1;
-      end if;
+    end if;
 
     when bf1 =>
       BUFFER_PEDIDO <= '0';
+      CACHED_MISS <= '1';
 
     when others =>
       null;
@@ -182,27 +189,27 @@ begin
   aux := to_integer(unsigned(auxe));
   case current_s is
     when ready =>
-		  if valids(aux) = '1' and tags(aux) = ender(31 downto 13) and readD = '1' then
+		  if valids(aux) = '1' and tags(aux) = ender(31 downto 13) then
         next_s <= ready;
-      elsif valids(aux) = '1' and tags(aux) = ender(31 downto 13) and writeD = '1' then
+      elsif valids(aux) = '1' and tags(aux) /= ender(31 downto 13) and writeD = '1' then
         next_s <= bf0;
       elsif writeD = '1' or readD = '1' then
         next_s <= le0;
       end if;
     when le0 =>
-      if  MAIN_PRONTO ='1' then
+      if  MAIN_PRONTO ='1' and MAIN_PRONTO'event then
         next_s <= b0;
       end if;
     when le1 =>
-      if MAIN_PRONTO ='1' then
+      if MAIN_PRONTO ='1' and MAIN_PRONTO'event then
         next_s <= b1;
       end if;
     when le2 =>
-      if  MAIN_PRONTO ='1' then
+      if  MAIN_PRONTO ='1' and MAIN_PRONTO'event then
         next_s <= b2;
       end if;
     when le3 =>
-      if  MAIN_PRONTO ='1' then
+      if  MAIN_PRONTO ='1' and MAIN_PRONTO'event then
         next_s <= b3;
       end if;
     when b0 =>
@@ -218,7 +225,9 @@ begin
     when bf1 =>
       if BUFFER_CONTADOR = 0 then --acabou de transferir o bloco, volte para ready
         next_s <= ready;
+        --CACHED_MISS <= '0';
       else
+        --CACHED_MISS <= '1';
         next_s <= bf0;
       end if;
     when others =>
