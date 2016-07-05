@@ -23,7 +23,7 @@ end MemoriaPrincipal;
 architecture MemoriaPrincipal of MemoriaPrincipal is
 
 -- Architecture declarations --
-type tipo_memoria  is array (0 to 2**14 - 1) of std_logic_vector(31 downto 0);
+type tipo_memoria  is array (0 to 2**15 - 1) of std_logic_vector(31 downto 0);
 signal Mram: tipo_memoria := ( others  => (others => '0')) ;
 
 type state_type is (liv, esp_I, pro_I, esp_D, pro_D, esp_B, pro_B);
@@ -37,7 +37,7 @@ begin
 ---- Processes ----
 
 Carga_Inicial_e_Ram_Memoria :process (clock)
-variable endereco: integer range 0 to (2**14 - 1);
+variable endereco: integer range 0 to (2**15 - 1);
 variable inicio: std_logic := '1';
 
 function fill_memory return tipo_memoria is

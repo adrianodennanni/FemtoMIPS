@@ -7224,4 +7224,893 @@ acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $
 # Compile Architecture "WBA" of Entity "WBA"
 # File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd
 # Compile Entity "MEM"
-# Compile Architectu
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  20:24, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+run 60000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 11842500 ps,  Iteration: 1,  Instance: /proc,  Process: line__579.
+# KERNEL: stopped at time: 60 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  20:25, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 11842500 ps,  Iteration: 1,  Instance: /proc,  Process: line__579.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $dsn/src/IFID.vhd $dsn/src/Mux4x1.vhd $dsn/src/PC.vhd $dsn/src/Somador.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/Mux2x1.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/MEMWB.vhd $dsn/src/EXEMEM.vhd $dsn/src/HazardUnit.vhd $dsn/src/IDEXE.vhd $dsn/src/GPR.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/CacheI.vhd $dsn/src/Controle.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd $dsn/src/ULA.vhd $dsn/src/WBA.vhd $dsn/src/MEM.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  20:52, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+run 60000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 1552500 ps,  Iteration: 1,  Instance: /proc,  Process: line__579.
+# KERNEL: stopped at time: 60 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  21:37, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+# 19 signal(s) traced.
+run
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/CacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  21:38, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 1552500 ps,  Iteration: 1,  Instance: /proc,  Process: line__579.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  21:41, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $dsn/src/IFID.vhd $dsn/src/Mux4x1.vhd $dsn/src/PC.vhd $dsn/src/Somador.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/Mux2x1.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/MEMWB.vhd $dsn/src/EXEMEM.vhd $dsn/src/HazardUnit.vhd $dsn/src/IDEXE.vhd $dsn/src/GPR.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/CacheI.vhd $dsn/src/Controle.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd $dsn/src/ULA.vhd $dsn/src/WBA.vhd $dsn/src/MEM.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 11842500 ps,  Iteration: 1,  Instance: /proc,  Process: line__579.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $dsn/src/IFID.vhd $dsn/src/Mux4x1.vhd $dsn/src/PC.vhd $dsn/src/Somador.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/Mux2x1.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/MEMWB.vhd $dsn/src/EXEMEM.vhd $dsn/src/HazardUnit.vhd $dsn/src/IDEXE.vhd $dsn/src/GPR.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/CacheI.vhd $dsn/src/Controle.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd $dsn/src/ULA.vhd $dsn/src/WBA.vhd $dsn/src/MEM.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  21:57, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+run
+# RUNTIME: Fatal Error: RUNTIME_0047 MemoriaPrincipal.vhd (64): Index 16512 out of range (0 to 16383).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/MP,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: Stopped at time 0 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $dsn/src/IFID.vhd $dsn/src/Mux4x1.vhd $dsn/src/PC.vhd $dsn/src/Somador.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/Mux2x1.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/MEMWB.vhd $dsn/src/EXEMEM.vhd $dsn/src/HazardUnit.vhd $dsn/src/IDEXE.vhd $dsn/src/GPR.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/CacheI.vhd $dsn/src/Controle.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd $dsn/src/ULA.vhd $dsn/src/WBA.vhd $dsn/src/MEM.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# Warning: COMP96_0119: MemoriaPrincipal.vhd : (40, 28): The range is 'null range'.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.9 [s]
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $dsn/src/IFID.vhd $dsn/src/Mux4x1.vhd $dsn/src/PC.vhd $dsn/src/Somador.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/Mux2x1.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/MEMWB.vhd $dsn/src/EXEMEM.vhd $dsn/src/HazardUnit.vhd $dsn/src/IDEXE.vhd $dsn/src/GPR.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/CacheI.vhd $dsn/src/Controle.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd $dsn/src/ULA.vhd $dsn/src/WBA.vhd $dsn/src/MEM.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  22:09, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 2707500 ps,  Iteration: 1,  Instance: /proc,  Process: line__579.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# 14 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/mem' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/tags' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/valids' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/LRU' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/current_s' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/next_s' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/BUFFER_CONTADOR' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/auxe' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/Clock' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/enable' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/readD' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/writeD' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/ender' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/writeDado' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/dumpMemory' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/MAIN_PRONTO' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/MAIN_DATA' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/BUFFER_BUSY' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/BUFFER_END' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/BUFFER_DADOS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/BUFFER_PEDIDO' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/dado' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/CacheD_MISS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/MAIN_RW' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/MAIN_END' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/proc/CD/ENABLE_D' has already been traced.
+# 0 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 10408 kB (elbread=1280 elab2=8968 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  22:10, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__51.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /proc/IDE_REGS,  Process: line__52.
+# EXECUTION:: NOTE   : \a
+# EXECUTION:: Time: 2707500 ps,  Iteration: 1,  Instance: /proc,  Process: line__579.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $dsn/src/IFID.vhd $dsn/src/Mux4x1.vhd $dsn/src/PC.vhd $dsn/src/Somador.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/Mux2x1.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/MEMWB.vhd $dsn/src/EXEMEM.vhd $dsn/src/HazardUnit.vhd $dsn/src/IDEXE.vhd $dsn/src/GPR.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/CacheI.vhd $dsn/src/Controle.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd $dsn/src/ULA.vhd $dsn/src/WBA.vhd $dsn/src/MEM.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXEMEM.vhd
+# Compile Entity "EXEMEM"
+# Compile Architecture "EXEMEM" of Entity "EXEMEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\HazardUnit.vhd
+# Compile Entity "HazardUnit"
+# Compile Architecture "HazardUnit" of Entity "HazardUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDEXE.vhd
+# Compile Entity "IDEXE"
+# Compile Architecture "IDEXE" of Entity "IDEXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\GPR.vhd
+# Compile Entity "GPR"
+# Compile Architecture "GPR" of Entity "GPR"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ForwardingUnit.vhd
+# Compile Entity "ForwardingUnit"
+# Compile Architecture "ForwardingUnit" of Entity "ForwardingUnit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Controle.vhd
+# Compile Entity "Controle"
+# Compile Architecture "Controle" of Entity "Controle"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheD.vhd
+# Compile Entity "CacheD"
+# Compile Architecture "CacheDI" of Entity "CacheD"
+# Compile Architecture "CacheD" of Entity "CacheD"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\CacheBuffer.vhd
+# Compile Entity "CacheBuffer"
+# Compile Architecture "CacheBuffer" of Entity "CacheBuffer"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\ULA.vhd
+# Compile Entity "ULA"
+# Compile Architecture "ULA" of Entity "ULA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\WBA.vhd
+# Compile Entity "WBA"
+# Compile Architecture "WBA" of Entity "WBA"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEM.vhd
+# Compile Entity "MEM"
+# Compile Architecture "MEM" of Entity "MEM"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFE.vhd
+# Compile Entity "IFE"
+# Compile Architecture "IFE" of Entity "IFE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IDE.vhd
+# Compile Entity "IDE"
+# Compile Architecture "IDE" of Entity "IDE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EXE.vhd
+# Compile Entity "EXE"
+# Compile Architecture "EXE" of Entity "EXE"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\proc.vhd
+# Compile Entity "proc"
+# Compile Architecture "proc" of Entity "proc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 12456 kB (elbread=1280 elab2=11016 kernel=159 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\wave.asdb
+#  22:15, segunda-feira, 4 de julho de 2016
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/adria/Desktop/FemtoMIPS/femtomips/src/wave.asdb'.
+acom -O3 -e 100 -work femtomips -2002  $dsn/src/Mux2x1Bit.vhd $dsn/src/EPC.vhd $dsn/src/IFID.vhd $dsn/src/Mux4x1.vhd $dsn/src/PC.vhd $dsn/src/Somador.vhd $dsn/src/Mux4x1Bit.vhd $dsn/src/Mux4x1_5b.vhd $dsn/src/Mux2x1.vhd $dsn/src/MemoriaPrincipal.vhd $dsn/src/MEMWB.vhd $dsn/src/EXEMEM.vhd $dsn/src/HazardUnit.vhd $dsn/src/IDEXE.vhd $dsn/src/GPR.vhd $dsn/src/ForwardingUnit.vhd $dsn/src/CacheI.vhd $dsn/src/Controle.vhd $dsn/src/CacheD.vhd $dsn/src/CacheBuffer.vhd $dsn/src/ULA.vhd $dsn/src/WBA.vhd $dsn/src/MEM.vhd $dsn/src/IFE.vhd $dsn/src/IDE.vhd $dsn/src/EXE.vhd $dsn/src/proc.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1Bit.vhd
+# Compile Entity "Mux2x1Bit"
+# Compile Architecture "Mux2x1Bit" of Entity "Mux2x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\EPC.vhd
+# Compile Entity "EPC"
+# Compile Architecture "EPC" of Entity "EPC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\IFID.vhd
+# Compile Entity "IFID"
+# Compile Architecture "IFID" of Entity "IFID"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1.vhd
+# Compile Entity "Mux4x1"
+# Compile Architecture "Mux4x1" of Entity "Mux4x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Somador.vhd
+# Compile Entity "Somador"
+# Compile Architecture "Somador" of Entity "Somador"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1Bit.vhd
+# Compile Entity "Mux4x1Bit"
+# Compile Architecture "Mux4x1Bit" of Entity "Mux4x1Bit"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux4x1_5b.vhd
+# Compile Entity "Mux4x1_5b"
+# Compile Architecture "Mux4x1_5b" of Entity "Mux4x1_5b"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\Mux2x1.vhd
+# Compile Entity "Mux2x1"
+# Compile Architecture "Mux2x1" of Entity "Mux2x1"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MemoriaPrincipal.vhd
+# Compile Entity "MemoriaPrincipal"
+# Compile Architecture "MemoriaPrincipal" of Entity "MemoriaPrincipal"
+# File: C:\Users\adria\Desktop\FemtoMIPS\femtomips\src\MEMWB.vhd
+# Compile Entity "MEMWB"
+# Compile Architecture "MEMWB" of Entity "MEMWB"
+# File: C:\Users\ad

@@ -283,14 +283,10 @@ end CacheDI;
 
 
 
-
-
-
-
 architecture CacheD of CacheD is
 
   -- Architecture declarations --
-  type tipo_memoria  is array (0 to 2**14 - 1) of std_logic_vector(31 downto 0);
+  type tipo_memoria  is array (0 to 2**15 - 1) of std_logic_vector(31 downto 0);
   signal Mram: tipo_memoria := ( others  => (others => '0')) ;
 
   begin
@@ -298,7 +294,7 @@ architecture CacheD of CacheD is
   ---- Processes ----
 
   Carga_Inicial_e_Ram_Memoria :process (clock, readD, writeD, ender, writeDado)
-  variable endereco: integer range 0 to (2**14 - 1);
+  variable endereco: integer range 0 to (2**15 - 1);
   variable inicio: std_logic := '1';
 
   function fill_memory return tipo_memoria is
